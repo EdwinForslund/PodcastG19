@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfFeed xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Feed>
+    <namn>ex...Namn</namn>
+    <url>hej.xml</url>
+    <uppdatera>0001-01-01T00:00:00</uppdatera>
+    <uppdateringsfrekvens>0</uppdateringsfrekvens>
+    <category>
+      <Title>Dokumentär</Title>
+    </category>
+  </Feed>
+  <Feed>
+    <namn>ex...Namn</namn>
+    <url>hallå.se</url>
+    <uppdatera>0001-01-01T00:00:00</uppdatera>
+    <uppdateringsfrekvens>0</uppdateringsfrekvens>
+    <category>
+      <Title>Dokumentär</Title>
+    </category>
+  </Feed>
+  <Feed>
+    <namn>ex...Namn</namn>
+    <url>https://poddtoppen.se/podcast/1710004738/30s-in-the-city-med-hanna-och-stella</url>
+    <uppdatera>0001-01-01T00:00:00</uppdatera>
+    <uppdateringsfrekvens>0</uppdateringsfrekvens>
+    <category>
+      <Title>Dokumentär</Title>
+    </category>
+  </Feed>
+  <Feed>
+    <namn>ex...Namn</namn>
+    <url>https://rss.podplaystudio.com/1565.xml</url>
+    <uppdatera>0001-01-01T00:00:00</uppdatera>
+    <uppdateringsfrekvens>0</uppdateringsfrekvens>
+    <category>
+      <Title>Dokumentär</Title>
+    </category>
+  </Feed>
+</ArrayOfFeed>
