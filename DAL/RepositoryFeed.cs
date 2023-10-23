@@ -220,6 +220,15 @@ namespace PodcastAppG19.DAL
         }
 
 
+        public void DeleteFeedAndContents(Feed feed)
+        {
+            // Remove the feed from the list
+            lista.Remove(feed);
+
+            // Optionally, delete any associated content or perform cleanup here
+
+            Save(); // Save the updated list
+        }
 
 
 

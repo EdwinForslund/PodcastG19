@@ -47,6 +47,10 @@ namespace PodcastAppG19.BLL
         {
             throw new NotImplementedException();
         }
+        public void DeleteFeedAndContents(Feed feed)
+        {
+            Feedrepos.DeleteFeedAndContents(feed);
+        }
 
     }
 }
