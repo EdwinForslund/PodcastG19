@@ -52,30 +52,30 @@ namespace PodcastAppG19
 
         private void btnTaBort_Click(object sender, EventArgs e)
         {
-            
-                
-                if (dataGridView1.SelectedRows.Count > 0)
-                {
-                    
-                    int selectedRowIndex = dataGridView1.SelectedRows[0].Index;
 
-                   
-                    Feed selectedFeed = feeds[selectedRowIndex]; 
 
-                  
-                    feeds.Remove(selectedFeed);
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
 
-                   
-                    feedcontoller.DeleteFeedAndContents(selectedFeed);
+                int selectedRowIndex = dataGridView1.SelectedRows[0].Index;
 
-                   
-                    dataGridView1.Rows.RemoveAt(selectedRowIndex);
-                }
-                else
-                {
-                    MessageBox.Show("Please select a feed to delete.");
-                }
-            
+
+                Feed selectedFeed = feeds[selectedRowIndex];
+
+
+                feeds.Remove(selectedFeed);
+
+
+                feedcontoller.DeleteFeedAndContents(selectedFeed);
+
+
+                dataGridView1.Rows.RemoveAt(selectedRowIndex);
+            }
+            else
+            {
+                MessageBox.Show("Please select a feed to delete.");
+            }
+
 
         }
 
@@ -272,5 +272,36 @@ namespace PodcastAppG19
 
             UpdateContentforCatagory();
         }
+
+        private void btnAndra_Click(object sender, EventArgs e)
+        {
+
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                int selectedRowIndex = dataGridView1.SelectedRows[0].Index;
+                Feed selectedFeed = feeds[selectedRowIndex];
+                string newFeedName = txtbNamn.Text; // Hämta namn från användaren
+
+                // Kontrollera att det nya namnet inte är tomt eller ogiltigt
+                if (!string.IsNullOrWhiteSpace(newFeedName))
+                {
+                    feedcontoller.UpdateFeedName(selectedFeed, newFeedName);
+
+                    // Uppdatera användargränssnittet med det nya namnet
+                    dataGridView1.Rows[selectedRowIndex].Cells[1].Value = newFeedName;
+
+                    MessageBox.Show("Namnet på feeden har uppdaterats.");
+                }
+                else
+                {
+                    MessageBox.Show("Ange ett giltigt nytt namn för feeden.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Välj en feed att uppdatera namnet för.");
+            }
+        }
+
+        }
     }
-}

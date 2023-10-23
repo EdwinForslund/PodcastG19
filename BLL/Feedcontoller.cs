@@ -52,5 +52,17 @@ namespace PodcastAppG19.BLL
             Feedrepos.DeleteFeedAndContents(feed);
         }
 
+
+        public void UpdateFeedName(Feed feed, string newFeedName)
+        {
+            // Update the feed's name in your data storage (e.g., using RepositoryFeed)
+            Feedrepos.UpdateFeedName(feed, newFeedName);
+
+            // Update the feed's name in your data structures
+            feed.namn = newFeedName;
+        }
+
+
+
     }
 }
