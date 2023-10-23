@@ -240,6 +240,20 @@ namespace PodcastAppG19.DAL
         }
 
 
+        public void UpdateFeedName(Feed feed, string newFeedName)
+        {
+            foreach (Feed f in lista)
+            {
+                if (f == feed)
+                {
+                    f.namn = newFeedName;
+                    Save(); // Save the updated feed list
+                    break;
+                }
+            }
+        }
+
+
     }
 
 
