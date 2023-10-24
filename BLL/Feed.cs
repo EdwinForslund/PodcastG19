@@ -35,6 +35,10 @@ namespace PodcastAppG19.BLL
             this.category = category;
             uppdateringsfrekvens = frekvens;
             repositoryFeed = new RepositoryFeed();
+
+
+            AddEpisode("Avsnitt 1", "Beskrivning av avsnitt 1");
+            AddEpisode("Avsnitt 2", "Beskrivning av avsnitt 2");
         }
 
         public Feed()
@@ -71,7 +75,12 @@ namespace PodcastAppG19.BLL
             serializer.SerializeFeedXML(feeds);
         }
 
-       
+        public List<Episode> Episodes { get; set; } = new List<Episode>();
+
+        public void AddEpisode(string namn, string beskrivning)
+        {
+            Episodes.Add(new Episode(namn, beskrivning));
+        }
 
     }
 }
