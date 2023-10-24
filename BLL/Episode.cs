@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PodcastAppG19.BLL
 {
-    internal class Episode
+    public class Episode
     {
 
 
