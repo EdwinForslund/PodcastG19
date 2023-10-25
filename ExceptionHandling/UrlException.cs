@@ -7,6 +7,9 @@ namespace PodcastAppG19.ExceptionHandling
     {
         private XDocument filen;
 
+        public XDocument Fil { get; set; }
+        public string AdditionalMessage { get; set; }
+
         public UrlException(XDocument filen)
         {
             this.filen = filen;
@@ -19,7 +22,5 @@ namespace PodcastAppG19.ExceptionHandling
             AdditionalMessage = additionalMessage;
         }
 
-        public XDocument Fil { get; set; }
-        public string AdditionalMessage { get; set; }
     }
 }

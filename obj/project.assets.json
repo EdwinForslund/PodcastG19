@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\maxhe\\OneDrive\\Skrivbord\\PodcastAppG19\\PodcastAppG19.csproj",
+      "projectUniqueName": "C:\\Users\\maxhe\\OneDrive\\Skrivbord\\PodcastG19\\PodcastAppG19.csproj",
       "projectName": "PodcastAppG19",
-      "projectPath": "C:\\Users\\maxhe\\OneDrive\\Skrivbord\\PodcastAppG19\\PodcastAppG19.csproj",
+      "projectPath": "C:\\Users\\maxhe\\OneDrive\\Skrivbord\\PodcastG19\\PodcastAppG19.csproj",
       "packagesPath": "C:\\Users\\maxhe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\maxhe\\OneDrive\\Skrivbord\\PodcastAppG19\\obj\\",
+      "outputPath": "C:\\Users\\maxhe\\OneDrive\\Skrivbord\\PodcastG19\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\maxhe\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -64,7 +64,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

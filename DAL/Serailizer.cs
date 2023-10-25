@@ -23,15 +23,28 @@ namespace PodcastAppG19.DAL
 
         public List<Feed> DeserializeFeedXML()
         {
-            XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<Feed>));
-            List<Feed> lista;
-
-            using (FileStream filestream = new FileStream("Podcast.xml", FileMode.Open, FileAccess.Read))
+            List<Feed> lista = new List<Feed>();
+            try
             {
-                lista = (List<Feed>)xmlSerializer.Deserialize(filestream);
-            }
+                XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<Feed>));
 
-            return lista;
+                using (FileStream filestream = new FileStream("Podcast.xml", FileMode.Open, FileAccess.Read))
+                {
+                    lista = (List<Feed>)xmlSerializer.Deserialize(filestream);
+                }
+
+                return lista;
+            }
+            catch (FileNotFoundException)
+            {
+                Console.WriteLine("Podcast.xml hittas ej");
+                return lista;
+            }
+            catch (System.InvalidOperationException)
+            {
+                Console.WriteLine("Fel på XML dokument, dubbelkolla taggar.");
+                return lista;
+            }
         }
 
         public void SerializeCatagoryXML(List<Category> lista)

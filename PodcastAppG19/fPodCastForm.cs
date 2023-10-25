@@ -5,7 +5,7 @@ using System.Xml.Linq;
 using System.Xml.Serialization;
 using System.Data;
 using PodcastAppG19.ExceptionHandling;
-
+using PodcastAppG19.PodcastAppG19;
 
 namespace PodcastAppG19
 {
@@ -16,7 +16,7 @@ namespace PodcastAppG19
         Feedcontoller feedcontoller;
         private List<Feed> feeds;
         Catagorycontroller catagorycontroller;
-
+        private bool valideringPasserad = false;
 
 
 
@@ -28,7 +28,7 @@ namespace PodcastAppG19
             feedcontoller = new Feedcontoller();
             catagorycontroller = new Catagorycontroller();
             UpdateContentforCatagory();
-         
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -80,17 +80,18 @@ namespace PodcastAppG19
 
         }
 
-      
 
 
-            private void btnLaggTill_Click(object sender, EventArgs e)
+
+        private void btnLaggTill_Click(object sender, EventArgs e)
+        {
+            string namn = txtbNamn.Text;
+            string url = txtbURL.Text;
+            string stringFrekvensen = cbBFrekvens.Text;
+            int frekvens = 0;
+            string kategori = cbBKategori.Text;
+            if (Validering.NamnKontroll(namn, RutaNamn))
             {
-                string namn = txtbNamn.Text;
-                string url = txtbURL.Text;
-                string stringFrekvensen = cbBFrekvens.Text;
-                int frekvens = 0;
-                string kategori = cbBKategori.Text;
-
                 if (cbBFrekvens.Text == "1 min")
                 {
                     frekvens = 1;
@@ -149,11 +150,22 @@ namespace PodcastAppG19
                 // Serialize the updated list of feeds
                 feed.FeedSerailizer(feeds);
             }
+            else
+            {
+                // Visa felmeddelande om valideringen misslyckas.
+                MessageBox.Show("Valideringen misslyckades. Åtgärda fel innan du fortsätter.");
+
+            }
+            
+        }
 
 
 
-            private void txtbNamn_TextChanged(object sender, EventArgs e)
+        private void txtbNamn_TextChanged(object sender, EventArgs e)
         {
+
+            bool valideringResultat = Validering.NamnKontroll(txtbNamn.Text, RutaNamn);
+            valideringPasserad = valideringResultat;
 
         }
 
@@ -182,23 +194,23 @@ namespace PodcastAppG19
 
 
 
-             // Rensa DataGridView2 för att börja med en tom lista av avsnitt
-                dataGridView2.Rows.Clear();
+            // Rensa DataGridView2 för att börja med en tom lista av avsnitt
+            dataGridView2.Rows.Clear();
 
-                // Kontrollera om användaren klickade på en giltig cell
-                if (e.RowIndex >= 0 && e.RowIndex < dataGridView1.Rows.Count)
+            // Kontrollera om användaren klickade på en giltig cell
+            if (e.RowIndex >= 0 && e.RowIndex < dataGridView1.Rows.Count)
+            {
+                // Hämta den valda feeden baserat på raden i DataGridView1
+                Feed selectedFeed = feeds[e.RowIndex];
+
+                // Loopa igenom avsnitten och lägg till beskrivning (eller namn) i DataGridView2
+                foreach (var episode in selectedFeed.Episodes)
                 {
-                    // Hämta den valda feeden baserat på raden i DataGridView1
-                    Feed selectedFeed = feeds[e.RowIndex];
-
-                    // Loopa igenom avsnitten och lägg till beskrivning (eller namn) i DataGridView2
-                    foreach (var episode in selectedFeed.Episodes)
-                    {
-                        int r = dataGridView2.Rows.Add();
-                        dataGridView2.Rows[r].Cells[0].Value = episode.Beskrivning; // Byt ut mot episode.Namn om du vill ha namnen istället
-                    }
+                    int r = dataGridView2.Rows.Add();
+                    dataGridView2.Rows[r].Cells[0].Value = episode.Beskrivning; // Byt ut mot episode.Namn om du vill ha namnen istället
                 }
             }
+        }
 
 
 
@@ -213,7 +225,7 @@ namespace PodcastAppG19
 
 
 
-            private void fPodCast_Load(object sender, EventArgs e)
+        private void fPodCast_Load(object sender, EventArgs e)
         {
 
         }
@@ -223,19 +235,22 @@ namespace PodcastAppG19
 
         private void Catagory_Click(object sender, EventArgs e)
         {
-            Catagorycontroller controll = new Catagorycontroller();
-            controll.create(kategoritxtb.Text);
-            //  controll.create(name);
+            if (valideringPasserad)
+            {
+                Catagorycontroller controll = new Catagorycontroller();
+                controll.create(kategoritxtb.Text);
+                //  controll.create(name);
 
-            int r = dataGridView3.Rows.Add();
+                int r = dataGridView3.Rows.Add();
 
-            //dataGridView3.Rows[r].Cells[0].Value = txtbKategori.Text;
+                dataGridView3.Rows[r].Cells[0].Value = kategoritxtb.Text;
 
-            dataGridView3.Rows[r].Cells[0].Value = kategoritxtb.Text;
-
-
-
-            UpdateContentforCatagory();
+                UpdateContentforCatagory();
+            }
+            else
+            {
+                MessageBox.Show("Valideringen misslyckades. Åtgärda fel innan du fortsätter.");
+            }
 
         }
         private void UpdateContentforCatagory()
@@ -302,7 +317,8 @@ namespace PodcastAppG19
 
         private void kategoritxtb_TextChanged(object sender, EventArgs e)
         {
-
+            bool valideringResultat = Validering.NamnKontroll(kategoritxtb.Text, KategoriNamn);
+            valideringPasserad = valideringResultat;
         }
 
         private void btnAndra1_Click(object sender, EventArgs e)
@@ -346,5 +362,14 @@ namespace PodcastAppG19
             }
         }
 
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
+}
