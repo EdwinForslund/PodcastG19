@@ -119,12 +119,12 @@
             // cbBFilter
             // 
             cbBFilter.FormattingEnabled = true;
-            cbBFilter.Location = new Point(466, 103);
+            cbBFilter.Location = new Point(447, 90);
             cbBFilter.Name = "cbBFilter";
             cbBFilter.Size = new Size(227, 28);
             cbBFilter.TabIndex = 5;
             cbBFilter.Text = "Filtrera...";
-            cbBFilter.SelectedIndexChanged += cbBFilter_SelectedIndexChanged;
+            cbBFilter.SelectedIndexChanged += cbBFilter_SelectedIndexChanged_1;
             // 
             // btnLaggTill
             // 
