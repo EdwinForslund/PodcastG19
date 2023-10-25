@@ -408,71 +408,86 @@ namespace PodcastAppG19
 
         private void cbBFilter_SelectedIndexChanged_1(object sender, EventArgs e)
         {
-
-
-            string selectedCategory = cbBFilter.SelectedItem.ToString();
-
-
-            // Now, update your DataGridView with the filtered feeds
-            dataGridView1.Rows.Clear();
-
-
-
-            // Filter the feeds based on the selected category
-            List<Feed> filteredFeeds = feeds.Where(feed => feed.category.Title == selectedCategory).ToList();
-
-
-            int frekvens = 0;
-            string stringFrekvensen = cbBFrekvens.Text;
-
-
-
-            if (stringFrekvensen == "1 min")
+            if (cbBFilter.SelectedItem != null)
             {
-                frekvens = 1;
+                string selectedCategory = cbBFilter.SelectedItem.ToString();
+
+                // Now, update your DataGridView with the filtered feeds
+                dataGridView1.Rows.Clear();
+
+                // Filter the feeds based on the selected category
+                List<Feed> filteredFeeds = feeds.Where(feed => feed.category.Title == selectedCategory).ToList();
+
+                foreach (var feed in filteredFeeds)
+                {
+                    int frekvens = 0;
+                    string stringFrekvensen = cbBFrekvens.Text;
+
+                    if (stringFrekvensen == "1 min")
+                    {
+                        frekvens = 1;
+                    }
+                    else if (stringFrekvensen == "5 min")
+                    {
+                        frekvens = 5;
+                    }
+                    else if (stringFrekvensen == "10 min")
+                    {
+                        frekvens = 10;
+                    }
+
+                    int antalAvsnitt = feed.getEpisodeNumber();
+                    int r = dataGridView1.Rows.Add();
+                    dataGridView1.Rows[r].Cells[0].Value = antalAvsnitt;
+                    dataGridView1.Rows[r].Cells[1].Value = feed.namn;
+                    dataGridView1.Rows[r].Cells[2].Value = feed.getFeedTitle();
+                    dataGridView1.Rows[r].Cells[3].Value = stringFrekvensen;
+                    dataGridView1.Rows[r].Cells[4].Value = feed.category.Title;
+                }
             }
-            else if (stringFrekvensen == "5 min")
+        }
+
+
+
+
+
+        private void btnAterstall_Click(object sender, EventArgs e)
             {
-                frekvens = 5;
-            }
-            else if (stringFrekvensen == "10 min")
-            {
-                frekvens = 10;
-            }
+                // Clear input fields
+                txtbNamn.Text = string.Empty;
+                txtbURL.Text = string.Empty;
 
+                // Clear the filter combo box if it's not empty
+                if (cbBFilter.SelectedItem != null)
+                {
+                    cbBFilter.SelectedIndex = -1;
+                }
 
-
-
-
-
-            // Populate the DataGridView with the filtered feeds
-            foreach (var feed in filteredFeeds)
-            {
-                int antalAvsnitt = feed.getEpisodeNumber();
-                int r = dataGridView1.Rows.Add();
-                dataGridView1.Rows[r].Cells[0].Value = antalAvsnitt;
-                dataGridView1.Rows[r].Cells[1].Value = feed.namn;
-                dataGridView1.Rows[r].Cells[2].Value = feed.getFeedTitle();
-                dataGridView1.Rows[r].Cells[3].Value = stringFrekvensen;
-              //  dataGridView1.Rows[r].Cells[3].Value = feed.uppdateringsfrekvens.ToString() + " min";
-                dataGridView1.Rows[r].Cells[4].Value = feed.category.Title;
               
 
+                // Clear the category combo box
+                cbBKategori.SelectedIndex = -1;
 
 
-
-             
-
-
-
-
-
-
-
-
-
-
+            if (cbBFrekvens.SelectedItem != null)
+            {
+                cbBFrekvens.SelectedIndex = -1;
             }
+
+            // Clear the frequency combo box
+            cbBFrekvens.SelectedIndex = -1;
+
+        }
+
+
+
+
+
+
+
+        private void cbBFrekvens_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

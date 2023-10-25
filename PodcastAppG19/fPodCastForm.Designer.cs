@@ -104,6 +104,7 @@
             cbBFrekvens.Size = new Size(115, 28);
             cbBFrekvens.TabIndex = 3;
             cbBFrekvens.Text = "1 min ";
+            cbBFrekvens.SelectedIndexChanged += cbBFrekvens_SelectedIndexChanged;
             // 
             // cbBKategori
             // 
@@ -164,6 +165,7 @@
             btnAterstall.TabIndex = 10;
             btnAterstall.Text = "Återställ";
             btnAterstall.UseVisualStyleBackColor = true;
+            btnAterstall.Click += btnAterstall_Click;
             // 
             // lblURL
             // 
