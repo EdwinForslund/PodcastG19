@@ -7,26 +7,26 @@ using PodcastAppG19.DAL;
 namespace PodcastAppG19.BLL
 {
     [DataContract]
-    public class Feed 
+    public class Feed
     {
 
         private Serializer serializer;
         public string namn { get; set; }
-        
-        public string url { get; set; }
-      
-        public DateTime uppdatera { get; set; }
-       
-        public int uppdateringsfrekvens { get; set; }
-       
-        public Category category { get; set; }
-        
 
-        private RepositoryFeed repositoryFeed; 
+        public string url { get; set; }
+
+        public DateTime uppdatera { get; set; }
+
+        public int uppdateringsfrekvens { get; set; }
+
+        public Category category { get; set; }
+
+
+        private RepositoryFeed repositoryFeed;
 
         public Feed(string namn, string url, int frekvens, Category category)
         {
-            
+
 
             serializer = new Serializer();
             this.namn = namn;
@@ -35,6 +35,7 @@ namespace PodcastAppG19.BLL
             this.category = category;
             uppdateringsfrekvens = frekvens;
             repositoryFeed = new RepositoryFeed();
+            getEpisodes();
 
 
         }
@@ -44,7 +45,7 @@ namespace PodcastAppG19.BLL
             // Tom
         }
 
-        
+
 
         public string DisplayInfo()
         {
@@ -54,17 +55,22 @@ namespace PodcastAppG19.BLL
 
         public string getFeedTitle()
         {
-            
+
             string title = repositoryFeed.getFeedTitle(this.url);
             return title;
         }
 
         public int getEpisodeNumber()
         {
-            
+
             int EpisodeNumber = repositoryFeed.ItemCounter(this.url);
             return EpisodeNumber;
 
+        }
+
+        public void getEpisodes()
+        {
+            episodes = repositoryFeed.GetEpisodes(this.url);
         }
 
 
@@ -73,11 +79,11 @@ namespace PodcastAppG19.BLL
             serializer.SerializeFeedXML(feeds);
         }
 
-        public List<Episode> Episodes { get; set; } = new List<Episode>();
+        public List<Episode> episodes { get; set; } = new List<Episode>();
 
         public void AddEpisode(string namn, string beskrivning)
         {
-            Episodes.Add(new Episode(namn, beskrivning));
+            episodes.Add(new Episode(namn, beskrivning));
         }
 
     }

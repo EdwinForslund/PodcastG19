@@ -7,6 +7,8 @@ using PodcastAppG19.BLL;
 using PodcastAppG19.ExceptionHandling;
 using System.Net;
 using System.Linq.Expressions;
+using System.Security.Policy;
+using System.Reflection;
 
 namespace PodcastAppG19.DAL
 {
@@ -180,9 +182,19 @@ namespace PodcastAppG19.DAL
                 {
 
                     XDocument filen = XDocument.Load(url);
-                    List<XElement> antalObjektsLista = filen.Descendants("item").ToList();
+                    List<XElement> antalObjektsLista = filen.Descendants("title").ToList();
+                    int index = 0;
 
-                    antalObjekt = antalObjektsLista.Count();
+                    foreach (XElement item in antalObjektsLista)
+                    {
+                        string title = (string)item;
+                        if (title.Contains("."))
+                        {
+                            index++;
+                        }
+                    }
+
+                    antalObjekt = index;
                 }
                 else
 
@@ -204,6 +216,35 @@ namespace PodcastAppG19.DAL
             
             return antalObjekt;  // Returnera antalObjekt
         
+        }
+
+        public List<Episode> GetEpisodes(string url) 
+        {
+            List<Episode> avsnittsLista = new List<Episode>();
+            if (url.EndsWith(".xml", StringComparison.OrdinalIgnoreCase))
+            {
+
+                XDocument filen = XDocument.Load(url);
+                List<XElement> beskrivningsLista = filen.Descendants("item").ToList();
+                List<XElement> titleLista = filen.Descendants("title").ToList();
+                int index = 0;
+
+                foreach (XElement item in titleLista)
+                {
+                    string title = (string)item;
+                    if (title.Contains(".")) 
+                    {
+                        avsnittsLista.Add(new Episode(title, (string)beskrivningsLista.ElementAt(index)));
+                        index++;
+                    }
+                }
+
+                return avsnittsLista;
+            }
+            else
+
+                // Kasta ett anpassat undantag med felmeddelandet om URL:en inte har rätt format
+                throw new UrlException(new XDocument(), "URL ska sluta på .xml");
         }
 
 

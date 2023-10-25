@@ -17,6 +17,7 @@ namespace PodcastAppG19
         Feedcontoller feedcontoller;
         private List<Feed> feeds;
         Catagorycontroller catagorycontroller;
+        List<Feed> feedList = new List<Feed>();
 
 
 
@@ -115,10 +116,7 @@ namespace PodcastAppG19
             Category category = new Category(kategori);
 
             Feed feed = new Feed(namn, url, frekvens, category);
-
-            // Sample episodes
-            feed.AddEpisode("Avsnitt 1", "Beskrivning av avsnitt 1");
-            feed.AddEpisode("Avsnitt 2", "Beskrivning av avsnitt 2");
+            feedList.Add(feed);
 
             int r = dataGridView1.Rows.Add();
             dataGridView1.Rows[r].Cells[1].Value = namn;
@@ -144,15 +142,20 @@ namespace PodcastAppG19
             feeds.Add(feed);
 
             // Clear and repopulate dataGridView2 with episodes
+            updateEpisodeList(feed);
+
+            // Serialize the updated list of feeds
+            feed.FeedSerailizer(feeds);
+        }
+
+        public void updateEpisodeList(Feed feed) 
+        {
             dataGridView2.Rows.Clear();
-            foreach (var episode in feed.Episodes)
+            foreach (Episode episode in feed.episodes)
             {
                 int row = dataGridView2.Rows.Add();
                 dataGridView2.Rows[row].Cells[0].Value = episode.Namn;
             }
-
-            // Serialize the updated list of feeds
-            feed.FeedSerailizer(feeds);
         }
 
 
@@ -235,17 +238,17 @@ namespace PodcastAppG19
                 Feed selectedFeed = feeds[e.RowIndex];
 
                 // Loop through the episodes and add them to dataGridView2
-                    foreach (var episode in selectedFeed.Episodes)
-                   {
-                        int r = dataGridView2.Rows.Add();
-                        dataGridView2.Rows[r].Cells[0].Value = episode.Namn;
-                        dataGridView2.Rows[r].Cells[1].Value = episode.Beskrivning;
-                    }// Display episode description
+                foreach (Episode episode in selectedFeed.episodes)
+                {
+                    int r = dataGridView2.Rows.Add();
+                    dataGridView2.Rows[r].Cells[0].Value = episode.Namn;
+                    //dataGridView2.Rows[r].Cells[1].Value = episode.Beskrivning;
+                }// Display episode description
 
 
-               
-           }
-         }
+
+            }
+        }
         private void fPodCast_Load(object sender, EventArgs e)
         {
 
@@ -322,7 +325,7 @@ namespace PodcastAppG19
             {
                 categoryName = (string)dataGridView3.SelectedRows[0].Cells[0].Value;
             }
-            catch(ArgumentOutOfRangeException)
+            catch (ArgumentOutOfRangeException)
             {
                 MessageBox.Show("Ingen kategori var vald!" + Environment.NewLine + "Se till att markera en kategori genom att klicka på rutan bredvid kategorinamnet!");
                 return;
@@ -370,20 +373,20 @@ namespace PodcastAppG19
                 oldCategory = (string)dataGridView3.SelectedRows[0].Cells[0].Value; //cbBKategori.SelectedItem.ToString();
                 newCategory = kategoritxtb.Text;
             }
-            catch(ArgumentOutOfRangeException)
+            catch (ArgumentOutOfRangeException)
             {
-                MessageBox.Show("Ingen kategori var vald!" + Environment.NewLine +"Se till att markera en kategori genom att klicka på rutan bredvid kategorinamnet!");
+                MessageBox.Show("Ingen kategori var vald!" + Environment.NewLine + "Se till att markera en kategori genom att klicka på rutan bredvid kategorinamnet!");
                 return;
             }
 
-            if (string.IsNullOrWhiteSpace(newCategory)) 
+            if (string.IsNullOrWhiteSpace(newCategory))
             {
                 MessageBox.Show("Kategori namnet får inte vara tomt!");
                 return;
             }
 
             DialogResult dialogResult = MessageBox.Show("Ändra namn på " + oldCategory + " till " + newCategory, "Varning!", MessageBoxButtons.YesNo);
-            if (dialogResult == DialogResult.Yes) 
+            if (dialogResult == DialogResult.Yes)
             {
                 catagorycontroller.UppdateKatagory(oldCategory, newCategory);
                 feedcontoller.UpdateFeedCategory(oldCategory, newCategory);
@@ -467,21 +470,21 @@ namespace PodcastAppG19
 
 
         private void btnAterstall_Click(object sender, EventArgs e)
+        {
+            // Clear input fields
+            txtbNamn.Text = string.Empty;
+            txtbURL.Text = string.Empty;
+
+            // Clear the filter combo box if it's not empty
+            if (cbBFilter.SelectedItem != null)
             {
-                // Clear input fields
-                txtbNamn.Text = string.Empty;
-                txtbURL.Text = string.Empty;
+                cbBFilter.SelectedIndex = -1;
+            }
 
-                // Clear the filter combo box if it's not empty
-                if (cbBFilter.SelectedItem != null)
-                {
-                    cbBFilter.SelectedIndex = -1;
-                }
 
-              
 
-                // Clear the category combo box
-                cbBKategori.SelectedIndex = -1;
+            // Clear the category combo box
+            cbBKategori.SelectedIndex = -1;
 
 
             if (cbBFrekvens.SelectedItem != null)
@@ -503,6 +506,21 @@ namespace PodcastAppG19
         private void cbBFrekvens_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Check if the clicked cell is valid
+            int index = e.RowIndex;
+            string feedTitle = (string)dataGridView1.Rows[index].Cells[2].Value;
+
+            foreach(Feed feed in feedList) 
+            { 
+                if(feed.getFeedTitle() == feedTitle) 
+                {
+                    updateEpisodeList(feed);
+                }
+            }
         }
     }
 }
