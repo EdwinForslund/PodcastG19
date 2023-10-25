@@ -12,11 +12,13 @@ namespace PodcastAppG19.BLL
 
         public string Namn { get; set; }
         public string Beskrivning { get; set; }
+     
 
         public Episode(string namn, string beskrivning)
         {
             Namn = namn;
             Beskrivning = beskrivning;
+          
         }
 
 
