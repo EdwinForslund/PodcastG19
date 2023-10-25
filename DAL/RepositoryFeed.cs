@@ -18,7 +18,7 @@ namespace PodcastAppG19.DAL
       //  Serializer serializeXml = new Serializer();
        
  
-        class1 se = new class1();
+        NewSerailzer se = new NewSerailzer();
         List<Feed> lista;
 
 
@@ -47,7 +47,7 @@ namespace PodcastAppG19.DAL
         public void Save()
         {
             //serializeXml.SerializeFeedXML(lista);
-            se.SerializePodcast(lista);
+            se.SerializeFeedfodcast(lista);
         }
 
 
@@ -56,7 +56,7 @@ namespace PodcastAppG19.DAL
         public List<Feed> GetAll()
         {
             //  return serializeXml.DeserializeFeedXML();
-           return  se.DeserializePodcast();
+           return  se.DeserializeFeedpodcast();
 
         }
 
