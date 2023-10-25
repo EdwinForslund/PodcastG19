@@ -13,7 +13,7 @@ namespace PodcastAppG19.DAL
 
         List<Category> lista;
         // Serializer serializeXml = new Serializer();
-        class1 se = new class1();
+        NewSerailzer se = new NewSerailzer();
 
 
         public RepositoryCatagory()
@@ -25,7 +25,7 @@ namespace PodcastAppG19.DAL
 
         public List<Category> GetAll()
         {
-            return lista = se.DeserializeCategory();
+            return lista = se.Deserializercategory();
         }
         public void ChangeCategory(Category newCategory)
         {
@@ -96,7 +96,7 @@ namespace PodcastAppG19.DAL
         public void Save()
         {
            // serializeXml.SerializeCatagoryXML(lista);
-            se.SerializeCategory(lista);
+            se.Serializercategory(lista);
         }
 
         public void removet(Category en)
