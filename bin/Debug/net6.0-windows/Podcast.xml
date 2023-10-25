@@ -1,39 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfFeed xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Feed>
-    <namn>ex...Namn</namn>
-    <url>hej.xml</url>
+    <namn>qwweqwe</namn>
+    <url>https://rss.podplaystudio.com/1477.xml</url>
     <uppdatera>0001-01-01T00:00:00</uppdatera>
     <uppdateringsfrekvens>0</uppdateringsfrekvens>
     <category>
-      <Title>Dokumentär</Title>
+      <Title>Drama</Title>
     </category>
+    <Episodes>
+      <Episode>
+        <Namn>Avsnitt 1</Namn>
+        <Beskrivning>Beskrivning av avsnitt 1</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>Avsnitt 2</Namn>
+        <Beskrivning>Beskrivning av avsnitt 2</Beskrivning>
+      </Episode>
+    </Episodes>
   </Feed>
   <Feed>
-    <namn>ex...Namn</namn>
-    <url>hallå.se</url>
+    <namn>sDS</namn>
+    <url>https://rss.podplaystudio.com/1477.xml</url>
     <uppdatera>0001-01-01T00:00:00</uppdatera>
-    <uppdateringsfrekvens>0</uppdateringsfrekvens>
+    <uppdateringsfrekvens>10</uppdateringsfrekvens>
     <category>
-      <Title>Dokumentär</Title>
+      <Title>gret</Title>
     </category>
-  </Feed>
-  <Feed>
-    <namn>ex...Namn</namn>
-    <url>https://poddtoppen.se/podcast/1710004738/30s-in-the-city-med-hanna-och-stella</url>
-    <uppdatera>0001-01-01T00:00:00</uppdatera>
-    <uppdateringsfrekvens>0</uppdateringsfrekvens>
-    <category>
-      <Title>Dokumentär</Title>
-    </category>
-  </Feed>
-  <Feed>
-    <namn>ex...Namn</namn>
-    <url>https://rss.podplaystudio.com/1565.xml</url>
-    <uppdatera>0001-01-01T00:00:00</uppdatera>
-    <uppdateringsfrekvens>0</uppdateringsfrekvens>
-    <category>
-      <Title>Dokumentär</Title>
-    </category>
+    <Episodes>
+      <Episode>
+        <Namn>Avsnitt 1</Namn>
+        <Beskrivning>Beskrivning av avsnitt 1</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>Avsnitt 2</Namn>
+        <Beskrivning>Beskrivning av avsnitt 2</Beskrivning>
+      </Episode>
+    </Episodes>
   </Feed>
 </ArrayOfFeed>

@@ -5,13 +5,14 @@ using System.Xml.Linq;
 using System.Xml.Serialization;
 using System.Data;
 using PodcastAppG19.ExceptionHandling;
+using System.Security.Policy;
 
 
 namespace PodcastAppG19
 {
     public partial class fPodCast : Form
     {
-
+        Episodecontroller episodecontroller;
 
         Feedcontoller feedcontoller;
         private List<Feed> feeds;
@@ -27,8 +28,9 @@ namespace PodcastAppG19
             InitializeComponent();
             feedcontoller = new Feedcontoller();
             catagorycontroller = new Catagorycontroller();
+            episodecontroller = new Episodecontroller();
             UpdateContentforCatagory();
-         
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -80,85 +82,127 @@ namespace PodcastAppG19
 
         }
 
-      
 
 
-            private void btnLaggTill_Click(object sender, EventArgs e)
+        private void btnLaggTill_Click(object sender, EventArgs e)
+        {
+            string namn = txtbNamn.Text;
+            string url = txtbURL.Text;
+            string stringFrekvensen = cbBFrekvens.Text;
+            int frekvens = 0;
+            string kategori = cbBKategori.Text;
+
+            // Validation: Ensure that the user enters valid data
+            if (string.IsNullOrEmpty(namn) || string.IsNullOrEmpty(url) || string.IsNullOrEmpty(stringFrekvensen) || string.IsNullOrEmpty(kategori))
             {
-                string namn = txtbNamn.Text;
-                string url = txtbURL.Text;
-                string stringFrekvensen = cbBFrekvens.Text;
-                int frekvens = 0;
-                string kategori = cbBKategori.Text;
-
-                if (cbBFrekvens.Text == "1 min")
-                {
-                    frekvens = 1;
-                }
-                else if (cbBFrekvens.Text == "5 min")
-                {
-                    frekvens = 5;
-                }
-                else if (cbBFrekvens.Text == "10 min")
-                {
-                    frekvens = 10;
-                }
-
-                Category category = new Category(kategori);
-
-                Feed feed = new Feed(namn, url, frekvens, category);
-
-                string title = feed.getFeedTitle();
-                int antalAvsnitt = feed.getEpisodeNumber();
-
-                // Anv�nd AddEpisode-metoden f�r att l�gga till avsnitt i feeden
-                feed.AddEpisode("Avsnitt 1", "Beskrivning av avsnitt 1");
-                feed.AddEpisode("Avsnitt 2", "Beskrivning av avsnitt 2");
-
-                int r = dataGridView1.Rows.Add();
-                dataGridView1.Rows[r].Cells[1].Value = namn;
-                dataGridView1.Rows[r].Cells[2].Value = title;
-                dataGridView1.Rows[r].Cells[3].Value = stringFrekvensen;
-                dataGridView1.Rows[r].Cells[4].Value = kategori;
-                dataGridView1.Rows[r].Cells[0].Value = antalAvsnitt;
-
-                if (antalAvsnitt == -1)
-                {
-                    dataGridView1.Rows[r].Cells[1].Value = "";
-                    dataGridView1.Rows[r].Cells[2].Value = "";
-                    dataGridView1.Rows[r].Cells[3].Value = "";
-                    dataGridView1.Rows[r].Cells[4].Value = "";
-                    dataGridView1.Rows[r].Cells[0].Value = "";
-                }
-                else
-                {
-                    dataGridView1.Rows[r].Cells[0].Value = antalAvsnitt;
-                }
-
-                // Clear and repopulate dataGridView2 with episodes
-                dataGridView2.Rows.Clear();
-                foreach (var episode in feed.Episodes)
-                {
-                    int row = dataGridView2.Rows.Add();
-                    dataGridView2.Rows[row].Cells[0].Value = episode.Namn;
-                }
-
-                // Add the new feed to the list of feeds
-                feeds.Add(feed);
-
-                // Serialize the updated list of feeds
-                feed.FeedSerailizer(feeds);
+                MessageBox.Show("Please fill in all fields.");
+                return;
             }
 
+            if (stringFrekvensen == "1 min")
+            {
+                frekvens = 1;
+            }
+            else if (stringFrekvensen == "5 min")
+            {
+                frekvens = 5;
+            }
+            else if (stringFrekvensen == "10 min")
+            {
+                frekvens = 10;
+            }
+
+            Category category = new Category(kategori);
+
+            Feed feed = new Feed(namn, url, frekvens, category);
+
+            // Sample episodes
+            feed.AddEpisode("Avsnitt 1", "Beskrivning av avsnitt 1");
+            feed.AddEpisode("Avsnitt 2", "Beskrivning av avsnitt 2");
+
+            int r = dataGridView1.Rows.Add();
+            dataGridView1.Rows[r].Cells[1].Value = namn;
+            dataGridView1.Rows[r].Cells[2].Value = feed.getFeedTitle();
+            dataGridView1.Rows[r].Cells[3].Value = stringFrekvensen;
+            dataGridView1.Rows[r].Cells[4].Value = kategori;
+            int antalAvsnitt = feed.getEpisodeNumber();
+
+            // Check if the number of episodes is -1 and handle it appropriately
+            if (antalAvsnitt == -1)
+            {
+                for (int i = 0; i < dataGridView1.ColumnCount; i++)
+                {
+                    dataGridView1.Rows[r].Cells[i].Value = "";
+                }
+            }
+            else
+            {
+                dataGridView1.Rows[r].Cells[0].Value = antalAvsnitt;
+            }
+
+            // Add the new feed to the list of feeds
+            feeds.Add(feed);
+
+            // Clear and repopulate dataGridView2 with episodes
+            dataGridView2.Rows.Clear();
+            foreach (var episode in feed.Episodes)
+            {
+                int row = dataGridView2.Rows.Add();
+                dataGridView2.Rows[row].Cells[0].Value = episode.Namn;
+            }
+
+            // Serialize the updated list of feeds
+            feed.FeedSerailizer(feeds);
+        }
 
 
-            private void txtbNamn_TextChanged(object sender, EventArgs e)
+        private void txtbNamn_TextChanged(object sender, EventArgs e)
         {
 
         }
 
         private void cbBFilter_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+
+
+
+
+            string selectedCategory = cbBFilter.SelectedItem.ToString();
+
+            // Clear the current rows in the DataGridView
+            dataGridView1.Rows.Clear();
+
+            // Filter the feeds based on the selected category
+            List<Feed> filteredFeeds = feeds.Where(feed => feed.category.Title == selectedCategory).ToList();
+
+            // Populate the DataGridView with the filtered feeds
+            foreach (var feed in filteredFeeds)
+            {
+                int r = dataGridView1.Rows.Add();
+                dataGridView1.Rows[r].Cells[1].Value = feed.namn;
+                dataGridView1.Rows[r].Cells[2].Value = feed.getFeedTitle();
+                dataGridView1.Rows[r].Cells[3].Value = feed.uppdateringsfrekvens.ToString() + " min";
+                dataGridView1.Rows[r].Cells[4].Value = feed.category.Title;
+                int antalAvsnitt = feed.getEpisodeNumber();
+
+                // Check if the number of episodes is -1 and handle it appropriately
+                if (antalAvsnitt == -1)
+                {
+                    for (int i = 0; i < dataGridView1.ColumnCount; i++)
+                    {
+                        dataGridView1.Rows[r].Cells[i].Value = "";
+                    }
+                }
+                else
+                {
+                    dataGridView1.Rows[r].Cells[0].Value = antalAvsnitt;
+                }
+            }
+
+
+
+
 
         }
 
@@ -177,30 +221,31 @@ namespace PodcastAppG19
 
         }
 
+
+
         private void dataGridView2_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
-
-
-
-             // Rensa DataGridView2 f�r att b�rja med en tom lista av avsnitt
+            // Check if the clicked cell is valid
+            if (e.RowIndex >= 0 && e.RowIndex < dataGridView1.Rows.Count)
+            {
+                // Clear the rows in dataGridView2
                 dataGridView2.Rows.Clear();
 
-                // Kontrollera om anv�ndaren klickade p� en giltig cell
-                if (e.RowIndex >= 0 && e.RowIndex < dataGridView1.Rows.Count)
-                {
-                    // H�mta den valda feeden baserat p� raden i DataGridView1
-                    Feed selectedFeed = feeds[e.RowIndex];
+                // Get the selected feed based on the clicked cell in dataGridView1
+                Feed selectedFeed = feeds[e.RowIndex];
 
-                    // Loopa igenom avsnitten och l�gg till beskrivning (eller namn) i DataGridView2
+                // Loop through the episodes and add them to dataGridView2
                     foreach (var episode in selectedFeed.Episodes)
-                    {
+                   {
                         int r = dataGridView2.Rows.Add();
-                        dataGridView2.Rows[r].Cells[0].Value = episode.Beskrivning; // Byt ut mot episode.Namn om du vill ha namnen ist�llet
-                    }
-                }
-            }
+                        dataGridView2.Rows[r].Cells[0].Value = episode.Namn;
+                        dataGridView2.Rows[r].Cells[1].Value = episode.Beskrivning;
+                    }// Display episode description
 
 
+               
+           }
+         }
         private void fPodCast_Load(object sender, EventArgs e)
         {
 
@@ -226,14 +271,19 @@ namespace PodcastAppG19
             UpdateContentforCatagory();
 
         }
+
+
+
         private void UpdateContentforCatagory()
         {
             cbBKategori.Items.Clear();
             dataGridView3.Rows.Clear();
+            cbBFilter.Items.Clear(); // Clear the filter combo box
             int categoryRow = 0;
             foreach (Category category in catagorycontroller.GetallaCatagory())
             {
                 cbBKategori.Items.Add(category.Title);
+                cbBFilter.Items.Add(category.Title); // Add categories to the filter combo box
                 dataGridView3.Rows.Add();
                 dataGridView3.Rows[categoryRow].Cells[0].Value = category.Title;
                 categoryRow++;
@@ -245,7 +295,15 @@ namespace PodcastAppG19
             }
 
             cbBKategori.SelectedIndex = 0;
+            cbBFilter.SelectedIndex = 0; // Set the default selected category for filtering
         }
+
+
+
+
+
+
+
 
         private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -363,5 +421,88 @@ namespace PodcastAppG19
             }
         }
 
+        private void cbBFilter_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            if (cbBFilter.SelectedItem != null)
+            {
+                string selectedCategory = cbBFilter.SelectedItem.ToString();
+
+                // Now, update your DataGridView with the filtered feeds
+                dataGridView1.Rows.Clear();
+
+                // Filter the feeds based on the selected category
+                List<Feed> filteredFeeds = feeds.Where(feed => feed.category.Title == selectedCategory).ToList();
+
+                foreach (var feed in filteredFeeds)
+                {
+                    int frekvens = 0;
+                    string stringFrekvensen = cbBFrekvens.Text;
+
+                    if (stringFrekvensen == "1 min")
+                    {
+                        frekvens = 1;
+                    }
+                    else if (stringFrekvensen == "5 min")
+                    {
+                        frekvens = 5;
+                    }
+                    else if (stringFrekvensen == "10 min")
+                    {
+                        frekvens = 10;
+                    }
+
+                    int antalAvsnitt = feed.getEpisodeNumber();
+                    int r = dataGridView1.Rows.Add();
+                    dataGridView1.Rows[r].Cells[0].Value = antalAvsnitt;
+                    dataGridView1.Rows[r].Cells[1].Value = feed.namn;
+                    dataGridView1.Rows[r].Cells[2].Value = feed.getFeedTitle();
+                    dataGridView1.Rows[r].Cells[3].Value = stringFrekvensen;
+                    dataGridView1.Rows[r].Cells[4].Value = feed.category.Title;
+                }
+            }
+        }
+
+
+
+
+
+        private void btnAterstall_Click(object sender, EventArgs e)
+            {
+                // Clear input fields
+                txtbNamn.Text = string.Empty;
+                txtbURL.Text = string.Empty;
+
+                // Clear the filter combo box if it's not empty
+                if (cbBFilter.SelectedItem != null)
+                {
+                    cbBFilter.SelectedIndex = -1;
+                }
+
+              
+
+                // Clear the category combo box
+                cbBKategori.SelectedIndex = -1;
+
+
+            if (cbBFrekvens.SelectedItem != null)
+            {
+                cbBFrekvens.SelectedIndex = -1;
+            }
+
+            // Clear the frequency combo box
+            cbBFrekvens.SelectedIndex = -1;
+
+        }
+
+
+
+
+
+
+
+        private void cbBFrekvens_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
+}
