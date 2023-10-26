@@ -282,26 +282,32 @@ namespace PodcastAppG19
         private void btnTaBort1_Click(object sender, EventArgs e)
         {
 
+                Category category = catagorycontroller.GetCategoryByName(kategoritxtb.Text);
 
-            Category category = catagorycontroller.GetCategoryByName(kategoritxtb.Text);
-            DialogResult dialogResult = MessageBox.Show($"Radera kategorin " + category.Title, "Varning!", MessageBoxButtons.YesNo);
-            if (dialogResult == DialogResult.Yes)
+            try
             {
-                feedcontoller.DeleteOnCategory(category);
-                catagorycontroller.remove(category);
+                DialogResult dialogResult = MessageBox.Show($"Radera kategorin " + category.Title, "Varning!", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    feedcontoller.DeleteOnCategory(category);
+                    catagorycontroller.remove(category);
 
-                // catagorycontroller.removeCategorybyindex();
+                    // catagorycontroller.removeCategorybyindex();
 
-                //catagorycontroller.RemoveCategory(cbBKategori.ToString());
-                catagorycontroller.RemoveCategory(kategoritxtb.ToString());
+                    //catagorycontroller.RemoveCategory(cbBKategori.ToString());
+                    catagorycontroller.RemoveCategory(kategoritxtb.ToString());
 
-                UpdateContentforCatagory();
+                    UpdateContentforCatagory();
+                }
+                else if (dialogResult == DialogResult.No)
+                {
+                    MessageBox.Show("Ingen kategorier har raderats");
+                }
             }
-            else if (dialogResult == DialogResult.No)
+            catch (System.NullReferenceException)
             {
-                MessageBox.Show("Ingen kategorier har raderats");
+                MessageBox.Show("Kategorin finns inte eller har redan raderats.");
             }
-
 
         }
 
