@@ -57,18 +57,18 @@ namespace PodcastAppG19.DAL
                     lista.Remove(categoryToRemove);
                     Save();
                 
-            }
+                }
 
         }
 
         public void DeleteCategoryByIndex(int index)
-{
-    if (index >= 0 && index < lista.Count)
-    {
-        lista.RemoveAt(index);
-        Save();
-    }
-}
+        {
+            if (index >= 0 && index < lista.Count)
+            {
+                lista.RemoveAt(index);
+                Save();
+            }
+        }
 
 
         public Category GetCategoryByName(string name)
@@ -83,14 +83,11 @@ namespace PodcastAppG19.DAL
         }
 
        public void CreateCategory( Category category)
-        {
-            
-                lista.Add(category);
-                Save();
-                GetAll();
-            
-
-        }
+       {
+           lista.Add(category);
+           Save();
+           GetAll();
+       }
 
 
         public void Save()
