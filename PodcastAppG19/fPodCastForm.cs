@@ -17,21 +17,18 @@ namespace PodcastAppG19
         Feedcontoller feedcontoller;
         private List<Feed> feeds;
         Catagorycontroller catagorycontroller;
-        List<Feed> feedList = new List<Feed>();
 
 
 
 
         public fPodCast()
         {
-
             feeds = new List<Feed>();
             InitializeComponent();
             feedcontoller = new Feedcontoller();
             catagorycontroller = new Catagorycontroller();
             episodecontroller = new Episodecontroller();
             UpdateContentforCatagory();
-
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -116,7 +113,7 @@ namespace PodcastAppG19
             Category category = new Category(kategori);
 
             Feed feed = new Feed(namn, url, frekvens, category);
-            feedList.Add(feed);
+            feedcontoller.create(feed);
 
             int r = dataGridView1.Rows.Add();
             dataGridView1.Rows[r].Cells[1].Value = namn;
@@ -148,7 +145,7 @@ namespace PodcastAppG19
             feed.FeedSerailizer(feeds);
         }
 
-        public void updateEpisodeList(Feed feed) 
+        private void updateEpisodeList(Feed feed)
         {
             dataGridView2.Rows.Clear();
             foreach (Episode episode in feed.episodes)
@@ -166,11 +163,6 @@ namespace PodcastAppG19
 
         private void cbBFilter_SelectedIndexChanged(object sender, EventArgs e)
         {
-
-
-
-
-
             string selectedCategory = cbBFilter.SelectedItem.ToString();
 
             // Clear the current rows in the DataGridView
@@ -202,11 +194,6 @@ namespace PodcastAppG19
                     dataGridView1.Rows[r].Cells[0].Value = antalAvsnitt;
                 }
             }
-
-
-
-
-
         }
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -254,13 +241,10 @@ namespace PodcastAppG19
 
         }
 
-        string name;
-
 
         private void Catagory_Click(object sender, EventArgs e)
         {
-            Catagorycontroller controll = new Catagorycontroller();
-            controll.create(kategoritxtb.Text);
+            catagorycontroller.create(kategoritxtb.Text);
             //  controll.create(name);
 
             int r = dataGridView3.Rows.Add();
@@ -275,7 +259,20 @@ namespace PodcastAppG19
 
         }
 
-
+        /*private void UpdateFeedsList() 
+        {
+            dataGridView1.Rows.Clear();
+            int feedRow = 0;
+            foreach(Feed feed in feedcontoller.Getallapodcast())
+            {
+                dataGridView1.Rows.Add();
+                dataGridView1.Rows[feedRow].Cells[0].Value = feed.getEpisodeNumber();
+                dataGridView1.Rows[feedRow].Cells[1].Value = feed.namn;
+                dataGridView1.Rows[feedRow].Cells[2].Value = feed.getFeedTitle();
+                dataGridView1.Rows[feedRow].Cells[3].Value = feed.uppdateringsfrekvens;
+                dataGridView1.Rows[feedRow].Cells[4].Value = feed.category;
+            }
+        }*/
 
         private void UpdateContentforCatagory()
         {
@@ -301,22 +298,10 @@ namespace PodcastAppG19
             cbBFilter.SelectedIndex = 0; // Set the default selected category for filtering
         }
 
-
-
-
-
-
-
-
         private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             UpdateContentforCatagory();
         }
-
-
-
-
-
 
         private void btnTaBort1_Click(object sender, EventArgs e)
         {
@@ -370,7 +355,7 @@ namespace PodcastAppG19
             string newCategory;
             try
             {
-                oldCategory = (string)dataGridView3.SelectedRows[0].Cells[0].Value; //cbBKategori.SelectedItem.ToString();
+                oldCategory = (string)dataGridView3.SelectedRows[0].Cells[0].Value;
                 newCategory = kategoritxtb.Text;
             }
             catch (ArgumentOutOfRangeException)
@@ -465,10 +450,6 @@ namespace PodcastAppG19
             }
         }
 
-
-
-
-
         private void btnAterstall_Click(object sender, EventArgs e)
         {
             // Clear input fields
@@ -497,26 +478,29 @@ namespace PodcastAppG19
 
         }
 
-
-
-
-
-
-
         private void cbBFrekvens_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_RowStateChanged(object sender, DataGridViewRowStateChangedEventArgs e)
         {
-            // Check if the clicked cell is valid
-            int index = e.RowIndex;
-            string feedTitle = (string)dataGridView1.Rows[index].Cells[2].Value;
+            string feedTitle = (string)e.Row.Cells[2].Value;
+            getEpisodes(feedTitle);
+        }
 
-            foreach(Feed feed in feedList) 
-            { 
-                if(feed.getFeedTitle() == feedTitle) 
+        private void dataGridView1_CellStateChanged(object sender, DataGridViewCellStateChangedEventArgs e)
+        {
+            string feedTitle = (string)dataGridView1.Rows[e.Cell.RowIndex].Cells[2].Value;
+            getEpisodes(feedTitle);
+        }
+
+        //Hämtar avsnitten från vald podcast
+        private void getEpisodes(string feedTitle) 
+        {
+            foreach (Feed feed in feeds)
+            {
+                if (feed.getFeedTitle() == feedTitle)
                 {
                     updateEpisodeList(feed);
                 }

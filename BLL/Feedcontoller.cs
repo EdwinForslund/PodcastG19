@@ -9,19 +9,14 @@ using PodcastAppG19.DAL;
 namespace PodcastAppG19.BLL
 {
     public class Feedcontoller
-
     {
        
         public RepositoryFeed Feedrepos;
        
 
-      public   Feedcontoller()
+        public   Feedcontoller()
         {
-
-            
-            Feedrepos = new RepositoryFeed();
-            
-
+           Feedrepos = new RepositoryFeed();
         }
 
         public List<Feed> Getallapodcast()
@@ -34,8 +29,10 @@ namespace PodcastAppG19.BLL
            Feedrepos.DeletePodcastOnCategory(cat);
         }
 
-
-
+        public void create(Feed feed) 
+        {
+            Feedrepos.insert(feed);
+        }
 
         public void UpdateFeedCategory(string oldCategory, string newCategory)
         {

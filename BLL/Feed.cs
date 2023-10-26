@@ -55,7 +55,6 @@ namespace PodcastAppG19.BLL
 
         public string getFeedTitle()
         {
-
             string title = repositoryFeed.getFeedTitle(this.url);
             return title;
         }
@@ -63,7 +62,7 @@ namespace PodcastAppG19.BLL
         public int getEpisodeNumber()
         {
 
-            int EpisodeNumber = repositoryFeed.ItemCounter(this.url);
+            int EpisodeNumber = episodes.Count();//repositoryFeed.ItemCounter(this.url);
             return EpisodeNumber;
 
         }

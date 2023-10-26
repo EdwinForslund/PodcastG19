@@ -38,10 +38,8 @@ namespace PodcastAppG19.DAL
 
         public void insert(Feed entity)
         {
-
             lista.Add(entity);
             Save();
-
         }
 
 
@@ -293,8 +291,6 @@ namespace PodcastAppG19.DAL
                 }
             }
         }
-
-
     }
 
 
