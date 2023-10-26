@@ -51,34 +51,42 @@ namespace PodcastAppG19
 
         }
 
-        private void btnTaBort_Click(object sender, EventArgs e)
-        {
-
-
-            if (dataGridView1.SelectedRows.Count > 0)
+       
+            private void btnTaBort_Click(object sender, EventArgs e)
             {
+                if (dataGridView1.SelectedRows.Count > 0)
+                {
+                    int selectedRowIndex = dataGridView1.SelectedRows[0].Index;
+                    Feed selectedFeed = feeds[selectedRowIndex];
 
-                int selectedRowIndex = dataGridView1.SelectedRows[0].Index;
+                    // Delete the feed and its contents
+                    feedcontoller.DeleteFeedAndContents(selectedFeed);
 
+                    // Remove the feed from the list of feeds
+                    feeds.Remove(selectedFeed);
 
-                Feed selectedFeed = feeds[selectedRowIndex];
+                    // Remove the row from dataGridView1
+                    dataGridView1.Rows.RemoveAt(selectedRowIndex);
 
-
-                feeds.Remove(selectedFeed);
-
-
-                feedcontoller.DeleteFeedAndContents(selectedFeed);
-
-
-                dataGridView1.Rows.RemoveAt(selectedRowIndex);
+                    // Clear the contents of dataGridView2
+                    dataGridView2.Rows.Clear();
+                }
+                else
+                {
+                    MessageBox.Show("Please select a feed to delete.");
+                }
             }
-            else
-            {
-                MessageBox.Show("Please select a feed to delete.");
-            }
 
 
-        }
+
+
+
+
+
+          
+
+
+        
 
 
 
