@@ -16,10 +16,10 @@ namespace PodcastAppG19
                 meddelandeLabel.Text = ("Namnet får inte lämnas tomt!");
                 return false;
             }
-            else if (namn.Length > 10)
+            else if (namn.Length > 15)
             {
                 meddelandeLabel.ForeColor = Color.Red;
-                meddelandeLabel.Text = ("Namnet överskrider gränsen på 10 tecken!");
+                meddelandeLabel.Text = ("Namnet överskrider gränsen på 15 tecken!");
                 return false;
             }
             meddelandeLabel.Text = "";

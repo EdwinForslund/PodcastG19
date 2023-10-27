@@ -60,23 +60,33 @@ namespace PodcastAppG19
                 int selectedRowIndex = dataGridView1.SelectedRows[0].Index;
                 Feed selectedFeed = feeds[selectedRowIndex];
 
-                // Delete the feed and its contents
-                feedcontoller.DeleteFeedAndContents(selectedFeed);
+                try
+                {
+                    // Försök ta bort feeden och dess innehåll
+                    feedcontoller.DeleteFeedAndContents(selectedFeed);
 
-                // Remove the feed from the list of feeds
-                feeds.Remove(selectedFeed);
+                    // Ta bort feeden från listan av feeds
+                    feeds.Remove(selectedFeed);
 
-                // Remove the row from dataGridView1
-                dataGridView1.Rows.RemoveAt(selectedRowIndex);
+                    // Ta bort raden från dataGridView1
+                    dataGridView1.Rows.RemoveAt(selectedRowIndex);
 
-                // Clear the contents of dataGridView2
-                dataGridView2.Rows.Clear();
+                    // Rensa innehållet i dataGridView2 och episodeDescriptionBox "txtbINFO"
+                    dataGridView2.Rows.Clear();
+                    txtbINFO.Clear();
+                }
+                catch (Exception ex)
+                {
+                    // Hanterar undantaget
+                    MessageBox.Show("Ett fel uppstod vid borttagning av feeden: " + ex.Message);
+                }
             }
             else
             {
-                MessageBox.Show("Please select a feed to delete.");
+                MessageBox.Show("Välj en feed att ta bort.");
             }
         }
+
 
 
 
@@ -358,10 +368,10 @@ namespace PodcastAppG19
 
         private void kategoritxtb_TextChanged(object sender, EventArgs e)
         {
-            
-                bool valideringResultat = Validering.NamnKontroll(kategoritxtb.Text, KategoriNamn);
-                valideringPasserad = valideringResultat;
-            
+
+            bool valideringResultat = Validering.NamnKontroll(kategoritxtb.Text, KategoriNamn);
+            valideringPasserad = valideringResultat;
+
         }
 
         private void btnAndra1_Click(object sender, EventArgs e)
@@ -520,6 +530,11 @@ namespace PodcastAppG19
                     updateEpisodeList(feed);
                 }
             }
+        }
+
+        private void KategoriNamn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

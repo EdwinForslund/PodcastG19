@@ -384,18 +384,17 @@
             RutaNamn.AutoSize = true;
             RutaNamn.Location = new Point(221, 138);
             RutaNamn.Name = "RutaNamn";
-            RutaNamn.Size = new Size(59, 25);
+            RutaNamn.Size = new Size(0, 25);
             RutaNamn.TabIndex = 27;
-            RutaNamn.Text = "label1";
             // 
             // KategoriNamn
             // 
             KategoriNamn.AutoSize = true;
             KategoriNamn.Location = new Point(1540, 184);
             KategoriNamn.Name = "KategoriNamn";
-            KategoriNamn.Size = new Size(59, 25);
+            KategoriNamn.Size = new Size(0, 25);
             KategoriNamn.TabIndex = 28;
-            KategoriNamn.Text = "label1";
+            KategoriNamn.Click += KategoriNamn_Click;
             // 
             // fPodCast
             // 

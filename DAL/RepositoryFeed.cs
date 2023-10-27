@@ -142,7 +142,7 @@ namespace PodcastAppG19.DAL
                 else
                 { 
                     // Kasta ett anpassat undantag med felmeddelandet om URL:en inte har rätt format
-                    throw new UrlException(new XDocument(), "URL ska sluta på .xml");
+                    throw new UrlException(new XDocument(), "Denna länk är ogiltig eller leder inte till en prenumererbar podcast");
 
                 }
             }
@@ -154,7 +154,7 @@ namespace PodcastAppG19.DAL
 
             catch (System.IO.FileNotFoundException)
             {
-                MessageBox.Show("URL ej hittad, försök igen!");
+                //MessageBox.Show("URL ej hittad, försök igen!");
                 // Kasta ett anpassat undantag med felmeddelandet
                 return null;
             }
@@ -199,7 +199,7 @@ namespace PodcastAppG19.DAL
                 else
 
                     // Kasta ett anpassat undantag med felmeddelandet om URL:en inte har rätt format
-                    throw new UrlException(new XDocument(), "URL ska sluta på .xml");
+                    throw new UrlException(new XDocument(), "Denna länk är ogiltig eller leder inte till en prenumererbar podcast");
             }
             catch (UrlException)
             {
@@ -249,7 +249,7 @@ namespace PodcastAppG19.DAL
                 else
 
                     //Kasta ett anpassat undantag med felmeddelandet om URL:en inte har rätt format
-                    throw new UrlException(new XDocument(), "URL ska sluta på .xml");
+                    throw new UrlException(new XDocument(), "Denna länk är ogiltig eller leder inte till en prenumererbar ljud- eller videofeed");
             }
             catch
             {
