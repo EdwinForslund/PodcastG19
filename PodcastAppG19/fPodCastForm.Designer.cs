@@ -59,6 +59,8 @@
             dataGridView3 = new DataGridView();
             kategori = new DataGridViewTextBoxColumn();
             kategoritxtb = new TextBox();
+            RutaNamn = new Label();
+            KategoriNamn = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView3).BeginInit();
@@ -68,9 +70,10 @@
             // 
             lblRubrik.AutoSize = true;
             lblRubrik.Font = new Font("SimSun", 28.2F, FontStyle.Bold, GraphicsUnit.Point);
-            lblRubrik.Location = new Point(583, 22);
+            lblRubrik.Location = new Point(833, 37);
+            lblRubrik.Margin = new Padding(4, 0, 4, 0);
             lblRubrik.Name = "lblRubrik";
-            lblRubrik.Size = new Size(157, 38);
+            lblRubrik.Size = new Size(235, 57);
             lblRubrik.TabIndex = 0;
             lblRubrik.Text = "PODCAST";
             lblRubrik.Click += lblRubrik_Click;
@@ -78,19 +81,20 @@
             // lblNamn
             // 
             lblNamn.AutoSize = true;
-            lblNamn.Location = new Point(61, 83);
+            lblNamn.Location = new Point(87, 138);
+            lblNamn.Margin = new Padding(4, 0, 4, 0);
             lblNamn.Name = "lblNamn";
-            lblNamn.Size = new Size(92, 15);
+            lblNamn.Size = new Size(136, 25);
             lblNamn.TabIndex = 1;
             lblNamn.Text = "NAMN (Valfritt):";
             // 
             // txtbNamn
             // 
             txtbNamn.ForeColor = SystemColors.ControlText;
-            txtbNamn.Location = new Point(61, 100);
-            txtbNamn.Margin = new Padding(3, 2, 3, 2);
+            txtbNamn.Location = new Point(87, 167);
+            txtbNamn.Margin = new Padding(4, 3, 4, 3);
             txtbNamn.Name = "txtbNamn";
-            txtbNamn.Size = new Size(279, 23);
+            txtbNamn.Size = new Size(397, 31);
             txtbNamn.TabIndex = 2;
             txtbNamn.Text = "ex...Namn";
             txtbNamn.TextChanged += txtbNamn_TextChanged;
@@ -100,10 +104,10 @@
             cbBFrekvens.ForeColor = SystemColors.WindowText;
             cbBFrekvens.FormattingEnabled = true;
             cbBFrekvens.Items.AddRange(new object[] { "1 min", "5 min ", "10 min" });
-            cbBFrekvens.Location = new Point(61, 125);
-            cbBFrekvens.Margin = new Padding(3, 2, 3, 2);
+            cbBFrekvens.Location = new Point(87, 208);
+            cbBFrekvens.Margin = new Padding(4, 3, 4, 3);
             cbBFrekvens.Name = "cbBFrekvens";
-            cbBFrekvens.Size = new Size(101, 23);
+            cbBFrekvens.Size = new Size(143, 33);
             cbBFrekvens.TabIndex = 3;
             cbBFrekvens.Text = "1 min ";
             cbBFrekvens.SelectedIndexChanged += cbBFrekvens_SelectedIndexChanged;
@@ -112,10 +116,10 @@
             // 
             cbBKategori.FormattingEnabled = true;
             cbBKategori.Items.AddRange(new object[] { "Dokumentär", "Historia", "Karriär ", "Humor", "Kriminal" });
-            cbBKategori.Location = new Point(165, 125);
-            cbBKategori.Margin = new Padding(3, 2, 3, 2);
+            cbBKategori.Location = new Point(236, 208);
+            cbBKategori.Margin = new Padding(4, 3, 4, 3);
             cbBKategori.Name = "cbBKategori";
-            cbBKategori.Size = new Size(175, 23);
+            cbBKategori.Size = new Size(248, 33);
             cbBKategori.TabIndex = 4;
             cbBKategori.Text = "Dokumentär";
             cbBKategori.SelectedIndexChanged += cbBKategori_SelectedIndexChanged;
@@ -123,20 +127,20 @@
             // cbBFilter
             // 
             cbBFilter.FormattingEnabled = true;
-            cbBFilter.Location = new Point(391, 68);
-            cbBFilter.Margin = new Padding(3, 2, 3, 2);
+            cbBFilter.Location = new Point(559, 113);
+            cbBFilter.Margin = new Padding(4, 3, 4, 3);
             cbBFilter.Name = "cbBFilter";
-            cbBFilter.Size = new Size(199, 23);
+            cbBFilter.Size = new Size(283, 33);
             cbBFilter.TabIndex = 5;
             cbBFilter.Text = "Filtrera...";
             cbBFilter.SelectedIndexChanged += cbBFilter_SelectedIndexChanged_1;
             // 
             // btnLaggTill
             // 
-            btnLaggTill.Location = new Point(408, 103);
-            btnLaggTill.Margin = new Padding(3, 2, 3, 2);
+            btnLaggTill.Location = new Point(583, 172);
+            btnLaggTill.Margin = new Padding(4, 3, 4, 3);
             btnLaggTill.Name = "btnLaggTill";
-            btnLaggTill.Size = new Size(82, 22);
+            btnLaggTill.Size = new Size(117, 37);
             btnLaggTill.TabIndex = 7;
             btnLaggTill.Text = "Lägg till";
             btnLaggTill.UseVisualStyleBackColor = true;
@@ -144,10 +148,10 @@
             // 
             // btnAndra
             // 
-            btnAndra.Location = new Point(495, 103);
-            btnAndra.Margin = new Padding(3, 2, 3, 2);
+            btnAndra.Location = new Point(707, 172);
+            btnAndra.Margin = new Padding(4, 3, 4, 3);
             btnAndra.Name = "btnAndra";
-            btnAndra.Size = new Size(82, 22);
+            btnAndra.Size = new Size(117, 37);
             btnAndra.TabIndex = 8;
             btnAndra.Text = "Ändra";
             btnAndra.UseVisualStyleBackColor = true;
@@ -155,10 +159,10 @@
             // 
             // btnTaBort
             // 
-            btnTaBort.Location = new Point(583, 103);
-            btnTaBort.Margin = new Padding(3, 2, 3, 2);
+            btnTaBort.Location = new Point(833, 172);
+            btnTaBort.Margin = new Padding(4, 3, 4, 3);
             btnTaBort.Name = "btnTaBort";
-            btnTaBort.Size = new Size(123, 22);
+            btnTaBort.Size = new Size(176, 37);
             btnTaBort.TabIndex = 9;
             btnTaBort.Text = "Ta bort";
             btnTaBort.UseVisualStyleBackColor = true;
@@ -166,10 +170,10 @@
             // 
             // btnAterstall
             // 
-            btnAterstall.Location = new Point(612, 76);
-            btnAterstall.Margin = new Padding(3, 2, 3, 2);
+            btnAterstall.Location = new Point(874, 127);
+            btnAterstall.Margin = new Padding(4, 3, 4, 3);
             btnAterstall.Name = "btnAterstall";
-            btnAterstall.Size = new Size(94, 22);
+            btnAterstall.Size = new Size(134, 37);
             btnAterstall.TabIndex = 10;
             btnAterstall.Text = "Återställ";
             btnAterstall.UseVisualStyleBackColor = true;
@@ -178,45 +182,48 @@
             // lblURL
             // 
             lblURL.AutoSize = true;
-            lblURL.Location = new Point(353, 131);
+            lblURL.Location = new Point(504, 218);
+            lblURL.Margin = new Padding(4, 0, 4, 0);
             lblURL.Name = "lblURL";
-            lblURL.Size = new Size(31, 15);
+            lblURL.Size = new Size(47, 25);
             lblURL.TabIndex = 11;
             lblURL.Text = "URL:";
             // 
             // txtbURL
             // 
-            txtbURL.Location = new Point(391, 129);
-            txtbURL.Margin = new Padding(3, 2, 3, 2);
+            txtbURL.Location = new Point(559, 215);
+            txtbURL.Margin = new Padding(4, 3, 4, 3);
             txtbURL.Name = "txtbURL";
-            txtbURL.Size = new Size(316, 23);
+            txtbURL.Size = new Size(450, 31);
             txtbURL.TabIndex = 12;
             // 
             // lblAvsnitt
             // 
             lblAvsnitt.AutoSize = true;
             lblAvsnitt.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            lblAvsnitt.Location = new Point(818, 123);
+            lblAvsnitt.Location = new Point(1169, 205);
+            lblAvsnitt.Margin = new Padding(4, 0, 4, 0);
             lblAvsnitt.Name = "lblAvsnitt";
-            lblAvsnitt.Size = new Size(73, 28);
+            lblAvsnitt.Size = new Size(107, 41);
             lblAvsnitt.TabIndex = 13;
             lblAvsnitt.Text = "Avsnitt";
             // 
             // lblKategori
             // 
             lblKategori.AutoSize = true;
-            lblKategori.Location = new Point(1016, 110);
+            lblKategori.Location = new Point(1451, 183);
+            lblKategori.Margin = new Padding(4, 0, 4, 0);
             lblKategori.Name = "lblKategori";
-            lblKategori.Size = new Size(63, 15);
+            lblKategori.Size = new Size(97, 25);
             lblKategori.TabIndex = 15;
             lblKategori.Text = "KATEGORI:";
             // 
             // Catagory
             // 
-            Catagory.Location = new Point(1016, 153);
-            Catagory.Margin = new Padding(3, 2, 3, 2);
+            Catagory.Location = new Point(1451, 255);
+            Catagory.Margin = new Padding(4, 3, 4, 3);
             Catagory.Name = "Catagory";
-            Catagory.Size = new Size(82, 22);
+            Catagory.Size = new Size(117, 37);
             Catagory.TabIndex = 16;
             Catagory.Text = "Lägg till";
             Catagory.UseVisualStyleBackColor = true;
@@ -224,10 +231,10 @@
             // 
             // btnTaBort1
             // 
-            btnTaBort1.Location = new Point(1204, 153);
-            btnTaBort1.Margin = new Padding(3, 2, 3, 2);
+            btnTaBort1.Location = new Point(1720, 255);
+            btnTaBort1.Margin = new Padding(4, 3, 4, 3);
             btnTaBort1.Name = "btnTaBort1";
-            btnTaBort1.Size = new Size(82, 22);
+            btnTaBort1.Size = new Size(117, 37);
             btnTaBort1.TabIndex = 17;
             btnTaBort1.Text = "Ta bort";
             btnTaBort1.UseVisualStyleBackColor = true;
@@ -235,10 +242,10 @@
             // 
             // btnAndra1
             // 
-            btnAndra1.Location = new Point(1103, 153);
-            btnAndra1.Margin = new Padding(3, 2, 3, 2);
+            btnAndra1.Location = new Point(1576, 255);
+            btnAndra1.Margin = new Padding(4, 3, 4, 3);
             btnAndra1.Name = "btnAndra1";
-            btnAndra1.Size = new Size(95, 22);
+            btnAndra1.Size = new Size(136, 37);
             btnAndra1.TabIndex = 18;
             btnAndra1.Text = "Ändra";
             btnAndra1.UseVisualStyleBackColor = true;
@@ -251,14 +258,14 @@
             dataGridView1.BackgroundColor = SystemColors.ButtonShadow;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { AntalAvsnitt, FlodesNamn, FlodesTitel, FlodesFrekvens, FlodesKategori });
-            dataGridView1.Location = new Point(61, 153);
+            dataGridView1.Location = new Point(87, 255);
             dataGridView1.Margin = new Padding(0);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
             dataGridView1.ShowCellToolTips = false;
             dataGridView1.ShowEditingIcon = false;
-            dataGridView1.Size = new Size(645, 406);
+            dataGridView1.Size = new Size(921, 677);
             dataGridView1.TabIndex = 19;
             dataGridView1.CellStateChanged += dataGridView1_CellStateChanged;
             dataGridView1.RowStateChanged += dataGridView1_RowStateChanged;
@@ -306,11 +313,11 @@
             // txtbINFO
             // 
             txtbINFO.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txtbINFO.Location = new Point(1016, 369);
-            txtbINFO.Margin = new Padding(3, 2, 3, 2);
+            txtbINFO.Location = new Point(1451, 615);
+            txtbINFO.Margin = new Padding(4, 3, 4, 3);
             txtbINFO.Multiline = true;
             txtbINFO.Name = "txtbINFO";
-            txtbINFO.Size = new Size(271, 191);
+            txtbINFO.Size = new Size(385, 316);
             txtbINFO.TabIndex = 22;
             // 
             // dataGridView2
@@ -320,14 +327,14 @@
             dataGridView2.AllowUserToOrderColumns = true;
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView2.Columns.AddRange(new DataGridViewColumn[] { AvsnittC });
-            dataGridView2.Location = new Point(709, 153);
-            dataGridView2.Margin = new Padding(3, 2, 3, 2);
+            dataGridView2.Location = new Point(1013, 255);
+            dataGridView2.Margin = new Padding(4, 3, 4, 3);
             dataGridView2.Name = "dataGridView2";
             dataGridView2.ReadOnly = true;
             dataGridView2.RowHeadersWidth = 51;
             dataGridView2.RowTemplate.Height = 29;
             dataGridView2.ShowCellToolTips = false;
-            dataGridView2.Size = new Size(302, 406);
+            dataGridView2.Size = new Size(431, 677);
             dataGridView2.TabIndex = 23;
             dataGridView2.CellContentClick += dataGridView2_CellContentClick_1;
             // 
@@ -347,12 +354,12 @@
             dataGridView3.AllowUserToResizeRows = false;
             dataGridView3.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView3.Columns.AddRange(new DataGridViewColumn[] { kategori });
-            dataGridView3.Location = new Point(1016, 179);
-            dataGridView3.Margin = new Padding(3, 2, 3, 2);
+            dataGridView3.Location = new Point(1451, 298);
+            dataGridView3.Margin = new Padding(4, 3, 4, 3);
             dataGridView3.Name = "dataGridView3";
             dataGridView3.RowHeadersWidth = 51;
             dataGridView3.RowTemplate.Height = 29;
-            dataGridView3.Size = new Size(270, 185);
+            dataGridView3.Size = new Size(386, 308);
             dataGridView3.TabIndex = 24;
             dataGridView3.CellContentClick += dataGridView3_CellContentClick;
             // 
@@ -365,18 +372,38 @@
             // 
             // kategoritxtb
             // 
-            kategoritxtb.Location = new Point(1016, 131);
-            kategoritxtb.Margin = new Padding(3, 2, 3, 2);
+            kategoritxtb.Location = new Point(1451, 218);
+            kategoritxtb.Margin = new Padding(4, 3, 4, 3);
             kategoritxtb.Name = "kategoritxtb";
-            kategoritxtb.Size = new Size(271, 23);
+            kategoritxtb.Size = new Size(385, 31);
             kategoritxtb.TabIndex = 26;
             kategoritxtb.TextChanged += kategoritxtb_TextChanged;
             // 
+            // RutaNamn
+            // 
+            RutaNamn.AutoSize = true;
+            RutaNamn.Location = new Point(221, 138);
+            RutaNamn.Name = "RutaNamn";
+            RutaNamn.Size = new Size(59, 25);
+            RutaNamn.TabIndex = 27;
+            RutaNamn.Text = "label1";
+            // 
+            // KategoriNamn
+            // 
+            KategoriNamn.AutoSize = true;
+            KategoriNamn.Location = new Point(1540, 184);
+            KategoriNamn.Name = "KategoriNamn";
+            KategoriNamn.Size = new Size(59, 25);
+            KategoriNamn.TabIndex = 28;
+            KategoriNamn.Text = "label1";
+            // 
             // fPodCast
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1297, 565);
+            ClientSize = new Size(1853, 942);
+            Controls.Add(KategoriNamn);
+            Controls.Add(RutaNamn);
             Controls.Add(kategoritxtb);
             Controls.Add(Catagory);
             Controls.Add(dataGridView3);
@@ -399,7 +426,7 @@
             Controls.Add(lblNamn);
             Controls.Add(lblRubrik);
             Controls.Add(btnTaBort);
-            Margin = new Padding(3, 2, 3, 2);
+            Margin = new Padding(4, 3, 4, 3);
             Name = "fPodCast";
             Text = "PODCAST";
             Load += fPodCast_Load;
@@ -444,5 +471,7 @@
         private DataGridView dataGridView3;
         private TextBox kategoritxtb;
         private DataGridViewTextBoxColumn kategori;
+        private Label RutaNamn;
+        private Label KategoriNamn;
     }
 }

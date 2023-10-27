@@ -131,7 +131,8 @@ namespace PodcastAppG19.DAL
         public string getFeedTitle(string url)
         {
             try {
-                if (url.EndsWith(".xml", StringComparison.OrdinalIgnoreCase))
+                if (url.Contains("feed", StringComparison.OrdinalIgnoreCase)
+                    || url.Contains("pod", StringComparison.OrdinalIgnoreCase))
                 {
                     XDocument fil = XDocument.Load(url);
                     var firstTitle = fil.Descendants("title").First();
@@ -176,7 +177,8 @@ namespace PodcastAppG19.DAL
 
             try
             {
-                if (url.EndsWith(".xml", StringComparison.OrdinalIgnoreCase))
+                if (url.Contains("feed", StringComparison.OrdinalIgnoreCase)
+                     || url.Contains("pod", StringComparison.OrdinalIgnoreCase))
                 {
 
                     XDocument filen = XDocument.Load(url);
@@ -219,30 +221,40 @@ namespace PodcastAppG19.DAL
         public List<Episode> GetEpisodes(string url) 
         {
             List<Episode> avsnittsLista = new List<Episode>();
-            if (url.EndsWith(".xml", StringComparison.OrdinalIgnoreCase))
+
+            try
             {
-
-                XDocument filen = XDocument.Load(url);
-                List<XElement> beskrivningsLista = filen.Descendants("item").ToList();
-                List<XElement> titleLista = filen.Descendants("title").ToList();
-                int index = 0;
-
-                foreach (XElement item in titleLista)
+                if (url.Contains("feed", StringComparison.OrdinalIgnoreCase)
+                    || url.Contains("pod", StringComparison.OrdinalIgnoreCase))
                 {
-                    string title = (string)item;
-                    if (title.Contains(".")) 
-                    {
-                        avsnittsLista.Add(new Episode(title, (string)beskrivningsLista.ElementAt(index)));
-                        index++;
-                    }
-                }
 
+                    XDocument filen = XDocument.Load(url);
+                    List<XElement> beskrivningsLista = filen.Descendants("item").ToList();
+                    List<XElement> titleLista = filen.Descendants("title").ToList();
+                    int index = 0;
+
+                    foreach (XElement item in titleLista)
+                    {
+                        string title = (string)item;
+                        if (title.Contains("."))
+                        {
+                            avsnittsLista.Add(new Episode(title, (string)beskrivningsLista.ElementAt(index)));
+                            index++;
+
+                        }
+                    }
+
+                    return avsnittsLista;
+                }
+                else
+
+                    //Kasta ett anpassat undantag med felmeddelandet om URL:en inte har rätt format
+                    throw new UrlException(new XDocument(), "URL ska sluta på .xml");
+            }
+            catch
+            {
                 return avsnittsLista;
             }
-            else
-
-                // Kasta ett anpassat undantag med felmeddelandet om URL:en inte har rätt format
-                throw new UrlException(new XDocument(), "URL ska sluta på .xml");
         }
 
 
