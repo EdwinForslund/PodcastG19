@@ -383,9 +383,10 @@
             RutaNamn.Location = new Point(177, 110);
             RutaNamn.Margin = new Padding(2, 0, 2, 0);
             RutaNamn.Name = "RutaNamn";
-            RutaNamn.Size = new Size(50, 20);
+
+            RutaNamn.Size = new Size(0, 25);
+
             RutaNamn.TabIndex = 27;
-            RutaNamn.Text = "label1";
             // 
             // KategoriNamn
             // 
@@ -393,9 +394,9 @@
             KategoriNamn.Location = new Point(1232, 147);
             KategoriNamn.Margin = new Padding(2, 0, 2, 0);
             KategoriNamn.Name = "KategoriNamn";
-            KategoriNamn.Size = new Size(50, 20);
+            KategoriNamn.Size = new Size(0, 25);
             KategoriNamn.TabIndex = 28;
-            KategoriNamn.Text = "label1";
+            KategoriNamn.Click += KategoriNamn_Click;
             // 
             // textBoxURL
             // 
