@@ -6,7 +6,7 @@ using System.Xml.Serialization;
 using System.Data;
 using PodcastAppG19.ExceptionHandling;
 using System.Security.Policy;
-
+using PodcastAppG19.PodcastAppG19;
 
 namespace PodcastAppG19
 {
@@ -17,6 +17,7 @@ namespace PodcastAppG19
         Feedcontoller feedcontoller;
         private List<Feed> feeds;
         Catagorycontroller catagorycontroller;
+        private bool valideringPasserad = false; // En flagga som indikerar om valideringen har passerat.
 
 
 
@@ -67,7 +68,6 @@ namespace PodcastAppG19
 
                 // Remove the row from dataGridView1
                 dataGridView1.Rows.RemoveAt(selectedRowIndex);
-
                 // Clear the contents of dataGridView2 and episodeDescriptionBox "txtbINFOR"
                 dataGridView2.Rows.Clear();
                 txtbINFO.Clear();
@@ -167,6 +167,9 @@ namespace PodcastAppG19
 
         private void txtbNamn_TextChanged(object sender, EventArgs e)
         {
+
+            bool valideringResultat = Validering.NamnKontroll(txtbNamn.Text, RutaNamn);
+            valideringPasserad = valideringResultat;
 
         }
 
@@ -353,7 +356,10 @@ namespace PodcastAppG19
 
         private void kategoritxtb_TextChanged(object sender, EventArgs e)
         {
-
+            
+                bool valideringResultat = Validering.NamnKontroll(kategoritxtb.Text, KategoriNamn);
+                valideringPasserad = valideringResultat;
+            
         }
 
         private void btnAndra1_Click(object sender, EventArgs e)
