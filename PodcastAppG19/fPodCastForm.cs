@@ -6,7 +6,7 @@ using System.Xml.Serialization;
 using System.Data;
 using PodcastAppG19.ExceptionHandling;
 using System.Security.Policy;
-
+using PodcastAppG19.PodcastAppG19;
 
 namespace PodcastAppG19
 {
@@ -17,6 +17,7 @@ namespace PodcastAppG19
         Feedcontoller feedcontoller;
         private List<Feed> feeds;
         Catagorycontroller catagorycontroller;
+        private bool valideringPasserad = false; // En flagga som indikerar om valideringen har passerat.
 
 
 
@@ -51,31 +52,31 @@ namespace PodcastAppG19
 
         }
 
-       
-            private void btnTaBort_Click(object sender, EventArgs e)
+
+        private void btnTaBort_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
             {
-                if (dataGridView1.SelectedRows.Count > 0)
-                {
-                    int selectedRowIndex = dataGridView1.SelectedRows[0].Index;
-                    Feed selectedFeed = feeds[selectedRowIndex];
+                int selectedRowIndex = dataGridView1.SelectedRows[0].Index;
+                Feed selectedFeed = feeds[selectedRowIndex];
 
-                    // Delete the feed and its contents
-                    feedcontoller.DeleteFeedAndContents(selectedFeed);
+                // Delete the feed and its contents
+                feedcontoller.DeleteFeedAndContents(selectedFeed);
 
-                    // Remove the feed from the list of feeds
-                    feeds.Remove(selectedFeed);
+                // Remove the feed from the list of feeds
+                feeds.Remove(selectedFeed);
 
-                    // Remove the row from dataGridView1
-                    dataGridView1.Rows.RemoveAt(selectedRowIndex);
+                // Remove the row from dataGridView1
+                dataGridView1.Rows.RemoveAt(selectedRowIndex);
 
-                    // Clear the contents of dataGridView2
-                    dataGridView2.Rows.Clear();
-                }
-                else
-                {
-                    MessageBox.Show("Please select a feed to delete.");
-                }
+                // Clear the contents of dataGridView2
+                dataGridView2.Rows.Clear();
             }
+            else
+            {
+                MessageBox.Show("Please select a feed to delete.");
+            }
+        }
 
 
 
@@ -83,10 +84,10 @@ namespace PodcastAppG19
 
 
 
-          
 
 
-        
+
+
 
 
 
@@ -166,6 +167,9 @@ namespace PodcastAppG19
 
         private void txtbNamn_TextChanged(object sender, EventArgs e)
         {
+
+            bool valideringResultat = Validering.NamnKontroll(txtbNamn.Text, RutaNamn);
+            valideringPasserad = valideringResultat;
 
         }
 
@@ -354,7 +358,10 @@ namespace PodcastAppG19
 
         private void kategoritxtb_TextChanged(object sender, EventArgs e)
         {
-
+            
+                bool valideringResultat = Validering.NamnKontroll(kategoritxtb.Text, KategoriNamn);
+                valideringPasserad = valideringResultat;
+            
         }
 
         private void btnAndra1_Click(object sender, EventArgs e)
@@ -504,7 +511,7 @@ namespace PodcastAppG19
         }
 
         //Hämtar avsnitten från vald podcast
-        private void getEpisodes(string feedTitle) 
+        private void getEpisodes(string feedTitle)
         {
             foreach (Feed feed in feeds)
             {
