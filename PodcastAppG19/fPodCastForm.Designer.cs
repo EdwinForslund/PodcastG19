@@ -39,7 +39,6 @@
             btnTaBort = new Button();
             btnAterstall = new Button();
             lblURL = new Label();
-            txtbURL = new TextBox();
             lblAvsnitt = new Label();
             lblKategori = new Label();
             Catagory = new Button();
@@ -59,6 +58,7 @@
             dataGridView3 = new DataGridView();
             kategori = new DataGridViewTextBoxColumn();
             kategoritxtb = new TextBox();
+            txtbURL = new TextBox();
             RutaNamn = new Label();
             KategoriNamn = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -220,10 +220,12 @@
             // 
             // Catagory
             // 
+
             Catagory.Location = new Point(1451, 255);
             Catagory.Margin = new Padding(4, 3, 4, 3);
             Catagory.Name = "Catagory";
             Catagory.Size = new Size(117, 37);
+
             Catagory.TabIndex = 16;
             Catagory.Text = "Lägg till";
             Catagory.UseVisualStyleBackColor = true;
@@ -231,10 +233,12 @@
             // 
             // btnTaBort1
             // 
+
             btnTaBort1.Location = new Point(1720, 255);
             btnTaBort1.Margin = new Padding(4, 3, 4, 3);
             btnTaBort1.Name = "btnTaBort1";
             btnTaBort1.Size = new Size(117, 37);
+
             btnTaBort1.TabIndex = 17;
             btnTaBort1.Text = "Ta bort";
             btnTaBort1.UseVisualStyleBackColor = true;
@@ -242,10 +246,12 @@
             // 
             // btnAndra1
             // 
+
             btnAndra1.Location = new Point(1576, 255);
             btnAndra1.Margin = new Padding(4, 3, 4, 3);
             btnAndra1.Name = "btnAndra1";
             btnAndra1.Size = new Size(136, 37);
+
             btnAndra1.TabIndex = 18;
             btnAndra1.Text = "Ändra";
             btnAndra1.UseVisualStyleBackColor = true;
@@ -258,14 +264,18 @@
             dataGridView1.BackgroundColor = SystemColors.ButtonShadow;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { AntalAvsnitt, FlodesNamn, FlodesTitel, FlodesFrekvens, FlodesKategori });
+
             dataGridView1.Location = new Point(87, 255);
+
             dataGridView1.Margin = new Padding(0);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
             dataGridView1.ShowCellToolTips = false;
             dataGridView1.ShowEditingIcon = false;
+
             dataGridView1.Size = new Size(921, 677);
+
             dataGridView1.TabIndex = 19;
             dataGridView1.CellStateChanged += dataGridView1_CellStateChanged;
             dataGridView1.RowStateChanged += dataGridView1_RowStateChanged;
@@ -313,12 +323,14 @@
             // txtbINFO
             // 
             txtbINFO.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+
             txtbINFO.Location = new Point(1451, 615);
             txtbINFO.Margin = new Padding(4, 3, 4, 3);
             txtbINFO.Multiline = true;
             txtbINFO.Name = "txtbINFO";
             txtbINFO.Size = new Size(385, 316);
             txtbINFO.TabIndex = 22;
+            txtbINFO.TextChanged += txtbINFO_TextChanged;
             // 
             // dataGridView2
             // 
@@ -327,16 +339,20 @@
             dataGridView2.AllowUserToOrderColumns = true;
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView2.Columns.AddRange(new DataGridViewColumn[] { AvsnittC });
+
             dataGridView2.Location = new Point(1013, 255);
             dataGridView2.Margin = new Padding(4, 3, 4, 3);
+
             dataGridView2.Name = "dataGridView2";
             dataGridView2.ReadOnly = true;
             dataGridView2.RowHeadersWidth = 51;
             dataGridView2.RowTemplate.Height = 29;
             dataGridView2.ShowCellToolTips = false;
             dataGridView2.Size = new Size(431, 677);
+
             dataGridView2.TabIndex = 23;
             dataGridView2.CellContentClick += dataGridView2_CellContentClick_1;
+            dataGridView2.RowStateChanged += dataGridView2_RowStateChanged;
             // 
             // AvsnittC
             // 
@@ -354,6 +370,7 @@
             dataGridView3.AllowUserToResizeRows = false;
             dataGridView3.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView3.Columns.AddRange(new DataGridViewColumn[] { kategori });
+
             dataGridView3.Location = new Point(1451, 298);
             dataGridView3.Margin = new Padding(4, 3, 4, 3);
             dataGridView3.Name = "dataGridView3";
@@ -372,6 +389,7 @@
             // 
             // kategoritxtb
             // 
+
             kategoritxtb.Location = new Point(1451, 218);
             kategoritxtb.Margin = new Padding(4, 3, 4, 3);
             kategoritxtb.Name = "kategoritxtb";
@@ -414,7 +432,6 @@
             Controls.Add(btnTaBort1);
             Controls.Add(lblKategori);
             Controls.Add(lblAvsnitt);
-            Controls.Add(txtbURL);
             Controls.Add(lblURL);
             Controls.Add(btnAterstall);
             Controls.Add(btnAndra);
@@ -426,7 +443,9 @@
             Controls.Add(lblNamn);
             Controls.Add(lblRubrik);
             Controls.Add(btnTaBort);
+
             Margin = new Padding(4, 3, 4, 3);
+          
             Name = "fPodCast";
             Text = "PODCAST";
             Load += fPodCast_Load;
@@ -450,7 +469,6 @@
         private Button btnTaBort;
         private Button btnAterstall;
         private Label lblURL;
-        private TextBox txtbURL;
         private Label lblAvsnitt;
         private TextBox txtbKategori;
         private Label lblKategori;
@@ -471,6 +489,7 @@
         private DataGridView dataGridView3;
         private TextBox kategoritxtb;
         private DataGridViewTextBoxColumn kategori;
+        private TextBox txtbURL;
         private Label RutaNamn;
         private Label KategoriNamn;
     }

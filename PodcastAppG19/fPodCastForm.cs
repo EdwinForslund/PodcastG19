@@ -68,9 +68,9 @@ namespace PodcastAppG19
 
                 // Remove the row from dataGridView1
                 dataGridView1.Rows.RemoveAt(selectedRowIndex);
-
-                // Clear the contents of dataGridView2
+                // Clear the contents of dataGridView2 and episodeDescriptionBox "txtbINFOR"
                 dataGridView2.Rows.Clear();
+                txtbINFO.Clear();
             }
             else
             {
@@ -241,11 +241,9 @@ namespace PodcastAppG19
                 {
                     int r = dataGridView2.Rows.Add();
                     dataGridView2.Rows[r].Cells[0].Value = episode.Namn;
-                    //dataGridView2.Rows[r].Cells[1].Value = episode.Beskrivning;
-                }// Display episode description
 
-
-
+                    txtbINFO.Text = episode.Beskrivning;
+                }
             }
         }
         private void fPodCast_Load(object sender, EventArgs e)
@@ -401,26 +399,26 @@ namespace PodcastAppG19
             {
                 int selectedRowIndex = dataGridView1.SelectedRows[0].Index;
                 Feed selectedFeed = feeds[selectedRowIndex];
-                string newFeedName = txtbNamn.Text; // H�mta namn fr�n anv�ndaren
+                string newFeedName = txtbNamn.Text; // Hamta namn fran anvandaren
 
-                // Kontrollera att det nya namnet inte �r tomt eller ogiltigt
+                // Kontrollera att det nya namnet inte ar tomt eller ogiltigt
                 if (!string.IsNullOrWhiteSpace(newFeedName))
                 {
                     feedcontoller.UpdateFeedName(selectedFeed, newFeedName);
 
-                    // Uppdatera anv�ndargr�nssnittet med det nya namnet
+                    // Uppdatera anvandargranssnittet med det nya namnet
                     dataGridView1.Rows[selectedRowIndex].Cells[1].Value = newFeedName;
 
-                    MessageBox.Show("Namnet p� feeden har uppdaterats.");
+                    MessageBox.Show("Namnet pa feeden har uppdaterats.");
                 }
                 else
                 {
-                    MessageBox.Show("Ange ett giltigt nytt namn f�r feeden.");
+                    MessageBox.Show("Ange ett giltigt nytt namn for feeden.");
                 }
             }
             else
             {
-                MessageBox.Show("V�lj en feed att uppdatera namnet f�r.");
+                MessageBox.Show("Valj en feed att uppdatera namnet for.");
             }
         }
 
@@ -520,6 +518,35 @@ namespace PodcastAppG19
                     updateEpisodeList(feed);
                 }
             }
+        }
+
+
+
+
+
+
+
+        private void txtbINFO_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView2_RowStateChanged(object sender, DataGridViewRowStateChangedEventArgs e)
+        {
+            string episodeName = (string)e.Row.Cells[0].Value;
+            
+            foreach(Feed feed in feeds)
+            {
+                foreach (Episode episode in feed.episodes)
+                {
+                    if(episode.Namn == episodeName)
+
+                    txtbINFO.Text = episode.Beskrivning;
+                }
+            }
+
+                // Loop through the episodes and add them to dataGridView2
+                
         }
     }
 }
