@@ -223,8 +223,8 @@ namespace PodcastAppG19.DAL
             {
 
                 XDocument filen = XDocument.Load(url);
-                List<XElement> beskrivningsLista = filen.Descendants("item").ToList();
-                List<XElement> titleLista = filen.Descendants("title").ToList();
+                List<XElement> beskrivningsLista = filen.Descendants("description").ToList();
+                List<XElement> titleLista = filen.Descendants("title").ToList(); 
                 int index = 0;
 
                 foreach (XElement item in titleLista)
