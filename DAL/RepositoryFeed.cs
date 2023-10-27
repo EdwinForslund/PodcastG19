@@ -131,7 +131,8 @@ namespace PodcastAppG19.DAL
         public string getFeedTitle(string url)
         {
             try {
-                if (url.EndsWith(".xml", StringComparison.OrdinalIgnoreCase))
+                if (url.Contains("feed", StringComparison.OrdinalIgnoreCase)
+                                    || url.Contains("pod", StringComparison.OrdinalIgnoreCase))
                 {
                     XDocument fil = XDocument.Load(url);
                     var firstTitle = fil.Descendants("title").First();
@@ -176,7 +177,8 @@ namespace PodcastAppG19.DAL
 
             try
             {
-                if (url.EndsWith(".xml", StringComparison.OrdinalIgnoreCase))
+                if (url.Contains("feed", StringComparison.OrdinalIgnoreCase)
+                                    || url.Contains("pod", StringComparison.OrdinalIgnoreCase))
                 {
 
                     XDocument filen = XDocument.Load(url);
