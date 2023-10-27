@@ -1,2 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ArrayOfFeed xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+<ArrayOfFeed xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Feed>
+    <namn>ex...Namn</namn>
+    <url>https://rss.podplaystudio.com/1565.xml</url>
+    <uppdatera>0001-01-01T00:00:00</uppdatera>
+    <uppdateringsfrekvens>0</uppdateringsfrekvens>
+    <category>
+      <Title>Dokumentär</Title>
+    </category>
+    <episodes>
+      <Episode>
+        <Namn>4. Rich Husband Hunting</Namn>
+        <Beskrivning>Stella &amp; Hanna närmar sig 30 och medan vännerna skaffar villa, Volvo och barn drömmer Stella &amp; Hanna om något annat. De är trötta på livet i Stockholm och har bestämt sig för att dra till New York för att leva ut sitt fulla jag. Inspirerat av tv-serien sex and the city får ni följa med dessa två singeltjejer på deras äventyr.</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>3. Är Stellas kille en scam? </Namn>
+        <Beskrivning>&lt;p&gt;Jakten efter framgångsrika män har dragit igång på allvar. Hannas dubbeldejt går inte riktigt som förväntat och Stellas kille har börjat bete sig väldigt konstigt.&lt;br&gt;&lt;br&gt;Klipps av Victor Ganguly&lt;/p&gt;</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>2. Triangeldramat om skådisen aka Mr. Old Guy</Namn>
+        <Beskrivning>&lt;p&gt;Stella och Hanna älskar livet i New York och fått ett kompis-gäng som inkluderar alla SATC-karaktärer. Hanna har redan fått icks på killarna i USA och det är många frågetecken kring Stellas dejt. Vem är han egentligen?&lt;br&gt;&lt;br&gt;Klipps av Victor Ganguly&lt;/p&gt;</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>1. Den värsta dejt-upplevelsen någonsin</Namn>
+        <Beskrivning>&lt;p&gt;Hanna och Stella har äntligen landat i  New York men bara fyra dagar in startar ett triangeldrama om en viss skådis som slutar i storbråk. &lt;/p&gt;</Beskrivning>
+      </Episode>
+    </episodes>
+  </Feed>
+</ArrayOfFeed>

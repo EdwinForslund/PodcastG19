@@ -94,7 +94,7 @@ namespace PodcastAppG19
         private void btnLaggTill_Click(object sender, EventArgs e)
         {
             string namn = txtbNamn.Text;
-            string url = txtbURL.Text;
+            string url = textBoxURL.Text;
             string stringFrekvensen = cbBFrekvens.Text;
             int frekvens = 0;
             string kategori = cbBKategori.Text;
@@ -356,10 +356,10 @@ namespace PodcastAppG19
 
         private void kategoritxtb_TextChanged(object sender, EventArgs e)
         {
-            
-                bool valideringResultat = Validering.NamnKontroll(kategoritxtb.Text, KategoriNamn);
-                valideringPasserad = valideringResultat;
-            
+
+            bool valideringResultat = Validering.NamnKontroll(kategoritxtb.Text, KategoriNamn);
+            valideringPasserad = valideringResultat;
+
         }
 
         private void btnAndra1_Click(object sender, EventArgs e)
@@ -534,19 +534,24 @@ namespace PodcastAppG19
         private void dataGridView2_RowStateChanged(object sender, DataGridViewRowStateChangedEventArgs e)
         {
             string episodeName = (string)e.Row.Cells[0].Value;
-            
-            foreach(Feed feed in feeds)
+
+            foreach (Feed feed in feeds)
             {
                 foreach (Episode episode in feed.episodes)
                 {
-                    if(episode.Namn == episodeName)
+                    if (episode.Namn == episodeName)
 
-                    txtbINFO.Text = episode.Beskrivning;
+                        txtbINFO.Text = episode.Beskrivning;
                 }
             }
 
-                // Loop through the episodes and add them to dataGridView2
-                
+            // Loop through the episodes and add them to dataGridView2
+
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
