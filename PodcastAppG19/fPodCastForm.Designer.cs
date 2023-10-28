@@ -406,11 +406,11 @@
             // 
             // button1
             // 
-            button1.Location = new Point(835, 139);
+            button1.Location = new Point(813, 139);
             button1.Name = "button1";
             button1.Size = new Size(233, 29);
             button1.TabIndex = 30;
-            button1.Text = "Tilldela-flödet-nykata";
+            button1.Text = "Tilldela-flödet-ny-Katagori";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click_1;
             // 
