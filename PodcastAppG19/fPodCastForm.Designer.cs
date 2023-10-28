@@ -396,7 +396,7 @@
             KategoriNamn.Name = "KategoriNamn";
             KategoriNamn.Size = new Size(0, 25);
             KategoriNamn.TabIndex = 28;
-            KategoriNamn.Click += KategoriNamn_Click;
+         
             // 
             // textBoxURL
             // 

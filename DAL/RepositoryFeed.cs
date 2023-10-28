@@ -127,47 +127,53 @@ namespace PodcastAppG19.DAL
 
         }
 
-        // Metod som retunerar feed titeln LINQ-fråga
-        public string getFeedTitle(string url)
+      
+
+
+
+        public async Task<string> GetFeedTitleAsync(string url)
         {
-            try {
-                if (url.Contains("feed", StringComparison.OrdinalIgnoreCase)
-                    || url.Contains("pod", StringComparison.OrdinalIgnoreCase))
+            try
+            {
+                if (url.EndsWith(".xml", StringComparison.OrdinalIgnoreCase))
                 {
-                    XDocument fil = XDocument.Load(url);
-                    var firstTitle = fil.Descendants("title").First();
+                    XDocument file = XDocument.Load(url);
+                    var firstTitle = await Task.Run(() => file.Descendants("title").First());
                     string title = firstTitle.Value;
                     return title;
                 }
                 else
-                { 
-                    // Kasta ett anpassat undantag med felmeddelandet om URL:en inte har rätt format
-                    throw new UrlException(new XDocument(), "Denna länk är ogiltig eller leder inte till en prenumererbar podcast");
-
+                {
+                    throw new UrlException(new XDocument(), "URL ska sluta på .xml");
                 }
             }
             catch (UrlException ex)
             {
-                MessageBox.Show(ex.Message);
+                // Observera: Här används normalt en Exception-loggning eller annan hantering,
+                // eftersom MessageBox inte är tillgänglig utanför UI-tråden.
+                // Logga ex med lämplig mekanism eller använd lämplig hantering för applikationen.
+                Console.WriteLine(ex.Message);
                 return null;
             }
-
             catch (System.IO.FileNotFoundException)
             {
-                //MessageBox.Show("URL ej hittad, försök igen!");
-                // Kasta ett anpassat undantag med felmeddelandet
+                Console.WriteLine("URL ej hittad, försök igen!");
                 return null;
             }
-            
             catch (Exception ex)
             {
-
-                MessageBox.Show("Exception klass :(" + ex.Message);
-
+                Console.WriteLine("Exception klass :(" + ex.Message);
                 return null;
             }
-        
         }
+
+
+
+
+
+
+
+
 
         // Metod som retunerar siffran på antalet objekt där objekten är avnsitt LINQ-fråga
         public int ItemCounter(string url)

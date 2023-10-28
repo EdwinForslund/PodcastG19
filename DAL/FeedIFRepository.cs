@@ -12,7 +12,7 @@ using System.Threading.Tasks;
          public void update(T t);
          public void insert(T t);
          public void Save();
-         public string getFeedTitle(string t);
+       //  public string getFeedTitle(string t);
          public int ItemCounter(string t);
 
         

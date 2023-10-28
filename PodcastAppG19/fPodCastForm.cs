@@ -102,7 +102,7 @@ namespace PodcastAppG19
 
 
 
-        private void btnLaggTill_Click(object sender, EventArgs e)
+        private async void btnLaggTill_Click(object sender, EventArgs e)
         {
             string namn = txtbNamn.Text;
             string url = textBoxURL.Text;
@@ -137,7 +137,7 @@ namespace PodcastAppG19
 
             int r = dataGridView1.Rows.Add();
             dataGridView1.Rows[r].Cells[1].Value = namn;
-            dataGridView1.Rows[r].Cells[2].Value = feed.getFeedTitle();
+            dataGridView1.Rows[r].Cells[2].Value = await feed.GetFeedTitleAsync();
             dataGridView1.Rows[r].Cells[3].Value = stringFrekvensen;
             dataGridView1.Rows[r].Cells[4].Value = kategori;
             int antalAvsnitt = feed.getEpisodeNumber();
@@ -184,7 +184,7 @@ namespace PodcastAppG19
 
         }
 
-        private void cbBFilter_SelectedIndexChanged(object sender, EventArgs e)
+        private async void cbBFilter_SelectedIndexChanged(object sender, EventArgs e)
         {
             string selectedCategory = cbBFilter.SelectedItem.ToString();
 
@@ -199,7 +199,7 @@ namespace PodcastAppG19
             {
                 int r = dataGridView1.Rows.Add();
                 dataGridView1.Rows[r].Cells[1].Value = feed.namn;
-                dataGridView1.Rows[r].Cells[2].Value = feed.getFeedTitle();
+                dataGridView1.Rows[r].Cells[2].Value = await feed.GetFeedTitleAsync();
                 dataGridView1.Rows[r].Cells[3].Value = feed.uppdateringsfrekvens.ToString() + " min";
                 dataGridView1.Rows[r].Cells[4].Value = feed.category.Title;
                 int antalAvsnitt = feed.getEpisodeNumber();
@@ -433,7 +433,7 @@ namespace PodcastAppG19
             }
         }
 
-        private void cbBFilter_SelectedIndexChanged_1(object sender, EventArgs e)
+        private async void cbBFilter_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             if (cbBFilter.SelectedItem != null)
             {
@@ -467,7 +467,7 @@ namespace PodcastAppG19
                     int r = dataGridView1.Rows.Add();
                     dataGridView1.Rows[r].Cells[0].Value = antalAvsnitt;
                     dataGridView1.Rows[r].Cells[1].Value = feed.namn;
-                    dataGridView1.Rows[r].Cells[2].Value = feed.getFeedTitle();
+                    dataGridView1.Rows[r].Cells[2].Value =await feed.GetFeedTitleAsync();
                     dataGridView1.Rows[r].Cells[3].Value = stringFrekvensen;
                     dataGridView1.Rows[r].Cells[4].Value = feed.category.Title;
                 }
@@ -510,21 +510,23 @@ namespace PodcastAppG19
         private void dataGridView1_RowStateChanged(object sender, DataGridViewRowStateChangedEventArgs e)
         {
             string feedTitle = (string)e.Row.Cells[2].Value;
-            getEpisodes(feedTitle);
+            getEpisodesAsync(feedTitle);
         }
 
         private void dataGridView1_CellStateChanged(object sender, DataGridViewCellStateChangedEventArgs e)
         {
             string feedTitle = (string)dataGridView1.Rows[e.Cell.RowIndex].Cells[2].Value;
-            getEpisodes(feedTitle);
+            getEpisodesAsync(feedTitle);
         }
 
         //Hämtar avsnitten från vald podcast
-        private void getEpisodes(string feedTitle)
+      
+
+        private async Task getEpisodesAsync(string feedTitle)
         {
             foreach (Feed feed in feeds)
             {
-                if (feed.getFeedTitle() == feedTitle)
+                if (await feed.GetFeedTitleAsync() == feedTitle)
                 {
                     updateEpisodeList(feed);
                 }

@@ -33,11 +33,7 @@ namespace PodcastAppG19.DAL
             throw new NotImplementedException();
         }
 
-        string FeedIFRepository<Episode>.getFeedTitle(string t)
-        {
-            throw new NotImplementedException();
-        }
-
+      
       
 
         int FeedIFRepository<Episode>.ItemCounter(string t)

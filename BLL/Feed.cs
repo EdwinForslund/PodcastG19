@@ -53,9 +53,11 @@ namespace PodcastAppG19.BLL
             return "Namn: " + namn + ", URL: " + url + ", Update Frequency: " + uppdateringsfrekvens + "\n\n";
         }
 
-        public string getFeedTitle()
+        
+
+        public async Task<string> GetFeedTitleAsync()
         {
-            string title = repositoryFeed.getFeedTitle(this.url);
+            string title = await repositoryFeed.GetFeedTitleAsync(this.url);
             return title;
         }
 
