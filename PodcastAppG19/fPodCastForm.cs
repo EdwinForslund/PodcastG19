@@ -467,7 +467,7 @@ namespace PodcastAppG19
                     int r = dataGridView1.Rows.Add();
                     dataGridView1.Rows[r].Cells[0].Value = antalAvsnitt;
                     dataGridView1.Rows[r].Cells[1].Value = feed.namn;
-                    dataGridView1.Rows[r].Cells[2].Value =await feed.GetFeedTitleAsync();
+                    dataGridView1.Rows[r].Cells[2].Value = await feed.GetFeedTitleAsync();
                     dataGridView1.Rows[r].Cells[3].Value = stringFrekvensen;
                     dataGridView1.Rows[r].Cells[4].Value = feed.category.Title;
                 }
@@ -520,7 +520,7 @@ namespace PodcastAppG19
         }
 
         //Hämtar avsnitten från vald podcast
-      
+
 
         private async Task getEpisodesAsync(string feedTitle)
         {
@@ -562,5 +562,44 @@ namespace PodcastAppG19
         {
 
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+              if (dataGridView1.SelectedRows.Count > 0)
+                {
+                    int selectedRowIndex = dataGridView1.SelectedRows[0].Index;
+                    Feed selectedFeed = feeds[selectedRowIndex];
+
+                    if (cbBKategori.SelectedItem != null)
+                    {
+                        // Hämta den valda kategorin från ComboBox
+                        string selectedCategory = cbBKategori.SelectedItem.ToString();
+
+                        // Uppdatera feedens kategori med den valda kategorin från ComboBox
+                        selectedFeed.category = new Category(selectedCategory);
+
+                        // Uppdatera användargränssnittet för den valda feeden med den nya kategorin
+                        dataGridView1.Rows[selectedRowIndex].Cells[4].Value = selectedCategory;
+
+                        // Alternativt: Anropa en metod i FeedController för att uppdatera kategorin för den valda feeden i databasen eller lagringen
+                        // feedcontoller.UpdateFeedCategory(selectedFeed, selectedCategory);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Välj en kategori att tilldela till feeden.");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Välj en feed för att uppdatera kategorin.");
+                }
+            }
+
+        
+
+
+
+
+
     }
-}
+    }

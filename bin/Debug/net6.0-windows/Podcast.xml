@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfFeed xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Feed>
-    <namn>jafar</namn>
+    <namn>f</namn>
     <url>https://rss.podplaystudio.com/1477.xml</url>
     <uppdatera>0001-01-01T00:00:00</uppdatera>
     <uppdateringsfrekvens>0</uppdateringsfrekvens>
     <category>
-      <Title>Sport</Title>
+      <Title>Fotboll</Title>
     </category>
     <episodes>
       <Episode>
@@ -1020,12 +1020,12 @@ Mail: fallen@ilikeradio.se
     </episodes>
   </Feed>
   <Feed>
-    <namn>jafar</namn>
+    <namn>fnn</namn>
     <url>https://rss.podplaystudio.com/1477.xml</url>
     <uppdatera>0001-01-01T00:00:00</uppdatera>
     <uppdateringsfrekvens>0</uppdateringsfrekvens>
     <category>
-      <Title>Game</Title>
+      <Title>Fotboll</Title>
     </category>
     <episodes>
       <Episode>

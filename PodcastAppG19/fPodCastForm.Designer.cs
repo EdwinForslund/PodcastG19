@@ -62,6 +62,7 @@
             RutaNamn = new Label();
             KategoriNamn = new Label();
             textBoxURL = new TextBox();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView3).BeginInit();
@@ -383,9 +384,7 @@
             RutaNamn.Location = new Point(177, 110);
             RutaNamn.Margin = new Padding(2, 0, 2, 0);
             RutaNamn.Name = "RutaNamn";
-
-            RutaNamn.Size = new Size(0, 25);
-
+            RutaNamn.Size = new Size(0, 20);
             RutaNamn.TabIndex = 27;
             // 
             // KategoriNamn
@@ -394,9 +393,8 @@
             KategoriNamn.Location = new Point(1232, 147);
             KategoriNamn.Margin = new Padding(2, 0, 2, 0);
             KategoriNamn.Name = "KategoriNamn";
-            KategoriNamn.Size = new Size(0, 25);
+            KategoriNamn.Size = new Size(0, 20);
             KategoriNamn.TabIndex = 28;
-         
             // 
             // textBoxURL
             // 
@@ -406,11 +404,22 @@
             textBoxURL.TabIndex = 29;
             textBoxURL.TextChanged += textBox1_TextChanged_1;
             // 
+            // button1
+            // 
+            button1.Location = new Point(835, 139);
+            button1.Name = "button1";
+            button1.Size = new Size(233, 29);
+            button1.TabIndex = 30;
+            button1.Text = "Tilldela-flödet-nykata";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click_1;
+            // 
             // fPodCast
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1482, 754);
+            Controls.Add(button1);
             Controls.Add(textBoxURL);
             Controls.Add(KategoriNamn);
             Controls.Add(RutaNamn);
@@ -483,5 +492,6 @@
         private Label RutaNamn;
         private Label KategoriNamn;
         private TextBox textBoxURL;
+        private Button button1;
     }
 }
