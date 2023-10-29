@@ -7,6 +7,7 @@ using System.Data;
 using PodcastAppG19.ExceptionHandling;
 using System.Security.Policy;
 using PodcastAppG19.PodcastAppG19;
+using PodcastAppG19.DAL;
 
 namespace PodcastAppG19
 {
@@ -18,7 +19,7 @@ namespace PodcastAppG19
         private List<Feed> feeds;
         Catagorycontroller catagorycontroller;
         private bool valideringPasserad = false; // En flagga som indikerar om valideringen har passerat.
-
+        List <string> länkList = new List<string>();
 
 
 
@@ -30,12 +31,52 @@ namespace PodcastAppG19
             catagorycontroller = new Catagorycontroller();
             episodecontroller = new Episodecontroller();
             UpdateContentforCatagory();
+            LoadPodcast();
         }
 
+        private void LoadPodcast()
+        {
+            try
+            {
+                RepositoryFeed repository = new RepositoryFeed();
+                List<Feed> feeds = repository.GetAll();
+
+                foreach (var feed in feeds)
+                {
+                    dataGridView1.Rows.Add(feed.namn, feed.namn, feed.uppdateringsfrekvens, feed.categoryTitle);
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
+            //try
+            //{
+            //    XDocument doc = XDocument.Load("Podcast.xml");
 
-        }
+            //    foreach (var länk in doc.Descendants("title"))
+            //    {
+            //        string enLänk = länk.Value;
+            //        länkList.Add(enLänk);
+            //    }
+            //    foreach (var nyhet in länkList)
+            //    {
+            //        dataGridView1.Rows.Add(nyhet);
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //}
+
+            
+            }
+
+        
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -513,14 +554,28 @@ namespace PodcastAppG19
 
         private void dataGridView1_RowStateChanged(object sender, DataGridViewRowStateChangedEventArgs e)
         {
-            string feedTitle = (string)e.Row.Cells[2].Value;
-            getEpisodesAsync(feedTitle);
+            try
+            {
+                string feedTitle = (string)e.Row.Cells[2].Value;
+                getEpisodesAsync(feedTitle);
+            }
+            catch(System.InvalidCastException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
 
         private void dataGridView1_CellStateChanged(object sender, DataGridViewCellStateChangedEventArgs e)
         {
-            string feedTitle = (string)dataGridView1.Rows[e.Cell.RowIndex].Cells[2].Value;
-            getEpisodesAsync(feedTitle);
+            try
+            {
+                string feedTitle = (string)dataGridView1.Rows[e.Cell.RowIndex].Cells[2].Value;
+                getEpisodesAsync(feedTitle);
+            }
+            catch (System.InvalidCastException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
 
         //Hämtar avsnitten från vald podcast
@@ -599,6 +654,27 @@ namespace PodcastAppG19
             }
         }
 
+        private void getNodes()
+        {
+            try
+            {
+                XDocument doc = XDocument.Load("Podcast");
+
+                foreach (var länk in doc.Descendants("title"))
+                {
+                    string enLänk = länk.Value;
+                    länkList.Add(enLänk);
+                }
+                foreach (var nyhet in länkList)
+                {
+                    dataGridView1.Rows.Add(nyhet);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);    
+            }
+        }
 
 
 

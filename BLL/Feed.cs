@@ -58,8 +58,16 @@ namespace PodcastAppG19.BLL
 
         public async Task<string> GetFeedTitleAsync()
         {
-            string title = await repositoryFeed.GetFeedTitleAsync(this.url);
-            return title;
+            try
+            {
+                string title = await repositoryFeed.GetFeedTitleAsync(this.url);
+                return title;
+            }
+            catch (System.NullReferenceException ex)
+            {
+                Console.WriteLine(ex.Message);
+                return null;
+            }
         }
 
         public int getEpisodeNumber()
