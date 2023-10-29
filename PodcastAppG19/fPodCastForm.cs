@@ -476,9 +476,16 @@ namespace PodcastAppG19
 
         private void btnAterstall_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Button clicked!"); // Visa meddelande för att kontrollera om koden körs
+            if (!string.IsNullOrEmpty(txtbURL.Text))
+            {
+               
+                txtbURL.Text = string.Empty;
+            }
             // Clear input fields
             txtbNamn.Text = string.Empty;
-            txtbURL.Text = string.Empty;
+            txtbURL.Text = string.Empty; // Rensa URL-fältet
+            txtbURL.Clear();
 
             // Clear the filter combo box if it's not empty
             if (cbBFilter.SelectedItem != null)
@@ -486,11 +493,8 @@ namespace PodcastAppG19
                 cbBFilter.SelectedIndex = -1;
             }
 
-
-
             // Clear the category combo box
             cbBKategori.SelectedIndex = -1;
-
 
             if (cbBFrekvens.SelectedItem != null)
             {
@@ -499,8 +503,8 @@ namespace PodcastAppG19
 
             // Clear the frequency combo box
             cbBFrekvens.SelectedIndex = -1;
-
         }
+
 
         private void cbBFrekvens_SelectedIndexChanged(object sender, EventArgs e)
         {

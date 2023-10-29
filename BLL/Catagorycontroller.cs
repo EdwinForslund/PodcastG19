@@ -10,7 +10,7 @@ namespace PodcastAppG19.BLL
     public class Catagorycontroller
     {
         public RepositoryCatagory Repositoryforcatagory;
-           Serializer serializeXml = new Serializer();
+          // Serializer serializeXml = new Serializer();
 
         public Catagorycontroller()
         {

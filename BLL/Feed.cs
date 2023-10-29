@@ -10,7 +10,8 @@ namespace PodcastAppG19.BLL
     public class Feed
     {
 
-        private Serializer serializer;
+      //  private Serializer serializer;
+        private NewSerailzer se; 
         public string namn { get; set; }
 
         public string url { get; set; }
@@ -27,8 +28,8 @@ namespace PodcastAppG19.BLL
         public Feed(string namn, string url, int frekvens, Category category)
         {
 
-
-            serializer = new Serializer();
+            se = new NewSerailzer();
+          //  serializer = new Serializer();
             this.namn = namn;
             this.url = url;
             uppdateringsfrekvens = 10;
@@ -77,7 +78,7 @@ namespace PodcastAppG19.BLL
 
         public void FeedSerailizer(List<Feed> feeds)
         {
-            serializer.SerializeFeedXML(feeds);
+            se.SerializeFeedfodcast(feeds);
         }
 
         public List<Episode> episodes { get; set; } = new List<Episode>();
