@@ -286,7 +286,7 @@ namespace PodcastAppG19.DAL
         {
             foreach (Feed f in lista)
             {
-                if (f == feed)
+                if (f.namn == feed.namn)
                 {
                     f.namn = newFeedName;
                     Save(); // Save the updated feed list

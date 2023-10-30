@@ -19,7 +19,7 @@ namespace PodcastAppG19.BLL
         public   Feedcontoller()
         {
            Feedrepos = new RepositoryFeed();
-            newSerailzer = new NewSerailzer();
+           newSerailzer = new NewSerailzer();
         }
 
         public List<Feed> Getallapodcast()
