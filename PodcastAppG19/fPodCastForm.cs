@@ -31,50 +31,11 @@ namespace PodcastAppG19
             catagorycontroller = new Catagorycontroller();
             episodecontroller = new Episodecontroller();
             UpdateContentforCatagory();
-            LoadPodcast();
-        }
-
-        private void LoadPodcast()
-        {
-            try
-            {
-                RepositoryFeed repository = new RepositoryFeed();
-                List<Feed> feeds = repository.GetAll();
-
-                foreach (var feed in feeds)
-                {
-                    dataGridView1.Rows.Add(feed.namn, feed.namn, feed.uppdateringsfrekvens, feed.categoryTitle);
-                }
-            }
-
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            UpdateFeedsList();
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            //try
-            //{
-            //    XDocument doc = XDocument.Load("Podcast.xml");
-
-            //    foreach (var länk in doc.Descendants("title"))
-            //    {
-            //        string enLänk = länk.Value;
-            //        länkList.Add(enLänk);
-            //    }
-            //    foreach (var nyhet in länkList)
-            //    {
-            //        dataGridView1.Rows.Add(nyhet);
-            //    }
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show(ex.Message);
-            //}
-
-            
-            }
+        }
 
         
 
@@ -129,20 +90,6 @@ namespace PodcastAppG19
             }
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         private async void btnLaggTill_Click(object sender, EventArgs e)
         {
             string namn = txtbNamn.Text;
@@ -158,15 +105,15 @@ namespace PodcastAppG19
                 return;
             }
 
-            if (stringFrekvensen == "1 min")
+            if (stringFrekvensen.Contains("1 min"))
             {
                 frekvens = 1;
             }
-            else if (stringFrekvensen == "5 min")
+            else if (stringFrekvensen.Contains("5 min"))
             {
                 frekvens = 5;
             }
-            else if (stringFrekvensen == "10 min")
+            else if (stringFrekvensen.Contains("10 min"))
             {
                 frekvens = 10;
             }
@@ -203,7 +150,7 @@ namespace PodcastAppG19
             updateEpisodeList(feed);
 
             // Serialize the updated list of feeds
-            feed.FeedSerailizer(feeds);
+            feedcontoller.FeedSerailizer(feeds);
         }
 
         private void updateEpisodeList(Feed feed)
@@ -321,20 +268,41 @@ namespace PodcastAppG19
 
         }
 
-        /*private void UpdateFeedsList() 
+        private async void UpdateFeedsList() 
         {
             dataGridView1.Rows.Clear();
             int feedRow = 0;
-            foreach(Feed feed in feedcontoller.Getallapodcast())
+            feeds = feedcontoller.Getallapodcast();
+            foreach(Feed feed in feeds)
             {
+                //MessageBox.Show(feed.getEpisodeNumber() + feed.namn + feed.uppdateringsfrekvens + feed.category + feed.GetFeedTitleAsync());
                 dataGridView1.Rows.Add();
                 dataGridView1.Rows[feedRow].Cells[0].Value = feed.getEpisodeNumber();
                 dataGridView1.Rows[feedRow].Cells[1].Value = feed.namn;
-                dataGridView1.Rows[feedRow].Cells[2].Value = feed.getFeedTitle();
-                dataGridView1.Rows[feedRow].Cells[3].Value = feed.uppdateringsfrekvens;
-                dataGridView1.Rows[feedRow].Cells[4].Value = feed.category;
+                dataGridView1.Rows[feedRow].Cells[2].Value = await feed.GetFeedTitleAsync();
+                dataGridView1.Rows[feedRow].Cells[3].Value = updateFrequency(feed.uppdateringsfrekvens);
+                dataGridView1.Rows[feedRow].Cells[4].Value = feed.category.Title;
+                feedRow++;
             }
-        }*/
+        }
+
+        private string updateFrequency(int frekvens)
+        {
+            if (frekvens == 1)
+            {
+                return "1 min";
+            }
+            else if (frekvens == 5)
+            {
+                return "5 min";
+            }
+            else if (frekvens == 10)
+            {
+                return "10 min";
+            }
+
+            return "Hittades inte";
+        }
 
         private void UpdateContentforCatagory()
         {
@@ -581,7 +549,7 @@ namespace PodcastAppG19
         //Hämtar avsnitten från vald podcast
 
 
-        private async Task getEpisodesAsync(string feedTitle)
+        private async void getEpisodesAsync(string feedTitle)
         {
             foreach (Feed feed in feeds)
             {
@@ -653,33 +621,5 @@ namespace PodcastAppG19
                 MessageBox.Show("Välj en feed för att uppdatera kategorin.");
             }
         }
-
-        private void getNodes()
-        {
-            try
-            {
-                XDocument doc = XDocument.Load("Podcast");
-
-                foreach (var länk in doc.Descendants("title"))
-                {
-                    string enLänk = länk.Value;
-                    länkList.Add(enLänk);
-                }
-                foreach (var nyhet in länkList)
-                {
-                    dataGridView1.Rows.Add(nyhet);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);    
-            }
-        }
-
-
-
-
-
-
     }
 }

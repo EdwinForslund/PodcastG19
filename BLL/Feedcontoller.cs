@@ -12,11 +12,14 @@ namespace PodcastAppG19.BLL
     {
        
         public RepositoryFeed Feedrepos;
+
+        public NewSerailzer newSerailzer;
        
 
         public   Feedcontoller()
         {
            Feedrepos = new RepositoryFeed();
+            newSerailzer = new NewSerailzer();
         }
 
         public List<Feed> Getallapodcast()
@@ -59,7 +62,10 @@ namespace PodcastAppG19.BLL
             feed.namn = newFeedName;
         }
 
-
+        public void FeedSerailizer(List<Feed> feeds)
+        {
+            newSerailzer.SerializeFeedfodcast(feeds);
+        }
 
     }
 }
