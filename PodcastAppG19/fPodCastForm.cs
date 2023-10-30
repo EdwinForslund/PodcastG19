@@ -325,7 +325,6 @@ namespace PodcastAppG19
             }
 
             cbBKategori.SelectedIndex = 0;
-            cbBFilter.SelectedIndex = 0; // Set the default selected category for filtering
         }
 
         private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
