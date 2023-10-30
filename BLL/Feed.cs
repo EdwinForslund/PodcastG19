@@ -22,6 +22,7 @@ namespace PodcastAppG19.BLL
 
         public Category category { get; set; }
 
+        //public string title { get; set; }
 
         private RepositoryFeed repositoryFeed;
 
@@ -37,8 +38,6 @@ namespace PodcastAppG19.BLL
             uppdateringsfrekvens = frekvens;
             repositoryFeed = new RepositoryFeed();
             getEpisodes();
-
-
         }
 
         public Feed()
@@ -58,9 +57,11 @@ namespace PodcastAppG19.BLL
 
         public async Task<string> GetFeedTitleAsync()
         {
+            repositoryFeed = new RepositoryFeed();
+            se = new NewSerailzer();
             try
             {
-                string title = await repositoryFeed.GetFeedTitleAsync(this.url);
+                string title = await repositoryFeed.GetFeedTitleAsync(url);
                 return title;
             }
             catch (System.NullReferenceException ex)
@@ -84,10 +85,7 @@ namespace PodcastAppG19.BLL
         }
 
 
-        public void FeedSerailizer(List<Feed> feeds)
-        {
-            se.SerializeFeedfodcast(feeds);
-        }
+        
 
         public List<Episode> episodes { get; set; } = new List<Episode>();
 

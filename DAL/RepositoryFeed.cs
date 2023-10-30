@@ -121,24 +121,17 @@ namespace PodcastAppG19.DAL
 
             // Retrieve all data
             GetAll();
-
-
-
-
         }
-
-      
-
-
 
         public async Task<string> GetFeedTitleAsync(string url)
         {
             try
             {
-                if (url.EndsWith(".xml", StringComparison.OrdinalIgnoreCase))
-                {
+                if (url.Contains("feed", StringComparison.OrdinalIgnoreCase)
+                     || url.Contains("pod", StringComparison.OrdinalIgnoreCase)) 
+                { 
                     XDocument file = XDocument.Load(url);
-                    var firstTitle = await Task.Run(() => file.Descendants("title").First());
+                    var firstTitle = Task.Run(() => file.Descendants("title").First()).Result;
                     string title = firstTitle.Value;
                     return title;
                 }
@@ -166,13 +159,6 @@ namespace PodcastAppG19.DAL
                 return null;
             }
         }
-
-
-
-
-
-
-
 
 
         // Metod som retunerar siffran på antalet objekt där objekten är avnsitt LINQ-fråga
