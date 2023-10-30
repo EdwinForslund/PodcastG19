@@ -1,13 +1,1022 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfFeed xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Feed>
-    <namn>ex...Namn</namn>
-    <url>jkjkjk</url>
+    <namn>fsdf</namn>
+    <url>https://rss.podplaystudio.com/1477.xml</url>
     <uppdatera>0001-01-01T00:00:00</uppdatera>
     <uppdateringsfrekvens>0</uppdateringsfrekvens>
     <category>
       <Title>Sport</Title>
     </category>
-    <episodes />
+    <episodes>
+      <Episode>
+        <Namn>115. Bombmannen del 1 av 2: Sexskandalen</Namn>
+        <Beskrivning>I 30 år har jag jobbat med att rapportera om brott. Den här podden handlar inte om brottsoffer. Den handlar inte om förövare. Den här podden handlar om de som gör sitt jobb. De som ser till att den skyldige åker fast. De som ger brottsoffren upprättelse. Den här podden handlar om utredarna som löste fallen jag aldrig glömmer.
+Lyssna på Fallen jag aldrig glömmer med Hasse Aro innan alla andra - på torsdagar på Podplay.</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>114. "Min våldtäktsman är död"</Namn>
+        <Beskrivning>&lt;p&gt;1977. Lars Tingström anses vara av de värsta brottslingarna i svensk kriminalhistoria. Från att vara en civiliserad och skötsam medborgare&amp;nbsp;raseras hans liv och han&amp;nbsp;förvandlas till en brutal och hänsynslös rättshaverist.&amp;nbsp;&lt;/p&gt;&lt;p&gt;Han ställs inför rätta för att ha skickat en brevbomb till en man som lurat honom på pengar. Och under rättegången blir han utsatt för den mest uppseendeväckande rättsskandalen i svensk historia. Åklagaren har en sexuell affär med hans kvinna.&amp;nbsp;&lt;/p&gt;&lt;p&gt;Så när han släpps fri är det dags för hämnd.&amp;nbsp;&lt;/p&gt;&lt;p&gt;En serie bombattentat skakar Stockholm. Mot åklagaren, mot skattemyndigheten, mot kronofogden.&lt;br&gt;&lt;/p&gt;&lt;p&gt;Hasse Aro intervjuar advokaten och författaren Per E Samuelson som skrivit boken ”Bombmannens testamente”. Per berättar om Tingströms successiva förvandling, bombattentaten, rättsprocessen och den omtalade sexskandalen.&lt;br&gt;&lt;br&gt;Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar!&lt;/p&gt;</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>113. Hoppets hårstrå</Namn>
+        <Beskrivning>&lt;p&gt;Mars 2023. En taxiförare hittas hängd i ett träd efter att ha anmälts försvunnen i en vecka. Men det visar sig att det inte rör sig om ett självmord, utan  om en brutal hämndaktion. Fyra bröder och en flicka, samtliga tonåringar, häktas misstänkta på sannolika skäl för det uppmärksammade taximordet. Möjligen kommer det att få en ny benämning när domen faller. Hämndmordet.&lt;br&gt;&lt;br&gt;Hasse Aro intervjuar kommissarie och utredningsledare Magnus Rova om det speciella fallet, fynden, chatthistoriken mellan ungdomarna och motivet bakom det hela.&lt;br&gt;&lt;br&gt;Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar!&lt;/p&gt;</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>112. Mord i punkens namn</Namn>
+        <Beskrivning>&lt;p&gt;December 2002. Tidpunkten då 18-åriga Marua Ajouz anmäls försvunnen. Hennes huvud hittas kort därefter i en skog och 14 år senare återfinns hennes kropp på en byggarbetsplats. Misstankarna har hela tiden riktats mot Maruas ex-pojkvän, men bristande bevisning har aldrig kunnat leda till ett gripande. Kan polisen och DNA-teknikers listighet sätta ny fart på fallet genom bevisinsamlingen? Ett fall där hoppet nu står till en enda detalj - ett hårstrå.&lt;br&gt;&lt;br&gt;Hasse Aro intervjuar Karin Bogyo från Kalla Fall-gruppen om utredningen, fynden, förhören och hoppet om att kunna utvinna DNA från hårstrået. &lt;br&gt;&lt;br&gt;Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar!&lt;/p&gt;</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>111. Jackmordet i Ånge</Namn>
+        <Beskrivning>&lt;p&gt;Juli 2022. Två män, båda vid namn Mattias, blir snabbt vänner efter att dom inser att båda gillar samma musik och den bisarra och kontroversiella punkartisten GG Allin som var känd för sina extrema scenframträdanden. &lt;br&gt;&lt;br&gt;Men den nyfunna vänskapen skulle snabbt få en mörkare vändning. Den yngre Mattias mördar sin nya vän brutalt och lämnar liket på ett sätt som förbryllar utredarna. Mordplatsen verkar nämligen vara arrangerad och ett försök till att efterlikna GG Allins obscena likvaka.&lt;/p&gt;&lt;p&gt;Hasse Aro intervjuar åklagare Linda Wiking om det uppseendeväckande fallet, om den arrangerade mordplatsen och frustrationen som efterföljde i samband med rättegången.&lt;/p&gt;&lt;p&gt;Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar!&lt;/p&gt;</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>110. Mordet på Wisby Hotell</Namn>
+        <Beskrivning>&lt;p&gt;December 2019. Från början var motivet att råna 20-åringen på hans jacka – istället mördas han hänsynslöst under tortyrlika förhållanden. Fyra personer misstänks, varav en håller sig gömd i Libanon. Det ska dock inte dröja länge förrän detaljerade, obehagliga och förnedrande texter börjar cirkulera på chattforumet Flashback - texter riktade mot offret, polisen och Hasse Aro. Vem är det som döljer sig bakom användarnamnet egentligen?&lt;br&gt;&lt;br&gt;Hasse Aro intervjuar ansvarig utredare Mats Jonsson om upprinnelsen till mordet, efterföljderna och hoten som cirkulerade på chattforumet.&lt;br&gt;&lt;br&gt;Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar!&lt;/p&gt;</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>109. I korruptionens grepp</Namn>
+        <Beskrivning>&lt;p&gt;Ny säsong - nya fall. Hasse Aro är äntligen tillbaka med en av Sveriges största krimpoddar. &lt;/p&gt;&lt;p&gt;Säsongspremiär på Podplay 28 september. &lt;/p&gt;&lt;p&gt;Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar.&lt;/p&gt;</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>108. Bosses första fall</Namn>
+        <Beskrivning>December 1996. En festlig kväll med julbord och dans lider mot sitt slut på Wisby Hotell på Gotland. I hotellets reception har Christina Olofsson precis gått på sitt arbetspass som nattportier. Vad ingen visste då var att detta skulle bli Christinas sista nattskift.
+
+Hasse Aro samarbetar med podden Kalla Fall med Urban Gärdek och Tobias von Braun om ett av Gotlands mest uppmärksammade fall.
+
+Podden "Kalla Fall" hittar du på Podplay.se eller i Podplay-appen. 
+https://www.podplay.com/sv-se/podcasts/kalla-fall-942313
+
+Kalla Falls Instagram: @kalla_fall
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar! </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>107. Smed-Olle och Sumpans A-lag</Namn>
+        <Beskrivning>2014. Bosse hamnar i ett land där polisens metoder ofta är olagliga, brottslingar köper sig fria och kopplingar till kriminella gäng går högt upp i parlamenten. Bosse får vara med om ett fall som går över alla gränser när det gäller ondska, falskhet, likgiltighet och girighet. 
+
+Hasse Aro intervjuar fd kommissarie Bosse "22-0" Åström om poliser i korruptionens grepp, ett rättssystem i kollaps och när människans inre godhet får en avgörande roll.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar! </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>106. Elitsimmerskans sista dopp</Namn>
+        <Beskrivning>1984. En åländsk man blir kallblodigt mördad i sitt eget hem. Fingeravtryck och skoavtryck hittas men utan att kunna jämföras med någon. Till en början såg fallet ut att förbli olöst. Tills två nyckelvittnen dyker upp i utredningen. Men hur mycket vet vittnena om mordet egentligen?
+
+Hasse Aro intervjuar fd kommissarie Bosse "22-0" Åström om det uppseendeväckande mordet, om bevisen som hittas på mordplatsen och den chockerade vändningen.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar! </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>105. Poliserna som överlevde</Namn>
+        <Beskrivning>1990. Smed-Olle var en ganska välkänd person i Sundbyberg. Inte minst för att han var en av dom som satt och söp på bänkarna i centrum. Dagarna såg ofta väldigt lika ut i hans liv. Men inte den här dagen.
+
+Hasse Aro intervjuar fd kommissarie Bosse "22-0" Åström om de solklara bevisen, men hur det gällde att tänka utanför boxen i detta fall. 
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar! </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>104. Sveriges rikaste man och styckmördare?</Namn>
+        <Beskrivning>1993. Det började med ett försvinnande men kom snart att handla om mord, internationell penningtvätt och knarkaffärer inom det forna Sovjetunionen.
+
+Hasse Aro intervjuar fd kommissarie Bosse "22-0" Åström om när Solnapolisen fick en anmälan avseende en försvunnen person - men som senare blev upprinnelsen till något mycket större än så.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar! </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>103. Styckmordet alla glömt</Namn>
+        <Beskrivning>Hasse och Bosse är tillbaka med en ny sommarspecial! 
+Tillsammans med fd kriminalkommissarie Bosse Åström, som också går under smeknamnet “22-0” eftersom han klarade upp 22 av 22 möjliga mord i sitt distrikt, tar dom upp fallen som Bosse aldrig glömmer. 
+
+Premiär: 29 juni
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar! </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>102. Mordet på Tove del 2: Väninnornas berättelser</Namn>
+        <Beskrivning>Mars 1993. Det kunde ha blivit ett dubbelmord där två poliser skjutits ihjäl. Hör den häpnadsväckande berättelsen om när de modiga poliserna Tomas Eriksson och Annika Svensson möter två rånare i ett pågående postrån och hamnar mitt i ett hänsynslöst skottdrama.
+
+Hasse Aro intervjuar poliserna som för första gången berättar om rånet, skottlossningen, gripandet och de spår som satt sig i dom båda efter en minst sagt dramatisk händelse i bägges liv.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar!</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>101. Mordet på Tove del 1 av 2: Utredarnas utmaning</Namn>
+        <Beskrivning>Juli 1996. Polisen får ett fax från en person som sedan tidigare är känd för ekonomisk brottslighet. Men faxet handlar inte om det utan istället om att den 38-åriga Maximilian “Greven” Kartachev, beskriven då som Sveriges rikaste man, har mördat sin fru Marita Pentinmäki. Hur skulle polisen kunna veta att det som stod var sant? Hade ett mord skett överhuvudtaget? En massiv och omtumlande utredning drar igång.
+
+Hasse Aro minns tillbaka på samtalet med utredaren Sonny Björk om den kriminaltekniskt utmanande utredningen och den omdiskuterade rättegången mot Maximilian Kartachev.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar!</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>100. Rånarligan och den oväntade vändningen</Namn>
+        <Beskrivning>April 2017. Vi har alla våra berättelser och minnen från dagen då terrorattacken på Drottninggatan i Stockholm inträffade. Men en sak kommer ingen av oss ihåg. Samma dag försvinner en kvinna, vars kropp ligger gömd i familjens källare, i väntan på att bli styckad. Ett av de mer bisarra fallen som Hasse hört talas om under sitt yrkesliv.
+
+Hasse Aro intervjuar utredare Håkan Ahlgren om det mystiska försvinnandet, det stormiga förhållandet och ett fullkomligt häpnadsväckande familjeöde.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar!</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>99. Tonårsmörderskan i Stuvkällaren</Namn>
+        <Beskrivning>Lyssna på fortsättningen om mordet på Tove i Vetlanda. 
+
+Hasse Aro intervjuar Aftonbladets krönikör och krimreporter Oisín Cantwell om rättegången, den mediala uppståndelsen och domarna. Jenny Yourstone, doktor i psykologi har forskat om dödligt våld utfört av kvinnor och ger sin analys av de dömda unga kvinnorna.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar!</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>98. Mordet på Årstabron del 2: FBI:s hemliga projekt</Namn>
+        <Beskrivning>Oktober 2022. 21-åriga Tove från Vetlanda anmäls försvunnen efter en till synes bråkig utekväll med två vänner. Drygt två veckor senare hittas hon död i ett skogsområde. Misstankar riktas tidigt i utredningen mot vännerna, en 20-årig och en 18-årig kvinna. Utredarna förbryllas av de unga kvinnornas tystnad till dess de hittar ett nytt tillvägagångssätt att komma vidare i utredningen.
+
+Hasse Aro intervjuar utredaren Rickard Finndahl om händelsen, misstankarna och förhörstaktiken som ledde till att utredningen kunde ta ny fart.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar!</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>97. Mordet på Årstabron del 1 av 2: Den bästa kompisens svek</Namn>
+        <Beskrivning>November 2021. En rånarliga tar fram en detaljerad plan för att råna en förmögen affärsman i hans hem. Till hjälp har dom även placerat en insider i mannens hem. Men det ligan inte vet är att polisen följer varenda steg dom tar.
+
+Hasse intervjuar spaningsledarna Mats och Milosz om ligan, telefonavlyssningarna och andra hemliga tvångsmedel som ledde till en noggrant planerad polisinsats.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar!</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>96. Bunkerläkaren</Namn>
+        <Beskrivning>Oktober 2005. En 36-årig kvinna hittas mördad i tygbutiken Stuvkällaren i centrala Göteborg. Hon har utsatts för ett besinningslöst våld. Allt tydde på att mordutredningen skulle bli snabb och effektiv. Trots vittnesuppgifter, DNA-spåret och flera misstänkta så gick tiden. Mordet förblev olöst i två decennier - men nu är gåtan löst.
+
+Hasse Aro intervjuar fd rotelchef Sven Alhbin om det bestialiska mordet, inslaget på Efterlyst och om preskriptionstiden efter den långa utredningen.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar!</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>95. Julspecial: Nu tändas åter bocken</Namn>
+        <Beskrivning>Lyssna på fortsättningen om mordet på Årstabron. 
+
+Hasse Aro intervjuar återigen åklagare Lisa dos Santos om FBI:s inblandning i fallet och om den stökiga rättegången.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar!</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>94. Kungen och Prinsen del 2: Attacken mot rättssystemet</Namn>
+        <Beskrivning>September 2020. En man hittas mördad med flera skott i ryggen och i huvudet på Årstabron i södra Stockholm. Det rör sig inte bara om en hämndaktion, utan också om ett svek. 
+
+Hasse Aro intervjuar åklagare Lisa dos Santos om mordutredningen, den ovanliga brottsplatsen och om en särskild chattjänst som användes för att planera dådet.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar!</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>93. Kungen och Prinsen del 1 av 2: Gängens favoritadvokater</Namn>
+        <Beskrivning>September 2015. Han har planerat det i flera år och nu är tiden inne. Läkaren Martin Trenneborg kidnappar en kvinna och låser in henne i en egenbyggd bunker långt in i Smålands skogar.
+
+Hasse Aro intervjuar chefsåklagare Peter Claeson om fallet och om hur det var att besöka bunkern.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar!</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>92. Arlandarånet: Historien som aldrig tog slut</Namn>
+        <Beskrivning>Ny säsong - nya fall. Hasse Aro är äntligen tillbaka med en av Sveriges största krimpoddar. Säsongspremiär på Podplay 23 mars. Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar.</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>91. Handboll, knarkaffärer och kidnappning</Namn>
+        <Beskrivning>Det har hållit på i 56 år. Och kommer förmodligen leva länge än. Hasse pratar om julbocken i Gävle. Den som har blivit världskänd – för att den brinner.
+
+Hasse Aro intervjuar presstalesman Jonas Eronen och vice chefsåklagare Micael Dahlberg om bränderna, traditionen och konsekvenserna.
+
+God jul och god fortsättning önskar Hasse och redaktionen.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar!</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>90. Avrättningen i Tillinge</Namn>
+        <Beskrivning>Lyssna på fortsättningen av berättelsen om de två försvarsadvokaterna med dold agenda, Kungen och Prinsen. Kriminaliteten visar sig inte längre vara utanför rättssalarna, utan innanför.
+
+Hasse Aro fortsätter att intervjua spaningsledare Lasse Bröms, analytikern David Nyberg och finansiella analytikern Tobias Qvist om attacken mot rättssystemet, gripandet och domarna.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar!</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>89. Morden i Malexander del 2: Polisjakten som skakade Sverige</Namn>
+        <Beskrivning>2020. Två av landets mest anlitade advokater visar sig ha mörka sidor med en dold agenda. De bryter inte bara sekretess. En av dom går betydligt längre än så. 
+
+Hasse Aro intervjuar spaningsledare Lasse Bröms, analytikern David Nyberg och finansiella analytikern Tobias Qvist om utredningen, krypterade chattar och kampen mot klockan. 
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar!</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>88. Morden i Malexander del 1 av 2: Polisen som överlevde</Namn>
+        <Beskrivning>Juli 2002. Det spektakulära rånet på Arlanda blev aldrig uppklarat. Hör berättelsen om det största rånet i svensk kriminalhistoria.
+
+Hasse Aro minns tillbaka intervjun med Marianne Öman och hennes redogörelse om den långdragna utredningen som aldrig tog slut.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar!</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>87. Klotterpapporna</Namn>
+        <Beskrivning>2021. Utåt sett var han en passionerad handbollstränare och en omtyckt person av både barn och vuxna. Tills en dag då polisen upptäcker att han lever ett dubbelliv. Det är tydligen inte bara handboll han ägnar sig åt.
+
+Hasse Aro intervjuar Jacob van Roij om spaningarna som kräver tålamod och noggrannhet för att kunna knäcka ett knarknätverk.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar! </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>86. Styckmordet i Boden</Namn>
+        <Beskrivning>Augusti 2021. Den lilla byn Tillinge utanför Västerås är minst sagt idyllisk med några hus, gårdar och en vacker kyrka. Tills en dag då en förbipasserande kvinna gör en fasansfull upptäckt och ser en ung man skjuten i huvudet - mitt på en åker. Polis tillkallas till platsen och tidigt konstateras det vara ett gängrelaterat mord. 
+
+Hasse Aro intervjuar polisinspektör Petra Blomqvist om fynden på brottsplatsen, svårigheterna i fallet och hur pusselbitarna noggrant måste läggas ihop när det gäller gängrelaterade mord. 
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar! </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>85. Sveriges första incel</Namn>
+        <Beskrivning>Lyssna på den dramatiska fortsättningen av Kenneths berättelse om händelseförloppet kring en av de mest uppmärksammade fallen i svensk kriminalhistoria.
+
+Hasse Aro intervjuar den överlevande polisen Kenneth Eklund om utryckningen, biljakten och de känslokalla avrättningarna på poliskollegorna i Malexander.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar! </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>84. Politikern som styckade</Namn>
+        <Beskrivning>28 maj 1999. Det är en lugn och stilla fredag i den lilla tätorten Kisa i Östergötland. Polisen Kenneth Eklund är nyligen hemkommen efter semestern och har precis gått klart sin polisrond inför helgen. Plötsligt utlöses banklarmet på Östgöta Enskilda Bank och Kenneth tar på sig sin skyddsväst och beger sig mot platsen. Detta var bara början på fallet som skakade en hel nation.
+
+Hasse Aro intervjuar den överlevande polisen Kenneth Eklund om utryckningen, biljakten och det hänsynslösa skottdramat i Malexander.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar! </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>83. Den halshuggna flickan och fallet som Bosse inte löste</Namn>
+        <Beskrivning>Hösten 2019. Det här avsnittet handlar inte om vilket småklotter som helst, utan om den största klotterutredningen av sitt slag i Sverige. Gärningsmän som inte alls stämmer överens med den bild många har av klottrare.
+
+Hasse Aro intervjuar utredaren av idrottsrelaterad brottslighet, Tomas Ivering, om spaningarna och dubbelliven gärningsmännen levde och om straffen de dyrt fick betala.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar! </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>82. Efterlysts första mordfall</Namn>
+        <Beskrivning>Maj 2013. En ung kvinna försvinner. Polisen vet inte vart hon tagit vägen, vad som hänt henne och om hon lever. Redan innan hennes öde är känt och innan polisen vet om hon är mördad eller inte har de två misstänkta. Två personer, varav en av dom med stor sannolikhet är skyldig.
+
+Hasse Aro intervjuar utredningsledare Lotta Daniels om fallet som kom att bli det största kriminalfallet i Norrbottens historia.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar! </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>81. Konspirationen knäckte mordutredningen</Namn>
+        <Beskrivning>November 1999. En ung kvinna hittas mördad i sin lägenhet. Det är ett oerhört bestialiskt mord. Hennes huvud har krosskador och hon är knivhuggen över hela kroppen. Detta kom att bli det fall som Hasse funderat mest över. Polisen fick nämligen inblick i exakt hur mördaren tänkte. En detaljerad beskrivning av hur gärningsmannen förvandlas från en osäker och sexuellt frustrerad person till att bli en mördare.
+
+Hasse Aro berättar om det bestialiska mordet och minns intervjun med den ansvarige utredaren Peter Ståhl. Hasse ringer även upp psykiatrikern och författaren Stefan Krakowski som släppt en bok om män som lever i ofrivilligt celibat, så kallade incels.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar! </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>80. 48 timmar</Namn>
+        <Beskrivning>September 2021. Några personer vid Karlbergskanalen i Stockholm fiskar upp en mystisk påse ur vattnet. Det dom fick se blev en chock. I påsen ligger ett avhugget huvud. Ett huvud genomborrat av ett skotthål. En mordutredning drar igång som leder till ett hårresande fall kring en politiker och ett styckmord.
+
+Hasse Aro intervjuar polisinspektören Ulf Höglund och utredare Yasemin Özkan om utredningen, fynden och de chockerande uppgifterna i fallet. 
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar! </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>79. Mordet på Joksovic</Namn>
+        <Beskrivning>Hasse Aro bjuder in Content Director (Bauer Media) Anna Rastner och pratar om arbetet bakom podden, vad du som lyssnare har att förvänta dig av den kommande säsongen, samt svarar på lyssnarfrågor i livechatten.
+
+En perfekt mjukstart inför den kommande säsongen med start 29 september. Du hittar Fallen jag aldrig glömmer på Podplay.se eller i Podplay-appen.</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>78. Kollegemordet i Trollhättan</Namn>
+        <Beskrivning>Ny säsong - nya fall. Hasse Aro är äntligen tillbaka med en av Sveriges största krimpoddar. Säsongspremiär på Podplay den 29 september. Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar.</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>77. Den hämndlystne mordbrännaren del 2: Den andra attacken</Namn>
+        <Beskrivning>Sommarspecial - avsnitt 5 av 5.
+
+Säsongsfinal. Hasse och Bosse pratar om två fall som förföljer honom än idag. Ett brutalt fall som knäckte Bosse i bilen hem, men även det fall som Bosse aldrig löste.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar! </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>76. Den hämndlystne mordbrännaren del 1 av 2: Eld utan motiv</Namn>
+        <Beskrivning>Sommarspecial - avsnitt 4 av 5.
+
+1991. Timo Mäkinen, känd inom polisen sedan tidigare försvinner spårlöst. Senare hittas han avrättad i en fåtölj med ett skott i huvudet. Frågan är när skedde mordet? Av vem? Och varför? Bosse och hans utredare jobbar mot klockan med dörrknackningar och vittnesförhör tills TV-programmet Efterlyst kommer på tal. Kan det ge något?
+
+Hasse Aro samtalar med Bosse ”22-0” Åström om mordutredningen där polisen valde att ta hjälp av TV-programmet Efterlyst.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar! </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>75. Styckmordet vid Drottningholm</Namn>
+        <Beskrivning>Sommarspecial - avsnitt 3 av 5.
+
+22 juni 1985. En ung student hittas mördad på ett studentboende i Solna. Fyra mystiska detaljer sticker ut ganska snart. Brottsplatsen verkar nämligen vara riggad. Kan motivet bakom mordet möjligen vara politiskt?
+
+Hasse Aro samtalar med Bosse ”22-0” Åström om den frustrerande utredningen som fick honom att se rött. 
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar! </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>74. Julmordet i Katrineholm</Namn>
+        <Beskrivning>Sommarspecial - avsnitt 2 av 5.
+
+4 februari 1993. 48 timmar. Det är vad det tog för Bosse och hans utredare att klara upp det brutala fall som inträffade i ett tjänsterum på Karolinska Sjukhuset i Solna. Ett fall som kom att sätta hela Bosses organisation på prov.
+
+Hasse Aro samtalar med kriminalkommissarie Bosse “22-0" Åström om motivet bakom mordet och de 48 kritiska timmarna utredarna hade på sig för att lösa fallet. 
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar! </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>73. Den nya Arbogakvinnan</Namn>
+        <Beskrivning>Sommarspecial - avsnitt 1 av 5.
+
+4 februari 1998. Dragan Joksovic, eller Jokso som han också kallas, parkerar sin flådiga bil utanför Solvalla Travbana där han är en känd spelare. Två meter lång, vältränad och mån om sitt yttre går han in på travbanan. Det han inte vet då är att där inne väntar någon som skjuter honom till döds med fyra skott. Denna brutala dödsskjutning kom att bli upprinnelsen och början på slutet för den s k “Juggemaffian”.
+
+Hasse Aro samtalar med kriminalkommissarie Bosse “22-0" Åström som snabbt fick ärendet på sitt bord. 
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar! </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>72. Infiltratören i pedofilnätverket</Namn>
+        <Beskrivning>Hasse tillbaka med en sommarspecial av Fallen jag aldrig glömmer. Med sig har han kriminalkommissarie Bosse Åström, som också går under smeknamnet “22-0” eftersom han klarade upp 22 av 22 möjliga mord i sitt distrikt. I hela 5 veckor i sommar får vi höra Hasse och Bosse prata om fallen som främst Bosse aldrig glömmer.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar! </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>71. Styckmordet i Karlskrona</Namn>
+        <Beskrivning>Hasse tipsar om den nya och grävande podden Kalla Fall som nyligen fått ett uppsving i media efter nya spännande upptäckter. 
+
+Du hittar Kalla Fall här på Podplay.se eller i appen Podplay. </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>70. Superkommissarien och likhunden</Namn>
+        <Beskrivning>September 2020. Två personliga assistenter befinner sig hos en brukare i Trollhättan. En av dem är "Johan" som har bakjour och sover i lägenhetens sovrum och den andre är Erik som är vaken och har det nattliga ansvaret. Brukaren är sängbunden och behöver ständig tillsyn dygnet runt. Tidigt på morgonen vid skiftbytet påträffas Erik blodig och livlös av en annan kollega. Vem kan ha mördat Erik och varför?
+
+Hasse Aro intervjuar förhörsledaren och handläggaren Anette Timm Preinfalk om de första åtgärderna, misstankarna och vändningarna i fallet.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar! </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>69. Bombmannen från Tumba</Namn>
+        <Beskrivning>Augusti 2018. Ytterligare en brand uppstår i ett flerfamiljshus i Rotebro och en rörelsehindrad kvinna är nära att mista livet. De första poliserna på plats avfärdar branden som en olycka, men gruppchefen Jacob van Rooij börjar se en koppling mellan de två bränderna. Mannen som tidigare betett sig underligt dyker återigen upp i utredningen.
+
+Hasse Aro fortsätter att intervjua Jacob van Rooij om förhören med mannen och motivet bakom de förödande bränderna.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar! </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>68. Mordet på Lena Wesström</Namn>
+        <Beskrivning>Juli 2018. Tidigt på morgonen får 112 ett samtal om att ett hus i en radhuslänga står i full brand. Lite längre bort från brandplatsen sitter en man i en bil och visar stort intresse för det som händer. Polisen sätter ihop flertalet pusselbitar och misstankarna mot mannen i bilen stärks. 
+
+Hasse Aro intervjuar Jacob van Rooij, gruppchef för grova brott i polisområde Nord, om utredningen, hemliga tvångsmedel och processen för att klargöra att det faktiskt var en mordbrand som polisen fått på sitt bord.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar! </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>67. Chefsmordet i Jönköping</Namn>
+        <Beskrivning>September 1992.  En fritidsfiskare är ute med sin båt på Mälaren och passerar strax utanför Drottningholm. Han märker att en flock med fiskmåsar tycks ha hittat något intressant i vattnet. När båten närmar sig ser han vad det är som väckt deras intresse. Ett underben från en människa. Polisen anländer snabbt till platsen och ett omfattande sökarbete inleds. 
+
+Hasse Aro intervjuar sin fd kollega Stefan Wahlberg (som då jobbade på Expressen) om fallet han aldrig glömmer.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar! </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>66. Nytorgsmannen</Namn>
+        <Beskrivning>December 2020. En övergiven bil hittas i ett dike utanför Katrineholm. I bagageluckan ligger en död man i fosterställning. Mannen är knivhuggen flera gånger och alla hugg har skett på och vid hans könsorgan. Vem eller vilka ligger bakom det bestialiska mordet?
+
+Hasse Aro intervjuar åklagare Klas Engdahl som fick det uppseendeväckande fallet på sitt bord och jobbet att driva utredningen framåt.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar!</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>65. Mannen med halvt ansikte</Namn>
+        <Beskrivning>December 2018. Carina beskrivs som en manipulativ, stundtals elak och kontrollerande person. Hon har flera relationer samtidigt och utnyttjar sina män ekonomiskt. När Carinas sambo, den 50-årige Tommy från Kolsva, försvinner spårlöst uppdagas en rad märkliga händelser. Polisen söker förgäves Carina i flera dagar tills hon en dag infinner sig självmant på polisstationen i Västerås. Hennes egna berättelse om försvinnandet håller inte ihop. Vad kan ha hänt Tommy?
+
+Hasse Aro intervjuar utredarna Lars Franzén och Thomas Tellebro om polisutredningen, vändningarna och likheterna med den ökända Arbogakvinnan. 
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar!</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>64. Mordet på Malin del 2 av 2: Sanningens fläck</Namn>
+        <Beskrivning>Augusti 2020. En pappa sitter i soffan tillsammans med sin son och en okänd man. Planen är att männen ska förgripa sig på pojken. Vad pappan inte känner till är att mannen bredvid honom inte är en pedofil utan en polis som lyckats infiltrera det pedofilnätverk som pappan tillhör.
+
+Hasse Aro intervjuar kammaråklagare Emelie Källfelt om utredningen, de tuffa besluten och den riskfyllda infiltrationen av nätverket. 
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar!</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>63. Mordet på Malin del 1 av 2: Den kraschade utredningen</Namn>
+        <Beskrivning>Juli 2020. 21-årige Anatoliy anmäler till polisen att hans far, Mikael Pettersson, är försvunnen. Karlskronapolisens största sökinsats inleds och tidigt misstänker polisen att något inte står rätt till. Misstankarna riktas mot sonen Anatoily och hans sambo Leonard.
+
+Hasse Aro intervjuar utredaren Helen Svedberg om sökinsatsen och förhören angående en planerad bestialisk gärning, som Karlskrona sent kommer att glömma.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar!</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>62. Mördarkvinnorna i sommaridyllen</Namn>
+        <Beskrivning>Ny säsong - nya fall. Hasse Aro är äntligen tillbaka med en av Sveriges största krimpoddar. Säsongspremiär på Podplay den 24 mars. Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar!</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>61. Rågsvedsmannen</Namn>
+        <Beskrivning>Hösten 1994. I oktober kommer en kvinna in på polisstationen. Hon har en väska med kläder och förnödenheter till sin man, Elving Faltin. Han är väl känd hos polisen sedan tidigare och hon tror att maken befinner sig i en häktningscell. Det gör han inte. Han är spårlöst försvunnen. Var finns han? Ett vittne träder fram och efter ett gediget polisarbete blir en sommarstuga och sjön Hjälmaren högintressant i utredningen. 
+
+Hasse Aro intervjuar Bo Åström, en av Sveriges främsta utredare med smeknamnet "22-0" som är antalet mord han löst på raken. Bosse berättar om spaningsarbetet, sökinsatserna och fokuset på sjön Hjälmaren där en likhund används i en mordutredning för första gången i Sverige.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar!</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>60. The Honeymoon Murder</Namn>
+        <Beskrivning>December 2019. Polisen i Tumba knackar på dörren för att omhänderta en ung man med missbruksproblem. En okänd man öppnar, nämligen 59-åriga Jörgen. Polisen får syn på en machete som hänger i hallen och bestämmer sig snabbt för att agera. De hittar kemikalier och manualer för tillverkning av bomber och en "dödslista" över ett hundratal personer och diverse olika platser i Stockholm som är tilltänkta mål för bombattentat. Det här är historien om gripandet av Tumbamannen - mannen med planer och uppsåt som kunde ha blivit Sveriges mest omfattande terrordåd någonsin.
+
+Hasse Aro intervjuar den fd polisen och silvervargen Curt Anhlund om gripandet och förhören av den sk Bombmannen från Tumba.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar!</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>59. Den djävulska predikanten</Namn>
+        <Beskrivning>15 maj 2018. I det lugna villaområdet i Hjärsta i Örebro väcks dom boende där av hjärtskärande, panikslagna kvinnoskrik och larmar polisen. Efter fyra dagars sökande hittas en kropp i skogen som visar sig vara Lena Wesström. Misstankarna riktas mot en man som Lena haft en relation med, 47-årige Stefan. Han friades i tingsrätten men dömdes sedan i hovrätten till ett straff som Stefan aldrig skulle komma att avtjäna. 
+
+Hasse Aro intervjuar utredaren Lisa Rehn om det uppmärksammade mordet och efterföljderna.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar!</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>58. Extrapappan och Silvervargarna</Namn>
+        <Beskrivning>22 april 2021. En kvinna ringer polisen i Jönköping och anmäler att hennes man är försvunnen. Hon har inte hört något från honom sedan morgonen dagen innan. Och det är verkligen inte likt honom. Dagen efter hittas han död i ett skogsområde i Dumme mosse utanför Jönköping. En av mannens kollegor blir snabbt misstänkt i utredningen. Har mordet skett med eller utan uppsåt? Är alla kapabla till att mörda?
+
+Hasse Aro intervjuar åklagare Lisa Hedberg om dådet i Dumme mosse och rättsprocessen kring ärendet.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar!</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>57. Den juridiska mordbeställaren - del 2</Namn>
+        <Beskrivning>November 2020. Till synes var han en charmig, utåtriktad man som bodde flott i ett eftertraktat kulturhus på Södermalm i Stockholm. Men bakom fasaden gömde sig ett becksvart mörker. I sin lägenhet vid Nytorget drogade han ner kvinnor. Kvinnor som han våldtog och förgrep sig på. Det sägs att han är den värsta våldtäktsmannen i svensk kriminalhistoria, den så kallade Nytorgsmannen som varit åtalad för brott under 26 åtalspunkter. Nu har domen fallit.
+
+Hasse Aro intervjuar civilutredaren Rima Almadeh om polisens arbete för att kartlägga och hitta de kvinnor som hamnade i Nytorgsmannen våld.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar!</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>56. Den juridiska mordbeställaren - del 1 av 2</Namn>
+        <Beskrivning>11 april 2012. Han blev känd i Sverige genom en uppmärksammad grannfejd och efter att ha överlevt en yxattack som deformerade halva hans ansikte. Det skulle dröja flera år tills det skrevs i tidningarna om Esa Rano igen. Han hittas i sitt hem avrättad av ett pistolskott på nära håll. Vem kan ha utfört mordet? Det är nu upp till polisen att gå igenom Esa Ranos kontaktnät som visade sig bestå av fler fiender än vänner.
+
+Hasse Aro intervjuar Lotta Daniels som ledde mordutredningen.
+
+Tack till Kalix Folkhögskola:
+https://www.kalixfolkhogskola.se/
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar!</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>55. Vårbynätverket</Namn>
+        <Beskrivning>31 maj 2021. Mordet på Malin 1996 har fått en ny vändning. Normalt preskriberas inte mord i Sverige, men det finns ett undantag. Allt talade för att DNA-profilen var oanvändbar. En lång juridisk process med överraskande vändningar har däremot gjort fallet aktuellt igen. Hur tungt är bevisläget egentligen?
+
+Hasse Aro intervjuar åklagare Mats Svensson om de oväntade och helt avgörande vändningarna i fallet.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar!</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>54. Dalslandspedofilen - del 2</Namn>
+        <Beskrivning>23 november 1996. 16-åriga Malin Lindström sätter sig på bussen från Örnsköldsvik till Husum för att åka till en kompis och plugga. Vittnen såg henne kliva på bussen, men ingen såg när hon klev av. Hon var spårlöst försvunnen. Redan fem dagar efter försvinnandet vänder sig polisen till Efterlyst för att få in tips från allmänheten. Dagarna blev till månader. I maj 1997 hittas Malin mördad i en snöig skogsdunge, bunden och knivhuggen. En brottsutredning full av avskyvärda detaljer inleds. Misstankarna riktas mot en ung man som tros ligga bakom mordet. En juridisk process startar där ena domstolen fäller, den andra friar. Och nu, 25 år senare, är processen igång igen.
+
+Hasse Aro intervjuar åklagare Mats Svensson som återupptagit fallet. Ljudupptagningarna i avsnittet är från Efterlyst.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar!</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>53. Dalslandspedofilen - del 1 av 2</Namn>
+        <Beskrivning>26 december 2020. Under annandag jul på det idylliska Åland får utredare Tommy Thörnroos ett samtal från sina kollegor. En man har anträffats med svåra brännskador i ett villaområde. Mannen lyckas berätta för polisen hur det har gått till innan han på sjukhuset senare avlider av sina skador. Det visar sig att branden är anlagd och noggrant planerad. Misstankarna riktas så småningom mot någon i hans närhet.
+
+Hasse Aro intervjuar kommissarie Tommy Thörnroos på Ålands polismyndighet om det uppmärksammade mordet på Åland.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar!</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>52. Miljardären och butlern</Namn>
+        <Beskrivning>7 juli 2019. En överfallsvåldtäkt sker i södra Stockholm. En journalist ser en koppling av tidigare överfall med liknande tillvägagångssätt, geografiskt och tidsmässigt nära varandra och kontaktar polisen. Kan det röra sig om en serievåldtäktsman? En jakt på förövaren med hjälp av kameraövervakning blir en stor och viktig del i utredningen. Hinner de gripa honom innan han slår till igen?
+
+Hasse Aro intervjuar Veronika Åström, journalist, Åsa Hansson, fd gruppchef på grova brott i polisområde Syd och civilutredaren Camilla Erixon om jakten på gärningsmannen som i svensk media kallas för Rågsvedsmannen.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar!</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>51. Dubbelmordet i Vallentuna</Namn>
+        <Beskrivning>30 november 2010. Efter ett spektakulärt giftermål i Indien blir Anni Dewani överraskad av sin nyblivna make Shrien Dewani med en smekmånad i Kapstaden i Sydafrika. Under en suspekt taxiresa utsätts paret för en bilkapning. Maken Shrien blir utslängd från taxin medan Anni lämnas kvar i bilen. Hon hittas senare skjuten i huvudet, mördad. Vad hände egentligen? Var det ett rånförsök eller ett välplanerat mord?
+
+Hasse Aro träffar Annis syster Ami Denborg som berättar om rättegången, medieuppståndelsen och vad hon tror är orsaken till hennes 
+systers död i det uppmärksammade smekmånadsmordet. 
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar!</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>50. Jakten på pedofilerna</Namn>
+        <Beskrivning>28 juni 2020. 30-åriga Klara är på Skavlötens badplats i Täby tillsammans med många andra. Vid 18-tiden börjar hon gå hemåt. En mystisk man med bar överkropp, solglasögon och stickad toppluva får henne att reagera. Plötsligt överfaller mannen Klara och våldtar henne. Detta är ett mycket allvarligt fall som får stor uppmärksamhet i Efterlyst och i tidningar. Polisen börjar ana oråd att det kan röra sig om en serievåldtäktsman. Misstankarna riktas mot en familjefar med bakgrund i kyrkan. En man som under en tid känt sig övergiven av Gud och istället vänt sig till djävulen.
+
+Hasse Aro träffar Niklas Kraft, gruppchef för sexualbrottsgruppen Nord om jakten på serievåldtäktsmannen.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar!</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>49. Det omvända Stockholmssyndromet</Namn>
+        <Beskrivning>Sommaren 2006. “Sara” har precis fyllt 12 år och befinner sig hemma hos sin mammas nära vän “Manuel”. Sara har känt honom i hela sitt liv, men nu har han blivit förändrad och gör opassande närmanden mot henne. Den här dagen blir början på en serie övergrepp som kommer att pågå i flera år. Av rädsla väljer Sara att hålla detta för sig själv tills det till slut brister för henne i  ett samtal med en psykolog. Sara blir stärkt av samtalet och polisanmäler övergreppen . Ärendet hamnar hos Silvervargarna, en särskild utredningsgrupp inom polisen med erfarna, pensionerade utredare som vill hjälpa Sara att få upprättelse.
+
+Hasse Aro intervjuar Christin Portnoff och Hasse Gunnarsson om den svåra och tålmodiga vägen till att få extrapappan Manuel att stå till svars i domstol för de mångåriga övergreppen.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar!</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>48. Fallet Wilma</Namn>
+        <Beskrivning>2018. Ett vittne träder fram och berättar om en oväntad vänskap som slutar i en mordkomplott. “Cissi” befinner sig på en restaurang och träffar juristen “Kerstin” för första gången. Cissi visste inte då om vad denna vänskap skulle komma att innebära för henne. Restaurangbesöket och mötet med Kerstin leder till lejda torpeder och pengar till avhopp och manipulation.
+
+Hasse Aro fortsätter samtalet med utredningsledare Ulrika Hammarin om mordförsöket på advokaten Henrik Olsson Lilja.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar!</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>47. Fallet Ndella</Namn>
+        <Beskrivning>6 september 2019. Advokaten Henrik Olsson Lilja har blivit ett känt namn bland allmänheten efter det uppmärksammade ASAP Rocky-fallet tidigare under sommaren. I trapphuset vid Norr Mälarstrand attackeras Henrik plötsligt av en okänd man som skjuter honom med två skott. Henrik försvarar sig och lyckas fly från gärningsmannen. Utanför porten hittas han av en polis, svårt skadad men vid liv. Vem ligger bakom dådet? Vad är motivet? Henrik Olsson Lilja tror sig veta vem.
+
+Hasse Aro pratar med utredningsledare Ulrika Hammarin om dådet.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar!</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>46. Dubbelmordet i Linköping - del 2</Namn>
+        <Beskrivning>2020. Fransk polis lyckas knäcka den krypterade tjänsten Encrochat. Detta leder till att svensk polis identifierar och griper ett 30-tal personer som är kopplade till det så kallade Vårbynätverket, bland dem en känd svensk rappare. Ett nätverk som i Stockholms undre värld misstänks för vapen- och narkotikabrott, kidnappning och mord.
+
+Hasse Aro intervjuar utredaren Torsten Alm som ansvarar för ett medialt uppmärksammat kidnappningsärende där den kända rapparen står i fokus.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar!</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>45. Dubbelmordet i Linköping - del 1 av 2</Namn>
+        <Beskrivning>29 april 2020. Polisen lyckas gripa mannen och spåra upp vilka flickor som hamnat i hans våld. Men historien slutar inte där. Han  förstörde inte bara flickornas liv via nätet. Han beordrade även två män att utföra en fysisk våldtäkt på en av flickorna som sedan skulle filmas och skickas tillbaka till honom.
+
+Hasse Aro intervjuar återigen utredare Ulf Andreasson och vice chefsåklagare Eva Johnsson. Hasse pratar även med Jenny Yourstone, doktor i psykologi, om Dalslandspedofilens beteende och dominansbehov. 
+
+Tack till Cayana Media AB i Vänersborg.
+https://cayana.se/
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar!</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>44. Regaliekuppen</Namn>
+        <Beskrivning>Hösten 2019. En trebarnsfar från Dalsland nattar sina två minsta barn och kramar om sin sambo för att sedan “kvällsjobba” framför datorn. Men istället släpper han fram sitt inre nattsvarta mörker. Genom sociala medier tvingar han flera unga flickor att göra hemska saker mot sig själva och utnyttjar sin makt över dem. En kompis till en av de drabbade flickorna larmar till slut polis. Ingen visste då att detta skulle bli början på en av Sveriges mest omfattande groomingutredningar någonsin.
+
+Hasse Aro intervjuar utredare Ulf Andreasson och vice chefsåklagare Eva Johnsson om ärendet.
+
+Tack till Cayana Media AB i Vänersborg.
+https://cayana.se/
+
+Manlig röstskådespelare: Mathias Lithner
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar!</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>43. Dåden på Kärleksudden - del 2</Namn>
+        <Beskrivning>2 juni 1994. Den framgångsrike direktören och affärsmannen Carl-Eric Björkegren var en av Sveriges rikaste personer. Plötsligt en dag, länge skuldsatt av miljardbelopp, försvinner han spårlöst. Vad kan egentligen ha hänt Carl-Eric? Detta blir snabbt ett av de mest uppmärksammade fallen i svensk kriminalhistoria och polisens fokus och misstankar riktas så småningom mot Carl-Erics lojale butler, Pierre Beckman.
+
+Hasse Aro intervjuar fd utredaren Börje Sjöholm om alla kända fakta kring det mystiska försvinnandet.
+
+Tack till Streuli Ljud &amp; Film AB i Helsingborg.
+https://streuli.se/ 
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar!</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>42. Dåden på Kärleksudden - del 1 av 2</Namn>
+        <Beskrivning>11 januari 2020. En polispatrull skickas hem till paret Lars och Suzanne efter att en väninna larmat om flera dagars tystnad och ett ovanligt SMS. Polisen väljer tillslut att bryta upp dörren till parets bostad. Där möter de en vedervärdig syn. Paret ligger livlösa i deras egna hem. Ett hänsynslöst dubbelmord. Vem eller vilka har mördat paret? Lyssna till den fasansfulla berättelsen med märkliga vändningar om när ondska och girighet leder till inbrott och som blir upprinnelsen till två bestialiska mord.
+
+Hasse Aro träffar polisens utredningsledare Christer Axling.
+
+Lyssna på Fallen jag aldrig glömmer innan alla andra - på Podplay på torsdagar!</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>41. Den amerikanske generalen</Namn>
+        <Beskrivning>
+                    Januari 2020. Ett tips kommer in till NOA (nationella operativa avdelningen) om en rysk sajt där sexbilder på barn ser ut att komma från Sverige. Polisens IT-brottscenter tar sig an ärendet. Det ser ut att vara en rutinärende, men leder dem snart till en pedagog på en förskola i Tumba. Mannen, hemmahörande i Botkyrka, ligger bakom omfattande sexbrott mot barn via nätet – och offren är barnen han ansvarar för på sin förskola. Den du som förälder ska kunna lita på mest är en pedofil. Efter ett gripande kunde den här historien fått sitt slut, men omständigheter leder till att en pappa till ett av barnen på pedagogens förskola tar lagen i egna händer.  
+
+Vad dömdes pedofilen och pappan till efter detta? 
+
+Det finns en mycket mörk, vidrig och sjuk värld på nätet där denna typ av förövare utför brott som leder till fruktansvärda konsekvenser för barn. Det stannar inte på nätet. Vi kommer berätta om ett fall till i det här avsnittet där hemskheterna blir värre för varje steg polisen tar i sin utredning av vad som sker. Poliserna som arbetar med den här typen av brott får se bilder och filmer ingen vill se. De är hjältarna som räddar barns liv.  
+
+Varning för en del grafiska detaljer i slutdelen av avsnittet.    
+
+Hasse Aro har träffat Peter Eriksson, utredare på barnpornografigruppen i Stockholm. Du kommer även få höra pappans berättelse i Botkyrka-pedofilfallet. 
+
+Mail: fallen@ilikeradio.se
+                </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>40. DNA – framgång eller fallgrop?</Namn>
+        <Beskrivning>
+                    17 januari 2005. Elektronikkedjan SIBAs VD Fabian Bengtsson lämnar sitt hem i Göteborg. Han dyker inte på sitt jobb som förväntat. Senare på kvällen lyssnar Fabians pappa av sin mobil. Ett brusigt meddelande som gör honom orolig. Allt talar för att Fabian är försvunnen.
+
+Polisen kopplas in och rikslarm går ut. Flertalet inspelade telefonsamtal når pappan. Det rör sig om en kidnappning. En massiv insats sätt in. Engelska polisen Scotland Yard som har stor erfarenhet skickar experter till Sverige för att hjälpa till i gärningsmannaprofileringen.
+
+Dagarna går. Tips kommer in. Inget leder polisen vidare. Då sjösätts en ny strategi som kommer visa sig avgörande för fallet. Vad går strategin ut på?
+
+Stockholmssyndromet blev känt i samband med Norrmalmstorgsdramat 1973 där kidnappningsoffer fattade tycke för sin kidnappare. Är det så att det kan röra sig om det omvända Stockholmssyndromet i fallet med Fabian Bengtsson?
+
+Hasse Aro har pratat med Sven Alhbin, insatschef på polisen och den som ledde arbetet med kidnappningsdramat.
+
+Mail: fallen@ilikeradio.se
+                </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>39. Dubbelmordet i Sätra</Namn>
+        <Beskrivning>
+                    18 november 2019. 17-åriga Wilma är försvunnen sen tre dagar tillbaka. Föräldrarna börjar ana oråd. Polisen kopplas in och ett massivt sökpådrag sätts igång. Polisen får hjälp av frivillighetsorganisationerna Missing People och FIKK. Wilmas pojkvän hamnar tidigt i utredarnas fokus.  
+Varför agerar han så kallt kring försvinnandet? 
+
+Efter tio dagar gör teknikerna ett makabert fynd i pojkvännens lägenhet som kommer få stor betydelse. Vad har hittats? 
+
+Nu börjar ett komplicerat arbete att knyta ihop trådarna och lägga pusslet. Har polisen vad som krävs för att fälla förövaren? Hur kommer tingsrätten och senare hovrätten se på bevisningen? 
+
+Hasse Aro har pratat med Sten-Rune Timmersjö, gruppchef för polisens avdelning för grova brott i Fyrbodal som tog sin an fallet. Du får även höra Wilmas mamma berätta om sorgen efter sin dotter och att leva med ovissheten om vad som hänt.    
+
+Mail: fallen@ilikeradio.se
+                </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>38. Trippelmordet i Uddevalla</Namn>
+        <Beskrivning>
+                    28 augusti 2019. 18-åriga Ndella pratar med sin kompis Amina. Plötsligt viner närmare 40 skott från gatan rakt in i lägenheten i Stockholmsförorten Råcksta. Ndella träffas. Hennes man rusar ut från badrummet och försöker rädda hennes liv. Det är försent. Ndella faller offer för en skjutning som inte var riktad mot henne.
+
+Ett oskyldigt offer. Vilka ligger bakom skjutningen? Ett rivaliserande gäng eller finns förövarna närmare familjen än polisen kan tro?
+
+Det hela utmynnar i två helt olika domar i olika instanser trots samma bevisning. Hur är det möjligt?
+
+Hasse Aro har träffat åklagare Anna Svedin som läst in sig på fallet. Du får även höra Ndellas närmsta vänner Amina och Emilia berätta om sorgen efter deras förlorade vän och frustrationen inför rättssystemet.
+
+Mail: fallen@ilikeradio.se
+                </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>37. Fallet Julia</Namn>
+        <Beskrivning>
+                    Bilden av vem gärningsmannen kan vara klar. Polisens prestigelösa och oförtröttliga arbete fortsätter år efter år. Inget leder dem till en lösning. Hur ska familjerna till Mohamed och Anna-Lena få sin upprättelse? Det växer fram alternativa teorier om gärningsmannens ålder. Alltmer pekar på en mycket oerfaren mördare. Hasse Aro får 2014 ett uppdrag som ger mystiska svar. Ett första genombrott i fallet kommer 2018-19 när en lagändring ger polisen nya befogenheter. Vad är det som gör att polisen till slut löser fallet efter 16 år?
+
+Hasse Aro intervjuar kommissarie Jan Staaf som ledde utredningen och löste fallet.
+
+Mail: fallen@ilikeradio.se
+                </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>36. Fallet Bobby</Namn>
+        <Beskrivning>
+                    19 oktober 2004. En regnig och gråmulen höstdag i Linköping. Åttaårige Mohamed är på väg till skolan. Anna-Lena, 56 år, är i sin tur på väg till jobbet. Samtidigt hoppar en 20-årig man på bussen i Sturefors. De tre hamnar senare på Åsgatan i Linköping. Det blir slutet för Mohamed och Anna-Lena. Flertalet spår säkras på brottsplatsen. Polisen är optimistiska att kunna lösa fallet. Det kommer att ta 16 år för att få fast gärningsmannen. Vilka spår blev avgörande den där dagen? Vilka hinder dyker upp på vägen?
+
+Hasse Aro intervjuar kommissarie Jan Staaf som ledde utredningen.
+
+Mail: fallen@ilikeradio.se
+                </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>35. Fallet Gunilla</Namn>
+        <Beskrivning>
+                    31 augusti 2018. Tre ovärderliga regalier stjäls från Strängnäs domkyrka. Det är gassande sensommarvärme och mycket folk i rörelse runt kyrkan. Stulna cyklar och en stulen båt gör att förövarna verkar ha en snillrik plan för att fly med bytet. Allt som verkar gå helt rätt börjar plötsligt gå käpprätt och åt fel håll. Nu sätts en kedja av händelser igång som tagna ur en film. Stölden väcker stor uppmärksamhet. Några av nationens mest värdefulla konstskatter är stulna. Även i media får fallet stor uppmärksamhet. Till slut kommer Efterlyst spela en avgörande roll för att få fast gärningsmännen.
+
+Hasse Aro har träffat kammaråklagare Reena Devgun som specialiserat sig på brott med värdefulla föremål.
+
+Mail: fallen@ilikeradio.se
+                </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>34. Kannibalens begär</Namn>
+        <Beskrivning>
+                    En svårt skadad 77-årig kvinna med sitt liv förstört är inte den enda som misshandlats i gärningsmannens vansinniga framfart. Platsen Kärleksudden i Sollentuna kommer visa sig spela en mycket avgörande roll i polisens arbete att lösa fallet. Kan en overklig slump vara det som fäller avgörandet? 
+
+Hasse Aro har träffat kriminalpolis Fredrik Kramp som ledde utredningen och löste fallet.     
+
+Mail: fallen@ilikeradio.se
+                </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>33. Fallet Melissa</Namn>
+        <Beskrivning>
+                    26 februari 2019. Larmcentralen får in ett samtal om en svårt skadad 77-årig kvinna på Kärleksudden i Sollentuna. Hennes skador är så allvarliga att det senare visar sig att hon får sitt liv förstört.
+Några månader senare ringer en person in till polisen och tar på sig dådet. Han verkar närmast stolt över vad han gjort. Vem är denna gärningsman? Finns det fler offer?
+
+Nu följer en jakt som tar polisen ända till en chatsida i Pakistan och amerikansk domstol. 
+Kan polisen säkra spåren som krävs för att få fast gärningsmannen?
+
+Hasse Aro har träffat kriminalpolis Fredrik Kramp som ledde utredningen.    
+
+Mail: fallen@ilikeradio.se
+                </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>32. Sveriges första kvinnliga styckmördare</Namn>
+        <Beskrivning>
+                    Hösten 2018. En kvinna uppvaktas av en man på Facebook. Mannen är från USA. Han ger ett propert och genuint intryck. Han är en amerikansk general. Han överöser kvinnan med smicker och tycke uppstår. Kvinnan blir mer och mer smittad av nätkärleken hon får. Med tiden pratar de två om att flytta ihop i Sverige, men är allt egentligen som det ska? Nu börjar en helvetesresa för kvinnan. Den kommer ta henne ända till Japan där hon hamnar i fängelse. Vad hände? Hur kunde ”den amerikanske generalen” genomföra sitt romansbedrägeri? Hasse Aro har pratat med analytiker Anna Lioufas på polisens nationella bedrägericentrum som hade hand om fallet. Du kommer även få höra kvinnans egen berättelse om vad som hände.  Mail: fallen@ilikeradio.se
+                </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>31. Billdal-fallet: Upprättelsen – del 2</Namn>
+        <Beskrivning>Ny säsong - nya fall. Bedrägerier, dubbelmord och spektakulära stölder. Nya säsongen av &amp;quot;Fallen jag aldrig glömmer&amp;quot; med Hasse Aro har premiär 17 september. Här kommer ett första smakprov på vad nya säsongen har att erbjuda.
+
+Mail: fallen@ilikeradio.se</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>30. Billdal-fallet: Spåren - del 1 av 2</Namn>
+        <Beskrivning>
+                    DNA spelar en allt större roll i brottsutredningar. Forskningen går framåt, men det finns fortfarande fallgropar. Hasse Aro berättar om fem olika fall där DNA spelade en avgörande roll. Till sin hjälp har han Johanna Björkman, advokat och DNA-expert. Vi går tillbaka och tittar på tidigare utredningar i Fallen jag aldrig glömmer. Var det alltid glasklart med resultaten av DNA i de fallen? 
+Vi diskuterar och går in på djupet kring hur DNA både fick de fallen att lösas, men också vilka svagheter som de utredningarna kan ha haft. 
+
+Detta specialavsnitt ger dig insikter och information om hur vi ska se på DNA idag i polisutredningar och kriminalfall.  
+  
+Mail: fallen@ilikeradio.se
+                </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>29. Dagen då terrorn kom till Stockholm</Namn>
+        <Beskrivning>
+                    10 april 2019. Två unga män förs ner i en smal källargång i Sätra till ett förråd. De tvingas ta av sig nakna. Därefter avrättas de skoningslöst av skott på nära håll från två vapen. Ren förnedring. Tre män sägs ligga bakom dådet.  Vid minnesstunden på fredagen samlas hundratals människor. Det börjar florera ett rykte bland de samlade om vem som kan ha utfört dådet. Alltmer pekar mot en 24-åring. Polisen hinner dock inte plocka in honom. Han är redan död. Vad hände med 24-åringen och vem ligger bakom hans död?
+
+Kvar står polisen med ytterligare två misstänkta. Med hjälp av DNA-bevis på mordplatsen, övervakningskameror och mobiltelefontrafik kommer utredarna närmare en lösning. 
+När det väl blir dags för rättegång händer något oväntat som gör att både försvarsadvokaten och åklagaren väljer att överklaga domen. Vad hände? 
+
+Följ med på en resa som präglas av maktkamp, konflikter, hierarkier och vedergällning. 
+  
+Hasse Aro har pratat med kriminalinspektör Torsten Alm från avdelningen grova brott på polisområde Stockholm Syd som hade hand om fallet. 
+Mail: fallen@ilikeradio.se
+                </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>28. Utrikesministern är död – del 2</Namn>
+        <Beskrivning>
+                    7 mars 2015. Strax före klockan sju på morgonen kommer ett larm in till polisen från en kvinnlig joggare. Hon har påträffat två döda och blodiga kroppar. Strax visar det sig att kvinnan även hittar ytterligare ett offer i en bil intill platsen. En ung kvinna. Polisen har nu ett trippelmord att utreda. 
+
+Diskussionerna sätter igång på diverse chattforum som mer och mer pekar mot Uddevallas undre värld. En värld av knarkhandel, utpressning, påhittade skulder och tydliga hierarkier. 
+Två bröder, Mark och Martin, blir indragna i utredningen. Vilka bevis har polisen funnit som kan knyta bröderna till brottsplatsen? 
+Det blir en komplicerad och noggrann utredning där minsta detalj är avgörande. Har utredarna allt som krävs för att fälla bröderna eller kommer rättssystemet utmanas rejält?  
+Hasse Aro har pratat med Per-Erik Rinsell som var en av två förundersökningsledare som hade hand om fallet. 
+Mail: fallen@ilikeradio.se
+                </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>27. Utrikesministern är död – del 1 av 2</Namn>
+        <Beskrivning>
+                    2 december 1998. 18-åriga Julia går ut på kvällen för att handla bröd på den närliggande macken hemma i Höganäs. Hon kommer aldrig tillbaka. Vad kan ha hänt Julia?
+Bara nån dryg timme senare hittar en förbipasserande Julia medvetslös bakom en trädgårdshäck. Misshandlad svävande mellan liv och död. 
+Det riktas misstankar mot den fd pojkvännen som bara dagar tidigare uppträtt aggressivt mot familjen. Det visar sig inte leda vidare i utredningen. Han har alibi. 
+Hur kan Julia av ren slump hamnat i en situation som gör att hon misshandlas så illa att hon dör? På en så kort sträcka dessutom. Bevisen leder inte polisen vidare trots flertalet försök att nå ut via Efterlyst.  
+Först åtta år senare när Skånes kalla fall-grupp bildas och tar upp fallet kommer ett genombrott. Vad har framkommit? Är det tillräckligt för att fälla förövaren?  
+Hasse Aro har pratat med fd kriminalkommissarie Börje Sjöholm som arbetade i Skånes kalla fall-grupp. 
+Mail: fallen@ilikeradio.se
+                </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>26. Mordet på Cajsa Jonsson – del 2</Namn>
+        <Beskrivning>
+                    29 januari 2006. Tioårige Bobby anmäls försvunnen vid köpcentret i Bäckebol på Hisingen av barnets mamma och styvpappa. En stor polisinsats sätts igång med allt från polispiketer, hundpatruller, väktare, rytteriet och sjöpolisen. Ingen lycka. Ingen Bobby. 
+Polisen börjar ana oråd. Paret som anmälde försvinnandet agerar oberörda av det som hänt. En utredning om familjen drar igång. Det visar sig att Bobby tidvis bott i en stödfamilj i Stenungssund där han haft en trygg tillvaro. Han hade också en nära relation med sin mormor. Bobby föddes med den ovanliga utvecklingsstörningen Fragilt X-syndrom.  
+Stödfamiljen och mormor tappar mer och mer kontakten med Bobby. Sista månaden upphör kontakten helt. Vad har hänt?  
+Polisen gör framsteg och börjar se mönstret som kan leda fram till den otäcka sanningen. 
+Sanningen är värre än någon kan föreställa sig. Den här historien är som ingen annan. Det som hänt Bobby är svårt att ta in. 
+Vad hände med Bobby? Hur kunde det hända? 
+Hasse Aro har träffat dåvarande chefen för länskriminalens spaningsdel Sven Alhbin som tog sig an fallet. 
+Mail: fallen@ilikeradio.se
+                </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>25. Mordet på Cajsa Jonsson – del 1 av 2</Namn>
+        <Beskrivning>
+                    30 maj 1999. Gunilla lever ett bohemiskt liv i sin lilla lägenhet i förorten Västertorp utanför Stockholm.  Hon väljer under vintern att ta en inneboende som vi valt att kalla Kennet. Livet med Kennet som hyresgäst tär efter tiden på Gunilla. Hans datorspelande hela nätterna blir för mycket. Hon vill att han ska ut. 
+Då försvinner Gunilla. Hennes vänner anar inget oråd. Hon gillar friluftsliv och tros ha tagit sig ut för att campa. De ringer efter ett tag till lägenheten där Kennet svarar. Han redogör för att hon begett sig ut för att campa och vad hon tagit med sig. Det märkliga är att hon tagit med sig en stor matta enligt Kennet. 
+Här sätter en utredning igång som tar många vändningar. Fallet tas upp i Efterlyst hela fyra gånger och varje gång faller pusselbitarna på plats. 
+Vad spelade den där mattan för roll? Hur går polisen tillväga för att lösa fallet till slut? 
+Hasse Aro har träffat kriminalkommissarie Hans Strindlund som tog sig an fallet. 
+Mail: fallen@ilikeradio.se
+                </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>24. Från Robinson till mord</Namn>
+        <Beskrivning>
+                    30 mars 2005. En kvinna mördas i sin lägenhet i Gävle. Hennes partner ringer till polisen och anmäler händelsen. I de allra flesta fall är partnern själv den skyldige. Det är också länge polisens naturliga huvudspår. 
+När DNA från mordet testas tar utredningen en avgörande vändning. Vad är det testet visar? 
+En bit hud saknas märkligt nog från kvinnans kropp. Det förefaller som förövaren har velat få med sig huden från brottsplatsen. Hur kommer detta fynd visa sig bli en pusselbit i utredningen?
+Följ med på en makaber och fascinerande resa som tar dig som lyssnar genom oväntade vändningar och nya avslöjanden. 
+Hasse Aro har träffat åklagare Christer Sammens som tog sig an fallet. 
+Mail: fallen@ilikeradio.se
+                </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>23. Örebro försattes i skräck</Namn>
+        <Beskrivning>
+                    11 november 2001. En familj på bilutflykt till Björkviks Brygga på Ingarö upptäcker en naken kvinna i vattnet inlindad i kedjor och hönsnät. Vem är kvinnan och hur har hon bragts om livet? 
+Kvinnan är Melissa, en 22-årig fotomodell med stora framtidsdrömmar och hopp om ett bra liv. Bakom fasaden fanns en destruktiv relation. Hon hade precis gjort sig fri bara en kort tid innan hon mördades. 
+Är detta den första ledtråden polisen behöver för att lösa fallet? Det blir en jakt på förövaren som präglas av lojalitetsband, kontrollbehov och bristfälliga alibis.  
+Hasse Aro har träffat Jan Ullén som vid den här tiden arbetade vid Nackapolisen. Jan var den som ledde utredningen. 
+Mail: fallen@ilikeradio.se
+                </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>22. Norrtäljes svarta änka</Namn>
+        <Beskrivning>
+                    30 november 1998. Två killar går längs Söder Mälarstrand i Stockholm. Kajen är fylld av båtar. Då ser de något ser ut som en lik. Det visar sig senare vara en torso av en manskropp. Nu startar utredningen om vem mannen är. För att få ledtrådarna på plats behövs fler fynd av likdelar. Det leder utredarna ända till ett hårstrå från ett huvud i en ugn. Vad hade gärningskvinnan gjort med kroppen? 
+Det blir en jakt som tar polisen ända till Rumänien för att lösa fallet. Frågan kvarstod, varför styckmörda kroppen?
+Hasse Aro har träffat Christin Portnoff som ledde utredningen om Sveriges första kvinnliga styckmördare. 
+Mail: fallen@ilikeradio.se
+                </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>21. Försäkrad om hans död</Namn>
+        <Beskrivning>27:e februari är ny säsong av Fallen jag aldrig glömmer äntligen tillbaka. 
+Mail: fallen@ilikeradio.se</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>20. Tystat vittne</Namn>
+        <Beskrivning>
+                    En åtta-årig flicka blir misshandlad och våldtagen på väg hem från skolan i september 1995. I del 1 berättade Hasse om DNA-spåren som låg nerfrysta i över 20 år i väntan på ny teknik. Så kommer äntligen möjligheten till att spåra DNA-provet via ett amerikanskt bolag som utformat en unik metod. Det enda hindret är att lagen i Sverige inte tillåter att göra matchningar i brottsregistret på DNA vid den här tidpunkten. Då kommer äntligen ett besked som ger utredarna hopp om en lösning. Pusselbitarna börjar falla på plats en efter en. Ska flickan och hennes familj äntligen få upprättelse och klarhet i vem som utförde det vansinniga dådet 24 år senare? Kommer polisen få fast gärningsmannen? 
+Hasse fortsätter prata med Anders Eriksson som är chef för Kalla Fall på Polisregion Väst om upprättelsen, upplösningen och efterspelet. Hasse har även träffat psykologen Jenny Yourstone (TV3 Dokumentär) som gör en analys av gärningsmannens motiv och drivkrafter.         
+Mail: fallen@ilikeradio.se
+                </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>19. Styckad i en ubåt</Namn>
+        <Beskrivning>
+                    12 september 1995. En åttaårig flicka blir våldtagen och misshandlad på väg från skolan i Billdal utanför Göteborg. Ett brott så fasansfullt och vidrigt att det saknar motstycke. Tryggheten i flickans liv krossas i ett ögonblick. Hasse Aro arbetade redan då med Efterlyst och detta kom att bli ett av de värsta fallen som det rapporterats om i programmets historia.
+Det visade sig bli en mycket lång utredning som lades ner och startades upp om vartannat. Två DNA-spår hade säkrats. Det här var dock långt före den teknik som finns tillgänglig idag för att spåra DNA. 
+Polisens utredning är mycket noggrann. Alla möjligheter provas. Allt från polishundens spår till att flickans föräldrar går ut i Efterlyst och uppmanar allmänheten om hjälp att få ledtrådar för att få fast gärningsmannen. Åren går och det börjar bli ont om tid innan preskriptionstiden för brottet ska gå ut. 
+Hasse har träffat Anders Eriksson som är chef för Kalla fall-gruppen på i polisregion Väst sedan 2016. Det här fallet var ett av Anders första att försöka lösa.  
+Vad är det som gör att polisen trots att till slut börjar få upp hoppet om att klara upp fallet?      
+Mail: fallen@ilikeradio.se
+                </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>18. Skenet bedrar - Del 2</Namn>
+        <Beskrivning>
+                    7 april 2017. En helt vanlig fredag i Stockholm. Hasse och hans fru befinner sig i Hötorgshallen. Efter besöket tar de bilen ur garaget. Han har två vägar att välja. Valet av färdväg skulle kunna blivit ett val på liv och död. Hasse och hans fru kunde hamnat mitt i terrorattentatet på Drottninggatan i Stockholm. 
+Det står ganska snart klart att det handlar om ett terrordåd. Stockholm går in i larmläge. Polis, brandkår, sjukhus sätts i högsta beredskap.
+Men inte bara dom. Den här händelsen blir elddopet för en ny organisation, en sambandsgrupp för olika myndigheter. En grupp som ska se till den stora bilden. Hasse har träffat Stefan Rådman som var polisens representant i den gruppen. Rådman berättar om sambandsgruppens uppgift att hantera bekräftad information och även den mängd av falska alarm som kom in om fler attacker. 
+Mitt i alla kaos den dagen försöker Hasse få tag på sin egen tolvåring. Vad kan ha hänt? 
+Hasse har även träffat åklagare Hans Ihrman som fick den tunga och grannlaga uppgiften att leda fallet mot gärningsmannen Rahmat Akilov. Det visade sig vara mer krävande än många trott. Över 100 målsäganden och en enormt lång brottsplats med flera hundra meter av Drottninggatan. 
+Varför valde Akilov att bara erkänna bara delar av sin fasansfulla handling?  
+Mail: fallen@ilikeradio.se
+                </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>17. Skenet bedrar - Del 1</Namn>
+        <Beskrivning>
+                    En vecka har gått sen mordet på utrikesminister Anna Lindh. Polisen intensifierar jakten på 35-åringen. Det leder till ett gripande utanför Råsunda Fotbollsstadion. Han hålls i förvar. Då kommer beskedet som kommer att förändra hela utredningen. Information kommer in om en annan möjlig gärningsman. Den andre mannen befinner sig i Solna inte långt bort från platsen där 35-åringen greps. Två spår – bara en mördare. Hur går polisen nu tillväga för att fälla rätt gärningsman?
+ 
+Det blir ett mycket hektiskt dygn på Polishuset. Leif Jennekvist som ledde utredningen berättar om tvivlen, bevisen och till slut hur de får fast Anna Lindhs mördare. 
+
+Nu återstår frågan om motivet. Varför mördas utrikesminister Anna Lindh på varuhuset NK i Stockholm? Är motiven politiska eller personliga? 
+Mail: fallen@ilikeradio.se
+                </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>16. Flickan som aldrig kom hem</Namn>
+        <Beskrivning>
+                    10 september 2003. Hasse Aro åker förbi varuhuset NK i Stockholm. Han möts av ett stort uppbåd av utryckningsfordon, ambulanser och polisbilar. Han väljer att kontakta Efterlyst-redaktionen. Uppgifter kommer in om att utrikesminister Anna Lindh har blivit knivattackerad. Skadorna sägs inte livshotande. Vi vet alla idag att så inte var fallet. På morgonen efter kommer beskedet att Anna Lindh dött av skadorna. 
+Det blir några mycket intensiva dygn. Både för polisen och för medierna. Först ovissheten om vad om hänt. Sen kommer dödsbeskedet. Polisen jobbar för högtryck. Efterlyst gör om hela kvällens program. 
+Signalement på en gärningsman kommer in. En röd keps och en kniv hittas. Vem är mannen som fångats på varuhusets övervakningskameror och som setts av vittnen?    
+Tips från både allmänheten och från pålitliga källor som rättpsyk och häkten kommer in. Tipsen leder polisen in på spåret med ”35-åringen”. Till slut kan han gripas. Tidningarna fullkomligt exploderar. Men har polisen rätt gärningsman? 
+Hasse Aro har träffat Leif Jennekvist som ledde mordutredningen och som senare gav ut boken ”Mordet på Anna Lindh – en polisutredning”. Jennekvist berättar om de intensiva dagarna i början av utredningen. Hur klarade polisen att genomföra sin utredning när pådraget från pressen att hitta mördaren var enormt?
+Mail: fallen@ilikeradio.se
+                </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>15. Festen slutade i blodbad</Namn>
+        <Beskrivning>
+                    I det förra avsnittet berättade Hasse Aro om mordet på Cajsa Jonsson i Norrköping. Våldtagen, misshandlad och mördad i en skogsdunge i januari 2005.  
+Polisen säkrar tidigt DNA-spår som överraskande ger en match med ett helt annat fall. En våldtäkt med ett liknande tillvägagångssätt som vid fallet med Cajsa. Polisen är därmed säkra på att de har rätt gärningsman – misstänkt för två grova brott. 
+Då flyr gärningsmannen till Turkiet. Hur går polisen nu tillväga för att få hem honom till Sverige eller lagföra honom utomlands?  
+Gärningsmannen vägrar in i det längsta erkänna sina brott. Vad gör till slut att han verkar börja vekna?
+Hasse tar även upp efterföljderna med att betala ut skadestånd till Cajsas familj. Det slutar inte som familjen hoppas.    
+Mail: fallen@ilikeradio.se
+                </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>14. 63 unga dog i lågorna</Namn>
+        <Beskrivning>
+                    Året är 2005. Stormen Gudrun härjar i Östergötland. En barnfamilj är på promenad i skogen. De hittar en död kvinnokropp bland all omkringblåst bråte och löv. Polisen identifierar kvinnan som 19-åriga Cajsa Jonsson. Hon har anmälts som försvunnen sen hon inte kom hem kvällen innan. 
+Efter intervjuer med vitten har polisen en huvudmisstänkt, men inga tekniska bevis. De väljer även att kartlägga Cajsas sista tid i livet. Hon har varit ute i Norrköping kvällen innan. De kan följa henne minut för minut tills spåren plötsligt försvinner. Vad hände där spåren slutade?
+Så kommer ett genombrott i utredningen. DNA-spår har säkrats på Cajsas kropp. Nu börjar en jakt på mördaren som tar fler vändningar. Är Cajsa mördarens enda offer? 
+Hasse Aro har träffat Anders Selevik, chef för avdelningen grova brott vid polisen i Norrköping, som berättar om en utredning där DNA-spåren till slut förde dem till målet att få fast mördaren. Då händer det som inte får hända… 
+Mail: fallen@ilikeradio.se
+                </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>13. Dubbelmord utan motiv</Namn>
+        <Beskrivning>
+                    Året är 2000. Hasse Aro jobbar som producent för &amp;quot;Expedition Robinson&amp;quot;. Bland deltagarna möter han bland andra Adnan. En lågmäld, mjuk och aningen tillbakadragen person. Inte den typsiska Robinson-deltagaren. Det ingen visste då var att en helt annan sida av Adnan skulle komma fram 17 år senare. 
+Utanför Östra Skolan i Katrineholm skjuts en man till döds. En hel del pekar på en gangsteruppgörelse. Polisen tar hjälp av en s k buslur som hittats i samband med skjutningen. Med hjälp av mobilen dras fler trådar som mer och mer pekar mot Adnan och flera andra personer i hans närmsta krets. Vilken roll spelar Adnan?
+Hasse Aro har träffat Lars Liwenborg som är ansvarig för utredningarna av grova brott i Nyköping och Katrineholm. Liwenborg berättar om en komplicerad utredning präglad av tystnadskultur och beskyddande. Vad blir polisens genombrott? Kan de nå ända i mål med fallet? 
+I slutet av vårt arbete med det här poddavsnittet får Hasse ett långt brev. Det är från Adnan. Vad är det han vill berätta för oss?  
+Mail: fallen@ilikeradio.se
+                </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>12. Tröjan i Efterlyst</Namn>
+        <Beskrivning>
+                    18 november 2009. Efterlyst rapporterar om flera fall av våldtäkter i Örebro. Det visade sig vara början till en serie otäcka och brutala våldtäkter och överfall. Polisen söker ett samband mellan fallen. Gärningsmannen har tagit sig fram på cykel och bruntband har använts för att binda offren. Till slut riktas misstankarna mot en specifik gärningsman. Han begår ett för utredningen avgörande misstag. När polisen tror sig ha dragit åt snaran så visar det sig att gärningsmannen långt ifrån är klar med sina extrema våldtäktsöverfall. 
+Hasse Aro har träffat Örebropolisens informationschef Torbjörn Carlsson vid tiden för utredningen.  Carlsson berättar vad som till slut fällde Örebromannen. 
+Mail: fallen@ilikeradio.se
+                </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>11. Sveriges Dr. Romand</Namn>
+        <Beskrivning>
+                    Februari 2018. En guldsmed befinner sig i sin sommarstuga i Norrtälje med sin sambo (i media kallad Kulturkvinnan). Sambon ringer grannparet och berättar att guldsmeden är redlöst berusad och hon behöver hjälp att flytta honom till sängen. Det blir sista gången guldsmeden ses i livet. Brottet rubriceras som mord. Vad hände den där kvällen? Vilka motiv fanns? 
+Hasse har återigen träffat Anders Lindstrand, fd polis, och numera chef för utredningsavdelningen på försäkringsbolaget If. Lindstrand berättar om att deras utredning ledde till misstankar mot Kulturkvinnan. Vad visste försäkringsbolaget som polisen sen kunde ta vidare?
+Mail: fallen@ilikeradio.se
+                </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>10. Scheinvillan</Namn>
+        <Beskrivning>
+                    Sommaren 2016. Mediecirkusen kring Arbogakvinnan Johanna Möller rullar igång. Sexfilmen, våldet mot flyktingpojkarna, hotet mot föräldrarna och mordet på pappan. Hade allt detta kunna förhindrats? Hasse Aro tar oss tillbaka till 2015. En livförsäkring upprättas och bara några dagar senare hittas Johanna Möllers man Aki Paasila död i vattnet utanför sommarstugan hon disponerade. Hasse har träffat Anders Lindstrand, fd polis, och numera chef för utredningsavdelningen på försäkringsbolaget If. Lindstrand berättar om att deras utredning gav upphov till tydliga misstankar mot Möller. Vad visste försäkringsbolaget som polisen inte trodde sig sett?
+Mail: fallen@ilikeradio.se
+                </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>9. Sturebymordet</Namn>
+        <Beskrivning>26:e september är ny säsong av Fallen jag aldrig glömmer äntligen tillbaka. 
+Mail: fallen@ilikeradio.se</Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>8. Dubbelmordet på Hallandsåsen</Namn>
+        <Beskrivning>
+                    I den här podden “Fallen jag aldrig glömmer” möter Hasse Aro ofta poliser som berättar om hur de löser de fall vi tar upp. Nu tar vi dig in bakom kulisserna till hur det är att arbeta som polis. Vad kännetecknar en riktig bra polis? Vad är det bästa med polisyrket? Och vad krävs för att bli polis?
+
+Hasse Aro har träffat poliserna Tomas Rosenberg och Åsa Wahlgren. Båda har mångårig erfarenhet av polisyrket. Maj Linnman är student på polisutbildningen som snart examineras som polis. Det blir ett spännande och inspirerande samtal om polisyrket och vad som krävs för att söka sig till polisen. Har du eller någon du känner vad som krävs för att bli polis?
+
+“En större uppgift” presenteras i samarbete med Polisen.
+
+Mail: fallen@ilikeradio.se
+                </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>7. Taximordet i Vidja</Namn>
+        <Beskrivning>
+                    22 januari 2017. 25-åriga Ivan Semedo lämnar sin mammas bostad i Hallonbergen. Bara minuter senare blir han skjuten. Allt tyder på en gänguppgörelse. Det vi inte vet då är detta är startskottet till en räcka otroliga händelser. Biljakter, nya skjutningar och till slut mord. Allt går fort. 
+Under tiden har en man observerat gärningsmännen. Det kommer inte bara bli hans slutgiltiga öde, utan även hans fru undanröjs. Varför? Parets två barn kommer hem från skolan - föräldralösa. 
+Hasse Aro har träffat kammaråklagare Olov Calmvik som var fallets förundersökningsedare.  
+Mail: fallen@ilikeradio.se
+                </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>6. Elin Krantz</Namn>
+        <Beskrivning>
+                    Säg så lite som möjligt. Ljug så lite som möjligt. Det brukar vara många kriminellas modus operandi när de misstänks för brott. Inte för Peter Madsen. 
+
+Du har säkert hört om dansken Peter Madsen som styckmördade svenska journalisten Kim Wall i sin ubåt och slängde ut likresterna i Öresund.  Vem är denna Peter Madsen egentligen? Vad fick honom att begå dessa sjuka våldshandlingar? Varför ville Madsen hålla rättegångarna inför öppen ridå?  
+
+Hasse Aro har träffat advokaten Nikolaj Linneballe som följde utvecklingen av fallet för svensk media.
+ 
+Hör om hur lögner efter lögner från Madsen till slut smulades sönder av försvaret och hur han till slut blev fälld.
+                </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>5. Vem mördade Palme? (del 2)</Namn>
+        <Beskrivning>
+                    December 1996. Över ett år sen mordet på Marie Johnsson har gått. Oron på Kristianstads gator har lugnat ner sig. Fallet ser ut att förbli olöst. Då slår Snälle-Bengt till igen. 
+Polisen sätter snabbt in stora insatser. Huvudspåret är de är på jakt efter samma gärningsman. 
+Ett tuggummipaket kommer spela en avgörande roll i utredningen. 
+Hasse Aro har träffat polisen Monika Olhed-Hansson som var med i utredningsarbetet. 
+ &amp;quot;Skenet bedrar&amp;quot; består av två delar. Har du inte lyssnat på del 1 ännu så rekommenderar vi att du gör det först. 
+Mail: fallen@ilikeradio.se
+                </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>4. Biografmannen - Palmemordet (del 1)</Namn>
+        <Beskrivning>
+                    1 oktober 1995. Marie Johnsson är på väg hem efter en kväll på Harrys Bar i Kristianstad. Hon väljer en annan väg hem än hon brukar. Det blir hennes sista öde i livet. På en gångstig i utkanten av staden möter hon sin mördare. Hon våldtas och stryps. Två dagar senare hittas kroppen.  
+En oro växer bland stadens kvinnor. Många vill inte gå ut när det blir mörkt. Det arrangeras nattvandringar som patrullerar runt och följer skräckslagna kvinnor hem. Det ingen vet är att en av nattvandrarna är Maries mördare.  
+Han kallas Snälle-Bengt. Vem är gärningsmannen egentligen? Har han en historia av fler brott? Kommer han slå till igen?  
+Hasse Aro har träffat polisen Göran Persson som ledde den mordgrupp som utredde fallet.  
+&amp;quot;Skenet bedrar&amp;quot; består av två delar. Del 2 släpps torsdag 18 april.  
+Mail: fallen@ilikeradio.se
+                </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>3. Flickan som försvann</Namn>
+        <Beskrivning>
+                    20 mars 1989. Tioåriga Helén är på väg till lågprisaffären hemma i Hörby. Sex dagar senare hittas hon i en plastsäck i en skogsdunge. Svårt sargad. Våldtagen. Brutalt mördad. Jakten att få fast gärningsmannen visar sig bli en 15 år lång utdragen historia. Trots stor uppmärksamhet i TV, radio och tidningar kommer inte polisen till en lösning. De har dock valt att säkra upp en del av bevisningen på brottsplatsen på ett sätt som senare kommer visa sig helt avgörande. Vad gör polisen 1989 som 15 år senare får gärningsmannen fälld? Finns det fler mordoffer som gärningsmannen är skyldig till? 
+Hasse Aro har träffat polisen Monica Olhed Hansson som jobbade med fallet. Hon berättar om den dramatiska upplösningen och vilka bevis som till slut fick fast en av vår tids värsta sadistiska sexmördare. 
+Mail: fallen@ilikeradio.se
+                </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>2. Malmös egen Laserman</Namn>
+        <Beskrivning>
+                    Det är slutet av november 1994. Hasse Aro träffar och lär känna den unga aspirerande journalisten Daniella Josberg på en bar i Stockholm. Bara nån vecka senare kommer hon falla offer för den värsta masskjutningen i modern svensk historia. 
+Gärningsmännen hade tidigare under kvällen hamnat i bråk utanför klubben. Timmar senare, utrustade med skarpladdade automatkarbiner, återkommer männen till Stureplan. Festnatten slutar i ett blodbad med fyra dödsoffer. 
+Jakten på förövarna blir en jakt. Hela den undre världen vänds upp och ner. Mitt i allt får Hasse ett konstigt telefonsamtal. Den som ringer kommer visa sig bli helt avgörande för att få fast gärningsmännen. 
+Hasse Aro har träffat kriminalkommissarie Tage Åström som befann sig mitt i nålens öga i jakten på att få fast de skyldiga. 
+Mail: fallen@ilikeradio.se
+                </Beskrivning>
+      </Episode>
+      <Episode>
+        <Namn>1. Trippelmordet i Klippan</Namn>
+        <Beskrivning>
+                    29 oktober 1998. En mulen och råkall kväll i Göteborg. På Backaplan på Hisingen arrangeras denna kväll disco för ungdomar mellan 12 och 25 år. Närmare 400 personer släpps in i lokalen som bara är godkänd för 125 personer. 
+Fyra killar blir inte insläppta eftersom de vägrar betala. Vi vet alla hur det slutar. 63 unga dör i lågorna och 200 skadas. Den värsta branden i modern svensk historia är ett faktum. 
+
+Utredningen blir komplicerad och långdragen. Hasse Aro har träffat spaningsledare Leif Rundberg som berättar hur polisen arbetade för lösa fallet. Återigen spelar Efterlyst en avgörande roll i utredningen. Vad är det som gjorde att polisen till slut får sitt efterlängtade genombrott? 
+Mail: fallen@ilikeradio.se
+                </Beskrivning>
+      </Episode>
+    </episodes>
   </Feed>
 </ArrayOfFeed>
