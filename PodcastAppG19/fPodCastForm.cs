@@ -599,11 +599,12 @@ namespace PodcastAppG19
                 if (cbBKategori.SelectedItem != null)
                 {
                     // Hämta den valda kategorin från ComboBox
-                    string selectedCategory = cbBKategori.SelectedItem.ToString();
+                    string selectedCategory = (string)cbBKategori.SelectedItem;
 
                     // Uppdatera feedens kategori med den valda kategorin från ComboBox
                     selectedFeed.category = new Category(selectedCategory);
 
+                    feedcontoller.UpdateFeedCategory((string)dataGridView1.Rows[selectedRowIndex].Cells[4].Value, selectedCategory);
                     // Uppdatera användargränssnittet för den valda feeden med den nya kategorin
                     dataGridView1.Rows[selectedRowIndex].Cells[4].Value = selectedCategory;
 

@@ -30,8 +30,7 @@ namespace PodcastAppG19.DAL
 
         public RepositoryFeed()
         {
-            lista = new List<Feed>();
-            GetAll();
+            lista = GetAll();
 
         }
 
