@@ -43,7 +43,7 @@ namespace PodcastAppG19
 
                 foreach (var feed in feeds)
                 {
-                    dataGridView1.Rows.Add(feed.namn, feed.namn, feed.uppdateringsfrekvens, feed.categoryTitle);
+                    dataGridView1.Rows.Add(feed.namn, feed.namn, feed.uppdateringsfrekvens, feed.category);
                 }
             }
 
