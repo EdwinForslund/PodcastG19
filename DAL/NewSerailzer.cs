@@ -14,7 +14,7 @@ namespace PodcastAppG19.DAL
 
         }
 
-        public void Serializercategory(List<Category> listOfCategorys)
+        public void Serialize(List<Category> listOfCategorys)
         {
             try
             {
@@ -31,31 +31,7 @@ namespace PodcastAppG19.DAL
             }
         }
 
-        public List<Category> Deserializercategory()
-        {
-            List<Category> categorilista = new List<Category>();
-
-            try
-            {
-                XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<Category>));
-
-                if (File.Exists(Environment.CurrentDirectory + @"\Katagori.xml"))
-                {
-                    using (FileStream fs = new FileStream("Katagori.xml", FileMode.Open, FileAccess.Read))
-                    {
-                        return (List<Category>)xmlSerializer.Deserialize(fs);
-                    }
-                }
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show(e.Message);
-            }
-
-            return categorilista;
-        }
-
-        public void SerializeFeedfodcast(List<Feed> listOfPodcast)
+        public void Serialize(List<Feed> listOfPodcast)
         {
             try
             {
@@ -72,7 +48,31 @@ namespace PodcastAppG19.DAL
             }
         }
 
-        public List<Feed> DeserializeFeedpodcast()
+        public List<Category> DeserializeCategory()
+        {
+            List<Category> categorilista = new List<Category>();
+
+            try
+            {
+                XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<Category>));
+
+                if (File.Exists(Environment.CurrentDirectory + @"\Katagori.xml"))
+                {
+                    using (FileStream fs = new FileStream("Katagori.xml", FileMode.Open, FileAccess.Read))
+                    {
+                        return (List<Category>)xmlSerializer.Deserialize(fs)!;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+
+            return categorilista;
+        }
+
+        public List<Feed> DeserializeFeed()
         {
             List<Feed> podcastListEmpty = new List<Feed>();
 
@@ -84,7 +84,7 @@ namespace PodcastAppG19.DAL
                 {
                     using (FileStream fs = new FileStream("Podcast.xml", FileMode.Open, FileAccess.Read))
                     {
-                        return (List<Feed>)xmlSerializer.Deserialize(fs);
+                        return (List<Feed>)xmlSerializer.Deserialize(fs)!;
                     }
                 }
             }

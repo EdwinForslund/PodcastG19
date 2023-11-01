@@ -28,7 +28,6 @@ namespace PodcastAppG19.BLL
         }
         public void DeleteOnCategory(Category cat)
         {
-           
            Feedrepos.DeletePodcastOnCategory(cat);
         }
 
@@ -42,11 +41,6 @@ namespace PodcastAppG19.BLL
             Feedrepos.UpdateFeedCategory(oldCategory, newCategory);
         }
 
-
-        internal void DeleteOnCategory(string? selectedCategoryTitle)
-        {
-            throw new NotImplementedException();
-        }
         public void DeleteFeedAndContents(Feed feed)
         {
             Feedrepos.DeleteFeedAndContents(feed);
@@ -64,7 +58,7 @@ namespace PodcastAppG19.BLL
 
         public void FeedSerailizer(List<Feed> feeds)
         {
-            newSerailzer.SerializeFeedfodcast(feeds);
+            newSerailzer.Serialize(feeds);
         }
 
     }

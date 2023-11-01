@@ -25,7 +25,7 @@ namespace PodcastAppG19.DAL
 
         public List<Category> GetAll()
         {
-            return lista = se.Deserializercategory();
+            return lista = se.DeserializeCategory();
         }
         public void ChangeCategory(Category newCategory)
         {
@@ -93,7 +93,7 @@ namespace PodcastAppG19.DAL
         public void Save()
         {
            // serializeXml.SerializeCatagoryXML(lista);
-            se.Serializercategory(lista);
+            se.Serialize(lista);
         }
 
         public void removet(Category en)
