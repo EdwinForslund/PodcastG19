@@ -3,120 +3,67 @@ using System.Collections.Generic;
 using System.Xml.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using PodcastAppG19.BLL;
 using PodcastAppG19.ExceptionHandling;
 using System.Net;
 using System.Linq.Expressions;
 using System.Security.Policy;
 using System.Reflection;
+using PodcastAppG19.Models;
 
 namespace PodcastAppG19.DAL
 {
     public class RepositoryFeed : FeedIFRepository<Feed>
     {
-
-
-
-      //  Serializer serializeXml = new Serializer();
-       
- 
-        NewSerailzer se = new NewSerailzer();
-        List<Feed> lista;
-
-
-
-
-
+        Serializer se = new Serializer();
+        List<Feed> list;
 
         public RepositoryFeed()
         {
-            lista = GetAll();
-
+            list = GetAll();
         }
 
-
-        public void insert(Feed entity)
+        public void Insert(Feed entity)
         {
-            lista.Add(entity);
+            list.Add(entity);
             Save();
         }
-
-
 
         public void Save()
         {
-            //serializeXml.SerializeFeedXML(lista);
-            se.Serialize(lista);
+            se.Serialize(list);
         }
-
-
-
 
         public List<Feed> GetAll()
         {
-            //  return serializeXml.DeserializeFeedXML();
            return  se.DeserializeFeed();
-
         }
 
-        public void Updatenamn(string gammaltNamn, string nyttNamn)
+
+        public void Delete(Feed t)
         {
-            foreach (Feed feed in lista)
-            {
-                if (feed.namn.Equals(gammaltNamn))
-                {
-                    feed.namn = nyttNamn;
-                }
-            }
+            list.Remove(t);
             Save();
         }
 
-
-
-        public Feed GetByName(string name)
+        public void Update(Feed t)
         {
-            // Skapar en LINQ-fråga som filtrerar mediaobjekt i lista där namn-egenskapen matchar det angivna namnet.
-            var podQuery = from feed in lista
-                           where feed.namn == name
-                           select feed;
-
-            // Sparar data innan du returnerar och uppdaterar sedan listan
-            Save();
-            GetAll();
-
-            // Returnerar det första matchande mediaobjektet om det finns något.
-            return podQuery.FirstOrDefault();
-        }
-
-
-        public void delete(Feed t)
-
-        {
-
-            lista.Remove(t);
-            Save();
-        }
-
-        public void update(Feed t)
-        {
-
             // Create a list to store updated podcasts
             List<Feed> updatedPodcasts = new List<Feed>();
 
             // Iterate through the existing podcasts and remove those with the same name as the new podcast
-            foreach (var pod in lista)
+            foreach (var pod in list)
             {
-                if (pod.namn != t.namn)
+                if (pod.name != t.name)
                 {
                     updatedPodcasts.Add(pod);
                 }
             }
 
             // Replace the old list with the updated list
-            lista = updatedPodcasts;
+            list = updatedPodcasts;
 
             // Add the new podcast
-            insert(t);
+            Insert(t);
 
             // Retrieve all data
             GetAll();
@@ -136,7 +83,7 @@ namespace PodcastAppG19.DAL
                 }
                 else
                 {
-                    throw new UrlException(new XDocument(), "URL ska sluta på .xml");
+                    throw new UrlException(new XDocument(), "Felaktig URL");
                 }
             }
             catch (UrlException ex)
@@ -145,113 +92,59 @@ namespace PodcastAppG19.DAL
                 // eftersom MessageBox inte är tillgänglig utanför UI-tråden.
                 // Logga ex med lämplig mekanism eller använd lämplig hantering för applikationen.
                 Console.WriteLine(ex.Message);
-                return null;
+                return null!;
             }
             catch (System.IO.FileNotFoundException)
             {
                 Console.WriteLine("URL ej hittad, försök igen!");
-                return null;
+                return null!;
             }
             catch (Exception ex)
             {
                 Console.WriteLine("Exception klass :(" + ex.Message);
-                return null;
+                return null!;
             }
-        }
-
-
-        // Metod som retunerar siffran på antalet objekt där objekten är avnsitt LINQ-fråga
-        public int ItemCounter(string url)
-        {
-
-            int antalObjekt = -1;  // Initiera antalObjekt med ett standardvärde för att kunna lämna objekt tomma senare i koden.
-
-            try
-            {
-                if (url.Contains("feed", StringComparison.OrdinalIgnoreCase)
-                     || url.Contains("pod", StringComparison.OrdinalIgnoreCase))
-                {
-
-                    XDocument filen = XDocument.Load(url);
-                    List<XElement> antalObjektsLista = filen.Descendants("title").ToList();
-                    int index = 0;
-
-                    foreach (XElement item in antalObjektsLista)
-                    {
-                        string title = (string)item;
-                        if (title.Contains("."))
-                        {
-                            index++;
-                        }
-                    }
-
-                    antalObjekt = index;
-                }
-                else
-
-                    // Kasta ett anpassat undantag med felmeddelandet om URL:en inte har rätt format
-                    throw new UrlException(new XDocument(), "Denna länk är ogiltig eller leder inte till en prenumererbar podcast");
-            }
-            catch (UrlException)
-            {
-
-            }
-            catch (System.IO.FileNotFoundException)
-            {
-                //MessageBox.Show("URL ej hittad, försök igen!");
-            }
-            catch (Exception)
-            {
-
-            }
-            
-            return antalObjekt;  // Returnera antalObjekt
-        
         }
 
         public List<Episode> GetEpisodes(string url) 
         {
-            List<Episode> avsnittsLista = new List<Episode>();
+            List<Episode> episodeList = new List<Episode>();
 
             try
             {
                 if (url.Contains("feed", StringComparison.OrdinalIgnoreCase)
                     || url.Contains("pod", StringComparison.OrdinalIgnoreCase))
                 {
+                    XDocument filen = XDocument.Load(url);
+                    List<XElement> descriptionList = filen.Descendants("description").ToList();
+                    List<XElement> titleList = filen.Descendants("title").ToList(); 
+                    int index = 0;
 
-                XDocument filen = XDocument.Load(url);
-                List<XElement> beskrivningsLista = filen.Descendants("description").ToList();
-                List<XElement> titleLista = filen.Descendants("title").ToList(); 
-                int index = 0;
-
-                    foreach (XElement item in titleLista)
+                    foreach (XElement item in titleList)
                     {
                         string title = (string)item;
                         if (title.Contains("."))
                         {
-                            avsnittsLista.Add(new Episode(title, (string)beskrivningsLista.ElementAt(index)));
+                            episodeList.Add(new Episode(title, (string)descriptionList.ElementAt(index)));
                             index++;
 
                         }
                     }
-
-                    return avsnittsLista;
+                    return episodeList;
                 }
                 else
-
                     //Kasta ett anpassat undantag med felmeddelandet om URL:en inte har rätt format
                     throw new UrlException(new XDocument(), "Denna länk är ogiltig eller leder inte till en prenumererbar ljud- eller videofeed");
             }
             catch
             {
-                return avsnittsLista;
+                return episodeList;
             }
         }
 
-
         public void UpdateFeedCategory(string oldCategory, string newCategory)
         {
-            foreach (Feed feed in lista)
+            foreach (Feed feed in list)
             {
                 if (feed.category.Title.Equals(oldCategory))
                 {
@@ -261,34 +154,30 @@ namespace PodcastAppG19.DAL
             Save();
         }
 
-
         public void DeleteFeedAndContents(Feed feed)
         {
             // Remove the feed from the list
-            lista.Remove(feed);
+            list.Remove(feed);
 
             // Optionally, delete any associated content or perform cleanup here
 
             Save(); // Save the updated list
         }
 
-
-
         public void DeletePodcastOnCategory(Category cat)
         {
-            lista.RemoveAll(podcast => podcast.category.Title == cat.Title);
+            list.RemoveAll(podcast => podcast.category.Title == cat.Title);
             Save();
             GetAll();
         }
 
-
         public void UpdateFeedName(Feed feed, string newFeedName)
         {
-            foreach (Feed f in lista)
+            foreach (Feed f in list)
             {
-                if (f.namn == feed.namn)
+                if (f.name == feed.name)
                 {
-                    f.namn = newFeedName;
+                    f.name = newFeedName;
                     Save(); // Save the updated feed list
                     break;
                 }

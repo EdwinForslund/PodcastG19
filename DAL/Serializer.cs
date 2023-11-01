@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.IO;
 using System.Xml.Serialization;
 using System.Windows.Forms;
-using PodcastAppG19.BLL;
+using PodcastAppG19.Models;
 
 namespace PodcastAppG19.DAL
 {
-    public class NewSerailzer
+    public class Serializer
     {
-        public NewSerailzer()
+        public Serializer()
         {
 
         }
@@ -50,7 +50,7 @@ namespace PodcastAppG19.DAL
 
         public List<Category> DeserializeCategory()
         {
-            List<Category> categorilista = new List<Category>();
+            List<Category> categoryList = new List<Category>();
 
             try
             {
@@ -69,7 +69,7 @@ namespace PodcastAppG19.DAL
                 MessageBox.Show(e.Message);
             }
 
-            return categorilista;
+            return categoryList;
         }
 
         public List<Feed> DeserializeFeed()
