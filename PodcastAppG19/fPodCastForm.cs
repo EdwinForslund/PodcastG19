@@ -484,33 +484,32 @@ namespace PodcastAppG19
 
         private void btnAterstall_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Button clicked!"); // Visa meddelande för att kontrollera om koden körs
-            if (!string.IsNullOrEmpty(txtbURL.Text))
-            {
-               
-                txtbURL.Text = string.Empty;
-            }
-            // Clear input fields
-            txtbNamn.Text = string.Empty;
-            txtbURL.Text = string.Empty; // Rensa URL-fältet
-            txtbURL.Clear();
+  
+            MessageBox.Show("Button clicked!");
 
-            // Clear the filter combo box if it's not empty
+            // Ta bort eventuell filtrering i DataGridView
+            dataGridView1.Rows.Clear();
+
+            // Uppdatera DataGridView med alla rader
+            UpdateFeedsList();
+
+            txtbNamn.Text = string.Empty;
+            textBoxURL.Text = string.Empty;
+            
+
             if (cbBFilter.SelectedItem != null)
             {
-                cbBFilter.SelectedIndex = -1;
+                cbBFilter.Text = "Filtrera...";
             }
 
-            // Clear the category combo box
-            cbBKategori.SelectedIndex = -1;
+            // Återställ ComboBox för kategori
+            cbBKategori.Text = "Kategori...";
 
+            // Återställ ComboBox för uppdateringsfrekvens
             if (cbBFrekvens.SelectedItem != null)
             {
                 cbBFrekvens.SelectedIndex = -1;
             }
-
-            // Clear the frequency combo box
-            cbBFrekvens.SelectedIndex = -1;
         }
 
 
