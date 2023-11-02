@@ -156,8 +156,14 @@ namespace PodcastAppG19.DAL
 
         public void DeleteFeedAndContents(Feed feed)
         {
-            // Remove the feed from the list
-            list.Remove(feed);
+            foreach(Feed f in list) 
+            { 
+                if(f.url == feed.url) 
+                { 
+                    list.Remove(f);
+                    break;
+                }
+            }
 
             // Optionally, delete any associated content or perform cleanup here
 
