@@ -142,15 +142,9 @@ namespace PodcastAppG19.DAL
             }
         }
 
-        public void UpdateFeedCategory(string oldCategory, string newCategory)
+        public void UpdateFeedCategory(int oldCategoryIndex, Category newCategory)
         {
-            foreach (Feed feed in list)
-            {
-                if (feed.category.Title.Equals(oldCategory))
-                {
-                    feed.category.Title = newCategory;
-                }
-            }
+            list.ElementAt(oldCategoryIndex).category = newCategory;
             Save();
         }
 

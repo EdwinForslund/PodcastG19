@@ -37,9 +37,9 @@ namespace PodcastAppG19.BLL
             feedRepos.Insert(feed);
         }
 
-        public void UpdateFeedCategory(string oldCategory, string newCategory)
+        public void UpdateFeedCategory(int oldCategoryIndex, Category newCategory)
         {
-            feedRepos.UpdateFeedCategory(oldCategory, newCategory);
+            feedRepos.UpdateFeedCategory(oldCategoryIndex, newCategory);
         }
 
         public void DeleteFeedAndContents(Feed feed)

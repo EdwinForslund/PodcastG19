@@ -79,18 +79,7 @@ namespace PodcastAppG19
                 return;
             }
 
-            if (stringFrequency.Contains("1 min"))
-            {
-                frequency = 1;
-            }
-            else if (stringFrequency.Contains("5 min"))
-            {
-                frequency = 5;
-            }
-            else if (stringFrequency.Contains("10 min"))
-            {
-                frequency = 10;
-            }
+            frequency = UpdateFrequency(stringFrequency);
 
             Category category = new Category(categoryTitle);
 
@@ -223,20 +212,13 @@ namespace PodcastAppG19
 
         private string UpdateFrequency(int frequency)
         {
-            if (frequency == 1)
-            {
-                return "1 min";
-            }
-            else if (frequency == 5)
-            {
-                return "5 min";
-            }
-            else if (frequency == 10)
-            {
-                return "10 min";
-            }
+            return frequency + " min";
+        }
 
-            return "Hittades inte";
+        private int UpdateFrequency(string frequency) 
+        {
+            frequency = frequency.Replace(" min", "");
+            return int.Parse(frequency);
         }
 
         private void UpdateContentforCatagory()
@@ -327,7 +309,6 @@ namespace PodcastAppG19
             if (dialogResult == DialogResult.Yes)
             {
                 categoryController.UppdateKatagory(oldCategory, newCategory);
-                feedController.UpdateFeedCategory(oldCategory, newCategory);
                 UpdateContentforCatagory();
             }
         }
@@ -459,14 +440,21 @@ namespace PodcastAppG19
                 if (cbBKategori.SelectedItem != null)
                 {
                     // Hämta den valda kategorin från ComboBox
-                    string selectedCategory = (string)cbBKategori.SelectedItem;
+                    Category selectedCategory = new Category();
+
+                    foreach (Category category in categoryController.GetallaCatagory()) 
+                    {
+                        if (category.Title.Contains((string)cbBKategori.SelectedItem)) 
+                        { 
+                            selectedCategory = category;
+                            break;
+                        }
+                    }
 
                     // Uppdatera feedens kategori med den valda kategorin från ComboBox
-                    selectedFeed.category = new Category(selectedCategory);
-
-                    feedController.UpdateFeedCategory((string)dataGridView1.Rows[selectedRowIndex].Cells[4].Value, selectedCategory);
+                    feedController.UpdateFeedCategory(selectedRowIndex, selectedCategory);
                     // Uppdatera användargränssnittet för den valda feeden med den nya kategorin
-                    dataGridView1.Rows[selectedRowIndex].Cells[4].Value = selectedCategory;
+                    dataGridView1.Rows[selectedRowIndex].Cells[4].Value = selectedCategory.Title;
 
                     // Alternativt: Anropa en metod i FeedController för att uppdatera kategorin för den valda feeden i databasen eller lagringen
                     // feedcontoller.UpdateFeedCategory(selectedFeed, selectedCategory);
